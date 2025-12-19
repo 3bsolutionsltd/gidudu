@@ -1106,3 +1106,329 @@ a {
         transform: scale(1);
     }
 }
+
+/* Additional Page Styles */
+
+/* Page Header */
+.page-header {
+    position: relative;
+    padding: 150px 0 100px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/gidudu_hero_section.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    text-align: center;
+}
+
+.page-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.page-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+    position: relative;
+    z-index: 2;
+}
+
+.page-header p {
+    font-size: 1.25rem;
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Vision & Mission */
+.vision-mission {
+    padding: 6rem 0;
+    background: var(--light-color);
+}
+
+.vm-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.vm-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.vm-card:hover {
+    transform: translateY(-10px);
+}
+
+.vm-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(37, 99, 235, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.vm-icon i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.vm-card h2 {
+    margin-bottom: 1rem;
+}
+
+.vm-card p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+/* About Detailed */
+.about-detailed {
+    padding: 6rem 0;
+}
+
+.content-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.content-text .lead {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+}
+
+.content-text p {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.content-image img {
+    border-radius: 12px;
+    box-shadow: var(--shadow-xl);
+}
+
+/* Core Values */
+.core-values {
+    padding: 6rem 0;
+    background: var(--light-color);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.value-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(37, 99, 235, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.value-icon i {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+}
+
+.value-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.value-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Founder Section */
+.founder {
+    padding: 6rem 0;
+}
+
+.founder-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.founder-image img {
+    border-radius: 12px;
+    box-shadow: var(--shadow-xl);
+}
+
+.founder-bio h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.founder-bio .lead {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.founder-bio p {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.founder-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.founder-social a {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.founder-social a:hover {
+    transform: translateY(-5px);
+    background: var(--dark-color);
+}
+
+/* Payment Platforms */
+.payment-platforms {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.platform-btn {
+    display: block;
+    padding: 0.75rem 1rem;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.platform-btn:hover {
+    background: var(--dark-color);
+    transform: translateX(5px);
+}
+
+.platform-btn i {
+    margin-right: 0.5rem;
+}
+
+/* CTA Section */
+.cta {
+    padding: 5rem 0;
+    background: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Logo link styling */
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive for new pages */
+@media (max-width: 1024px) {
+    .vm-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-layout,
+    .founder-content {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+}
