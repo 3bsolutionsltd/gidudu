@@ -265,23 +265,106 @@ a {
 
 /* Mission Section */
 .mission {
-    padding: 4rem 0;
-    background: var(--primary-color);
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
     color: var(--white);
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+    opacity: 0.3;
+}
+
+.mission-content {
+    position: relative;
+    z-index: 2;
+}
+
+.mission-tag {
+    display: inline-block;
+    padding: 10px 25px;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .mission-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    font-weight: 800;
+}
+
+.mission-text {
+    font-size: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.mission-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pillar {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.pillar:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px);
+}
+
+.pillar-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.pillar-icon i {
     font-size: 2rem;
-    margin-bottom: 1rem;
     color: var(--white);
 }
 
-.mission-content p {
-    font-size: 1.25rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
+.pillar h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.pillar p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
 }
 
 /* Section Headers */
@@ -1029,6 +1112,18 @@ a {
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
     h2 { font-size: 2rem; }
+    
+    .mission-content h2 {
+        font-size: 2rem;
+    }
+
+    .mission-text {
+        font-size: 1.1rem;
+    }
+
+    .mission-pillars {
+        grid-template-columns: 1fr;
+    }
     
     .nav-menu {
         position: fixed;
