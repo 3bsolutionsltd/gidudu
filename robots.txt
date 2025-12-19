@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://3bsolutionsltd.github.io/gidudu/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Disallow certain paths if needed
+# Disallow: /private/

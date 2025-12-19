@@ -1,6 +1,18 @@
-# IGFM Website Redesign
+# IGFM Website - International Great Faith Ministries
 
-Modern, responsive website redesign for International Great Faith Ministries (gidudu.org).
+Modern, responsive website for International Great Faith Ministries (IGFM) - Transforming lives in Uganda through faith, care, and compassion.
+
+🌐 **Live Site:** https://3bsolutionsltd.github.io/gidudu/
+
+## About IGFM
+
+International Great Faith Ministries is a non-denominational 501(c)(3) nonprofit organization bringing hope to unreached communities in Uganda and beyond through:
+- **Berakhah Childcare** - Serving 5,000+ children
+- **Church Planting** - Establishing churches in remote villages
+- **Pastor Training** - Supporting 1,000+ rural pastors
+- **Healthcare** - Berakhah Clinic serving communities
+- **Education** - Berakhah School nurturing future leaders
+- **Widows & Elderly Care** - Supporting 700+ vulnerable individuals
 
 ## Features
 
