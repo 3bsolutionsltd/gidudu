@@ -209,7 +209,7 @@ a {
     justify-content: center;
     text-align: center;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/serve_with_us.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/gidudu_hero_section.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
