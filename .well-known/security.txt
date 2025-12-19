@@ -1,0 +1,11 @@
+# Our security policy
+Contact: mailto:info@gidudu.org
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://3bsolutionsltd.github.io/gidudu/.well-known/security.txt
+
+# If you've found a vulnerability, please email us at info@gidudu.org
+# We take security seriously and will respond as quickly as possible.
+
+Policy: https://3bsolutionsltd.github.io/gidudu/
+Acknowledgments: https://3bsolutionsltd.github.io/gidudu/about.html
