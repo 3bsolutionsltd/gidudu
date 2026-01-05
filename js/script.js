@@ -166,6 +166,99 @@ if (contactForm) {
     });
 }
 
+// Sponsorship form handling
+const sponsorshipForm = document.getElementById('sponsorshipForm');
+
+if (sponsorshipForm) {
+    // Automatically populate child's name from profile
+    const profileDetails = document.querySelector('.profile-details');
+    const childNameInput = document.getElementById('childNameInput');
+    const formTitle = document.getElementById('formTitle');
+    const messageLabel = document.querySelector('label[for="comment"]');
+    const messagePlaceholder = document.getElementById('comment');
+    
+    if (profileDetails && childNameInput) {
+        const childName = profileDetails.getAttribute('data-child-name') || 
+                         profileDetails.querySelector('h1')?.textContent.trim() || 
+                         '';
+        
+        // Set the hidden input value
+        childNameInput.value = childName;
+        
+        // Update form title dynamically
+        if (formTitle && childName) {
+            formTitle.textContent = `Sponsor ${childName}`;
+        }
+        
+        // Update message label and placeholder
+        const firstName = childName.split(' ')[0];
+        if (messageLabel && firstName) {
+            messageLabel.textContent = `Message to ${firstName} (Optional)`;
+        }
+        if (messagePlaceholder && firstName) {
+            messagePlaceholder.placeholder = `Send a message of encouragement to ${firstName}...`;
+        }
+    }
+    
+    // Handle custom amount toggle
+    const donationAmountSelect = document.getElementById('donationAmount');
+    const customAmountGroup = document.getElementById('customAmountGroup');
+    const customAmountInput = document.getElementById('customAmount');
+    
+    if (donationAmountSelect && customAmountGroup) {
+        donationAmountSelect.addEventListener('change', (e) => {
+            if (e.target.value === 'custom') {
+                customAmountGroup.style.display = 'block';
+                customAmountInput.required = true;
+            } else {
+                customAmountGroup.style.display = 'none';
+                customAmountInput.required = false;
+                customAmountInput.value = '';
+            }
+        });
+    }
+    
+    sponsorshipForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(sponsorshipForm);
+        const data = Object.fromEntries(formData);
+        
+        // Validate required fields
+        if (!data.firstName || !data.lastName || !data.email || !data.phone || 
+            !data.address || !data.city || !data.state || !data.zipCode || 
+            !data.country || !data.donationAmount || !data.paymentMethod) {
+            alert('Please fill in all required fields.');
+            return;
+        }
+        
+        // Validate custom amount if selected
+        if (data.donationAmount === 'custom') {
+            if (!data.customAmount || parseFloat(data.customAmount) < 35) {
+                alert('Please enter a custom amount of at least $35.');
+                return;
+            }
+        }
+        
+        // Get the sponsorship amount
+        const amount = data.donationAmount === 'custom' ? data.customAmount : data.donationAmount;
+        
+        // Here you would normally send the data to your backend
+        console.log('Sponsorship form submitted:', data);
+        
+        // Show success message with child's name
+        const childName = data.childName || 'this child';
+        alert(`Thank you for choosing to sponsor ${childName} with $${amount}/month!\n\nOur team will contact you within 24 hours at ${data.email} to finalize your sponsorship and payment setup.\n\nWe're excited to have you join our mission!`);
+        
+        // Reset form
+        sponsorshipForm.reset();
+        if (customAmountGroup) {
+            customAmountGroup.style.display = 'none';
+        }
+    });
+}
+
 // Counter animation for impact numbers
 function animateCounter(element, target, duration = 2000) {
     const start = 0;

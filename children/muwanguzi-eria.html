@@ -55,7 +55,7 @@
                 <div class="profile-image">
                     <img src="../images/mwanguzi_eria_image.jpg" alt="Muwanguzi Eria" loading="lazy">
                 </div>
-                <div class="profile-details">
+                <div class="profile-details" data-child-name="Muwanguzi Eria">
                     <h1>Muwanguzi Eria</h1>
                     <div class="detail-grid">
                         <div class="detail-item">
@@ -116,46 +116,126 @@
         <div class="container">
             <div class="form-wrapper">
                 <div class="form-header">
-                    <h2>Sponsor Muwanguzi Eria</h2>
+                    <h2 id="formTitle">Begin Your Sponsorship</h2>
                     <p>Fill out the form below to begin your sponsorship journey</p>
                 </div>
                 <form id="sponsorshipForm" class="sponsorship-form">
-                    <div class="form-row">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Smith">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john.smith@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 123-4567">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Address Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">Address Information</h3>
                         <div class="form-group">
-                            <label for="firstName">First Name *</label>
-                            <input type="text" id="firstName" name="firstName" required>
+                            <label for="address">Street Address *</label>
+                            <input type="text" id="address" name="address" required placeholder="123 Main Street">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required placeholder="New York">
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State/Province *</label>
+                                <input type="text" id="state" name="state" required placeholder="NY">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="zipCode">Zip/Postal Code *</label>
+                                <input type="text" id="zipCode" name="zipCode" required placeholder="10001">
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country *</label>
+                                <select id="country" name="country" required>
+                                    <option value="">Select country...</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="NZ">New Zealand</option>
+                                    <option value="UG">Uganda</option>
+                                    <option value="KE">Kenya</option>
+                                    <option value="TZ">Tanzania</option>
+                                    <option value="ZA">South Africa</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="FR">France</option>
+                                    <option value="NL">Netherlands</option>
+                                    <option value="SE">Sweden</option>
+                                    <option value="NO">Norway</option>
+                                    <option value="DK">Denmark</option>
+                                    <option value="CH">Switzerland</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sponsorship Details -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">Sponsorship Details</h3>
+                        <div class="form-group">
+                            <label for="donationAmount">Monthly Sponsorship Amount (USD) *</label>
+                            <select id="donationAmount" name="donationAmount" required>
+                                <option value="">Select amount...</option>
+                                <option value="35">$35/month - Basic Support</option>
+                                <option value="50">$50/month - Standard Support</option>
+                                <option value="75">$75/month - Enhanced Support</option>
+                                <option value="100">$100/month - Full Support</option>
+                                <option value="custom">Custom Amount</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="customAmountGroup" style="display: none;">
+                            <label for="customAmount">Enter Custom Amount (USD) *</label>
+                            <input type="number" id="customAmount" name="customAmount" min="35" placeholder="50">
                         </div>
                         <div class="form-group">
-                            <label for="lastName">Last Name *</label>
-                            <input type="text" id="lastName" name="lastName" required>
+                            <label for="paymentMethod">Preferred Payment Method *</label>
+                            <select id="paymentMethod" name="paymentMethod" required>
+                                <option value="">Select payment method...</option>
+                                <option value="credit-card">Credit/Debit Card</option>
+                                <option value="bank-transfer">Bank Transfer</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="mobile-money">Mobile Money (Uganda)</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
+
+                    <!-- Personal Message -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">Personal Message (Optional)</h3>
+                        <div class="form-group">
+                            <label for="comment">Message to Child (Optional)</label>
+                            <textarea id="comment" name="comment" rows="4" placeholder="Send a message of encouragement..."></textarea>
+                            <p class="field-hint">Your message will be shared with the child and their caregivers</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="donationAmount">Monthly Sponsorship Amount (USD) *</label>
-                        <select id="donationAmount" name="donationAmount" required>
-                            <option value="">Select amount...</option>
-                            <option value="35">$35/month - Basic Support</option>
-                            <option value="50">$50/month - Standard Support</option>
-                            <option value="75">$75/month - Enhanced Support</option>
-                            <option value="100">$100/month - Full Support</option>
-                            <option value="custom">Custom Amount</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="comment">Message to Eria (Optional)</label>
-                        <textarea id="comment" name="comment" rows="4" placeholder="Send a message of encouragement to Eria..."></textarea>
-                    </div>
-                    <input type="hidden" name="childName" value="Muwanguzi Eria">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">Begin Sponsorship</button>
-                    <p class="form-note">After submitting, you will be contacted by our team to complete your sponsorship setup.</p>
+
+                    <input type="hidden" id="childNameInput" name="childName" value="">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Complete Sponsorship Application</button>
+                    <p class="form-note"><i class="fas fa-lock"></i> Your information is secure. After submitting, our team will contact you within 24 hours to finalize your sponsorship setup and payment details.</p>
                 </form>
             </div>
         </div>

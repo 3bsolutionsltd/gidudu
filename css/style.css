@@ -576,6 +576,26 @@ a {
     transform: scale(1.1);
 }
 
+.clinic-placeholder {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clinic-placeholder .placeholder-content {
+    color: white;
+    font-size: 80px;
+    opacity: 0.25;
+    transition: all 0.3s ease;
+}
+
+.program-card:hover .clinic-placeholder .placeholder-content {
+    opacity: 0.35;
+    transform: scale(1.1);
+}
+
 .program-icon {
     width: 70px;
     height: 70px;
@@ -1748,6 +1768,70 @@ a {
     gap: 1.5rem;
 }
 
+.form-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.form-section-title {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.field-hint {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.form-note {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.form-note i {
+    color: var(--secondary-color);
+}
+
+.btn-block {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #adb5bd;
+    opacity: 1;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(77, 117, 248, 0.1);
+}
+
 .form-note {
     text-align: center;
     color: var(--text-color);
@@ -1878,6 +1962,19 @@ a {
     
     .parallax-text h2 {
         font-size: 2rem;
+    }
+    
+    .form-wrapper {
+        padding: 2rem 1.5rem;
+    }
+    
+    .sponsorship-form .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .form-section-title {
+        font-size: 1.1rem;
     }
 }
 
