@@ -33,11 +33,9 @@
     
     <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://www.paypal.com https://cash.app https://venmo.com https://www.givelify.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; media-src 'self' data: blob:; connect-src 'self'; base-uri 'self'; form-action 'self' https://www.paypal.com https://cash.app https://venmo.com https://www.givelify.com;">
     
     <!-- Additional Meta Tags -->
     <meta name="theme-color" content="#2563eb">
@@ -159,7 +157,9 @@
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="faith.html" class="nav-link">Our Faith</a></li>
                 <li><a href="stories.html" class="nav-link">Stories</a></li>
-                <li><a href="#programs" class="nav-link">Programs</a></li>                <li><a href="sponsor.html" class="nav-link">Sponsor</a></li>                <li><a href="partner.html" class="nav-link">Partner</a></li>
+                <li><a href="sponsor.html" class="nav-link">Sponsor</a></li>
+                <li><a href="partner.html" class="nav-link">Partner</a></li>
+                <li><a href="https://call2prayer.church" class="nav-link" target="_blank" rel="noopener noreferrer">Call to Prayer</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
                 <li><a href="#donate" class="btn btn-primary">Donate</a></li>
             </ul>
@@ -173,13 +173,17 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+            <source src="images/hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">Loving God. Loving People. Changing Lives.</h1>
             <p class="hero-subtitle">Transforming communities in Uganda through faith, care, and compassion</p>
             <div class="hero-buttons">
-                <a href="#donate" class="btn btn-primary btn-lg">Make a Donation</a>
-                <a href="#programs" class="btn btn-secondary btn-lg">Our Programs</a>
+                <a href="#donate" class="btn btn-primary btn-lg">Donate</a>
+                <a href="sponsor.html" class="btn btn-secondary btn-lg">Sponsor</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -266,6 +270,9 @@
             <div class="programs-grid">
                 <!-- Berakhah Childcare -->
                 <div class="program-card">
+                    <div class="program-image">
+                        <img src="images/berakhah-chior.jpg" alt="Berakhah Childcare" loading="lazy">
+                    </div>
                     <div class="program-icon">
                         <i class="fas fa-heart"></i>
                     </div>
@@ -281,6 +288,9 @@
 
                 <!-- Berakhah School -->
                 <div class="program-card">
+                    <div class="program-image">
+                        <img src="images/berakhah-chior_street_two_girls.jpg" alt="Berakhah School" loading="lazy">
+                    </div>
                     <div class="program-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
@@ -296,6 +306,9 @@
 
                 <!-- Berakhah Clinic -->
                 <div class="program-card">
+                    <div class="program-image">
+                        <img src="images/serve_with_us.jpg" alt="Berakhah Clinic" loading="lazy">
+                    </div>
                     <div class="program-icon">
                         <i class="fas fa-hospital"></i>
                     </div>
@@ -367,45 +380,32 @@
     </section>
 
     <!-- Berakhah Choir Section -->
-    <section class="choir">
+    <section class="parallax-section choir-parallax">
+        <div class="parallax-bg" style="background-image: url('images/berakhah-chior_street.jpg');"></div>
         <div class="container">
-            <div class="choir-content">
-                <div class="choir-text">
-                    <span class="section-tag">Spreading Hope Through Music</span>
-                    <h2>Berakhah Children's Choir</h2>
-                    <p>The Berakhah Children's Choir shares their life-changing testimonies, hope, and joy through vibrant cultural performances and extraordinary talent.</p>
-                    <p>As they travel and perform, these remarkable children use Uganda's rich heritage to raise awareness about the challenges faced by orphans and vulnerable children in rural communities.</p>
+            <div class="parallax-content">
+                <div class="parallax-spacer"></div>
+                <div class="parallax-text">
+                    <h4>Berakhah Children's Choir</h4>
+                    <h2>Spreading <strong>hope</strong> and <strong>joy</strong> through music</h2>
+                    <p>The Berakhah Children's Choir shares their life-changing testimonies through vibrant cultural performances and extraordinary talent. As they travel and perform, these remarkable children use Uganda's rich heritage to raise awareness about the challenges faced by orphans and vulnerable children in rural communities.</p>
                     <a href="#contact" class="btn btn-primary">Book the Choir</a>
-                </div>
-                <div class="choir-image">
-                    <img src="images/berakhah-chior_street.jpg" alt="Berakhah Children's Choir" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Call2Prayer Church -->
-    <section class="church">
+    <section class="parallax-section church-parallax">
+        <div class="parallax-bg" style="background-image: url('images/call_to_prayer.jpg');"></div>
         <div class="container">
-            <div class="church-content">
-                <div class="church-image">
-                    <img src="images/call_to_prayer.jpg" alt="Call2Prayer Mbale Church" loading="lazy">
-                </div>
-                <div class="church-text">
-                    <span class="section-tag">Join Our Community</span>
-                    <h2>Call2Prayer Mbale Church</h2>
-                    <p class="lead">"A church after God's heart committed to evangelism, loving God, loving people and changing lives."</p>
-                    <div class="church-info">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>900m from Mbale S.S on Kakungulu Drive, Half London Area, Mbale City</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="https://call2prayerchurch.org" target="_blank" class="btn btn-primary" rel="noopener">Visit Church Website</a>
-                    <a href="#contact" class="btn btn-secondary" style="margin-left: 1rem;">Contact Us</a>
+            <div class="parallax-content reverse">
+                <div class="parallax-spacer"></div>
+                <div class="parallax-text">
+                    <h4>Call2Prayer Mbale Church</h4>
+                    <h2>A church after God's <strong>heart</strong> committed to <strong>evangelism</strong></h2>
+                    <p>Loving God, loving people and changing lives. Join our community in Mbale City as we worship, grow, and serve together. Located 900m from Mbale S.S on Kakungulu Drive, Half London Area.</p>
+                    <a href="https://call2prayer.church" target="_blank" class="btn btn-primary" rel="noopener noreferrer">Visit Church Website</a>
                 </div>
             </div>
         </div>
@@ -641,15 +641,15 @@
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sponsor.html">Sponsor</a></li>
                         <li><a href="#donate">Donate</a></li>
-                        <li><a href="#sponsor">Sponsor</a></li>
+                        <li><a href="partner.html">Partner</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Programs</h4>
+                    <h4>Our Ministries</h4>
                     <ul>
                         <li><a href="#programs">Berakhah Childcare</a></li>
                         <li><a href="#programs">Berakhah School</a></li>

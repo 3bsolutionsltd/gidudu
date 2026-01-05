@@ -1,3 +1,49 @@
+// Hero Video Autoplay
+document.addEventListener('DOMContentLoaded', () => {
+    const heroVideo = document.querySelector('.hero-video');
+    if (heroVideo) {
+        console.log('Video element found:', heroVideo);
+        
+        // Set video properties
+        heroVideo.muted = true;
+        heroVideo.volume = 0;
+        heroVideo.setAttribute('playsinline', '');
+        heroVideo.setAttribute('webkit-playsinline', '');
+        
+        // Try to play immediately
+        const playPromise = heroVideo.play();
+        
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                console.log('Video is playing successfully!');
+            }).catch(error => {
+                console.error('Autoplay failed:', error);
+                console.log('Trying to play on user interaction...');
+                
+                // Fallback: play on any user interaction
+                const playOnInteraction = () => {
+                    heroVideo.play()
+                        .then(() => console.log('Video started after user interaction'))
+                        .catch(err => console.error('Play still failed:', err));
+                    document.removeEventListener('click', playOnInteraction);
+                    document.removeEventListener('touchstart', playOnInteraction);
+                };
+                
+                document.addEventListener('click', playOnInteraction);
+                document.addEventListener('touchstart', playOnInteraction);
+            });
+        }
+        
+        // Log video events for debugging
+        heroVideo.addEventListener('loadeddata', () => console.log('Video data loaded'));
+        heroVideo.addEventListener('canplay', () => console.log('Video can play'));
+        heroVideo.addEventListener('playing', () => console.log('Video is playing'));
+        heroVideo.addEventListener('error', (e) => console.error('Video error:', e));
+    } else {
+        console.error('Video element not found!');
+    }
+});
+
 // Mobile Navigation Toggle
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
