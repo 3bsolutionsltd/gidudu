@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "$2a$10$KdYQqD6onIiOyDcP2XkyA.3qdZ6msaVk5YPVJU1wJ4dYiO8M4CqUG",
+      "email": "admin@igfm.org"
+    }
+  ]
+}

@@ -16,8 +16,11 @@ International Great Faith Ministries is a non-denominational 501(c)(3) nonprofit
 
 ## Features
 
+- **Dynamic Content Management**: Backend CMS for easy content updates (no coding required!)
 - **Modern Design**: Clean, contemporary design with smooth animations
 - **Fully Responsive**: Optimized for all devices (mobile, tablet, desktop)
+- **Hero Slideshow**: Dynamic video/image slideshow managed through admin panel
+- **Professional Forms**: Dynamic sponsorship forms with auto-population
 - **Fast Performance**: Lightweight code with lazy loading for images
 - **SEO Optimized**: Semantic HTML and meta tags for better search visibility
 - **Accessible**: WCAG compliant with proper ARIA labels
@@ -46,17 +49,83 @@ International Great Faith Ministries is a non-denominational 501(c)(3) nonprofit
 
 ## Technologies Used
 
+### Frontend
 - HTML5
 - CSS3 (with CSS Grid and Flexbox)
 - Vanilla JavaScript
 - Google Fonts (Inter & Poppins)
 - Font Awesome Icons
 
+### Backend (NEW!)
+- Node.js + Express
+- JWT Authentication
+- Multer (File Uploads)
+- bcryptjs (Password Security)
+- JSON-based Data Storage
+
 ## Installation
 
+### Quick Start (Frontend Only)
 1. Clone or download this repository
 2. Open `index.html` in your web browser
 3. No build process required - pure HTML/CSS/JS
+
+### Full Setup (With CMS Backend)
+
+**Prerequisites:**
+- Node.js 16+ installed
+- Python 3.x for frontend dev server
+
+**Step 1: Install Backend Dependencies**
+```bash
+cd server
+npm install
+```
+
+**Step 2: Configure Environment**
+```bash
+# Copy .env.example to .env
+cp .env.example .env
+
+# Edit .env and set your JWT_SECRET
+```
+
+**Step 3: Start Backend Server**
+```bash
+npm start
+# Server runs on http://localhost:3000
+```
+
+**Step 4: Start Frontend Server**
+```bash
+# In project root (new terminal)
+python -m http.server 8000
+# Website runs on http://localhost:8000
+```
+
+**Step 5: Access Admin Panel**
+- URL: http://localhost:3000/admin
+- Username: `admin`
+- Password: `admin123`
+
+📖 **Detailed CMS Guide**: See [CMS_GUIDE.md](CMS_GUIDE.md) for complete instructions
+
+## Content Management
+
+### Managing Hero Slideshow
+1. Login to admin panel at http://localhost:3000/admin
+2. Upload videos (MP4, WEBM, MOV) or images (JPEG, PNG, GIF)
+3. Add titles and subtitles
+4. Toggle slides active/inactive
+5. Changes appear automatically on website!
+
+### API Endpoints
+- `GET /api/hero` - Get all hero slides (public)
+- `POST /api/hero` - Upload new slide (requires auth)
+- `PUT /api/hero/:id` - Update slide (requires auth)
+- `DELETE /api/hero/:id` - Delete slide (requires auth)
+
+For full API documentation, see [server/README.md](server/README.md)
 
 ## Customization
 
@@ -97,12 +166,18 @@ Edit the text content directly in `index.html`
 
 ## Future Enhancements
 
+- [x] ✅ Backend CMS system
+- [x] ✅ Dynamic hero slideshow
+- [x] ✅ Professional sponsorship forms
+- [ ] Programs management via CMS
+- [ ] Children profiles management
 - [ ] Add image gallery
-- [ ] Implement actual donation integration
+- [ ] Implement actual donation integration (Stripe/PayPal)
 - [ ] Add blog section
 - [ ] Integrate email service for contact form
 - [ ] Add language translation
-- [ ] Create admin dashboard
+- [ ] Database migration (PostgreSQL/MongoDB)
+- [ ] Image optimization and CDN integration
 
 ## Credits
 

@@ -1,0 +1,31 @@
+{
+  "slides": [
+    {
+      "id": 1,
+      "type": "video",
+      "src": "/images/hero-video.mp4",
+      "title": "Transforming Lives",
+      "subtitle": "Through Faith and Action",
+      "active": true,
+      "updatedAt": "2026-01-09T07:27:17.581Z"
+    },
+    {
+      "id": 1767938005530,
+      "type": "video",
+      "src": "/uploads/1767938004633-2.mp4",
+      "title": "Transforming Lives",
+      "subtitle": "Through Faith and Action 2",
+      "active": true,
+      "createdAt": "2026-01-09T05:53:25.530Z"
+    },
+    {
+      "id": 1767938107467,
+      "type": "video",
+      "src": "/uploads/1767938106844-1.mp4",
+      "title": "Transforming Lives 3",
+      "subtitle": "Through Faith and Action 3",
+      "active": true,
+      "createdAt": "2026-01-09T05:55:07.467Z"
+    }
+  ]
+}
