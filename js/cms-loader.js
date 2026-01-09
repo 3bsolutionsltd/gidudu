@@ -6,6 +6,16 @@ const CMS_API_URL = window.location.hostname === 'localhost'
     ? 'http://localhost:3000/api'
     : 'https://igfm-cms-backend.onrender.com/api';
 
+const CMS_BASE_URL = window.location.hostname === 'localhost'
+    ? 'http://localhost:3000'
+    : 'https://igfm-cms-backend.onrender.com';
+
+// Helper function to get full URL for media files
+function getMediaURL(src) {
+    if (src.startsWith('http')) return src;
+    return CMS_BASE_URL + (src.startsWith('/') ? src : '/' + src);
+}
+
 // Load hero slideshow slides
 async function loadHeroSlides() {
     try {
@@ -46,7 +56,7 @@ async function loadHeroSlides() {
                 video.preload = 'auto';
                 
                 const source = document.createElement('source');
-                source.src = slide.src;
+                source.src = getMediaURL(slide.src);
                 source.type = 'video/mp4';
                 video.appendChild(source);
 
@@ -54,7 +64,7 @@ async function loadHeroSlides() {
             } else {
                 const img = document.createElement('img');
                 img.className = 'hero-video'; // Reuse same class for styling
-                img.src = slide.src;
+                img.src = getMediaURL(slide.src);
                 img.alt = slide.title || 'Hero image';
                 heroSection.insertBefore(img, heroSection.firstChild);
             }
@@ -86,14 +96,14 @@ async function loadHeroSlides() {
                     video.preload = 'auto';
                     
                     const source = document.createElement('source');
-                    source.src = slide.src;
+                    source.src = getMediaURL(slide.src);
                     source.type = 'video/mp4';
                     video.appendChild(source);
                     
                     slideDiv.appendChild(video);
                 } else {
                     const img = document.createElement('img');
-                    img.src = slide.src;
+                    img.src = getMediaURL(slide.src);
                     img.alt = slide.title || 'Hero slide';
                     slideDiv.appendChild(img);
                 }
