@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: igfm-cms-backend
+    env: node
+    region: ohio
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: PORT
+        value: 3000
+    healthCheckPath: /api/hero
+    autoDeploy: true
