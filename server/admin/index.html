@@ -606,13 +606,24 @@
 
         async function toggleSlide(id) {
             try {
+                // First, get the current state of the slide
+                const heroData = await fetch(`${API_URL}/hero`, {
+                    headers: {
+                        'Authorization': `Bearer ${authToken}`
+                    }
+                }).then(res => res.json());
+                
+                const slide = heroData.slides.find(s => s.id === id);
+                if (!slide) throw new Error('Slide not found');
+                
+                // Toggle the active state
                 const response = await fetch(`${API_URL}/hero/${id}`, {
                     method: 'PUT',
                     headers: {
                         'Authorization': `Bearer ${authToken}`,
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ active: true }) // Toggle logic on server
+                    body: JSON.stringify({ active: !slide.active })
                 });
 
                 if (!response.ok) throw new Error('Failed to toggle slide');
