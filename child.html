@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://igfm-cms-backend.onrender.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self';">
+    <title id="page-title">Child Profile - IGFM</title>
+    <meta name="description" id="page-description" content="Sponsor a child and transform their future through education, healthcare, and spiritual care.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <h2>IGFM</h2>
+                    <span>International Great Faith Ministries</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="faith.html" class="nav-link">Our Faith</a></li>
+                <li><a href="stories.html" class="nav-link">Stories</a></li>
+                <li><a href="sponsor.html" class="nav-link">Sponsor</a></li>
+                <li><a href="partner.html" class="nav-link">Partner</a></li>
+                <li><a href="https://call2prayer.church" class="nav-link" target="_blank" rel="noopener noreferrer">Call to Prayer</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="index.html#donate" class="btn btn-primary">Donate</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Loading Indicator -->
+    <div id="loading" style="display: none; text-align: center; padding: 100px 20px;">
+        <i class="fas fa-spinner fa-spin" style="font-size: 48px; color: #2563eb;"></i>
+        <p style="margin-top: 20px; font-size: 18px;">Loading child profile...</p>
+    </div>
+
+    <!-- Error Message -->
+    <div id="error-message" style="display: none; text-align: center; padding: 100px 20px;">
+        <i class="fas fa-exclamation-circle" style="font-size: 48px; color: #dc3545;"></i>
+        <h2 style="margin-top: 20px;">Child Not Found</h2>
+        <p style="margin-top: 10px;">The child profile you're looking for could not be found.</p>
+        <a href="sponsor.html" class="btn btn-primary" style="margin-top: 20px;">Back to All Children</a>
+    </div>
+
+    <!-- Child Profile Header -->
+    <section class="child-profile-header" id="child-profile" style="display: none;">
+        <div class="container">
+            <a href="sponsor.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to All Children</a>
+            <div class="profile-layout">
+                <div class="profile-image">
+                    <img id="child-image" src="" alt="" loading="lazy">
+                </div>
+                <div class="profile-details">
+                    <h1 id="child-name"></h1>
+                    <div class="detail-grid">
+                        <div class="detail-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <div>
+                                <strong>Birthday</strong>
+                                <p id="child-birthday"></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i id="gender-icon" class="fas fa-mars"></i>
+                            <div>
+                                <strong>Gender</strong>
+                                <p id="child-gender"></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-flag"></i>
+                            <div>
+                                <strong>Nationality</strong>
+                                <p id="child-nationality"></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <p id="child-location"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Child Story -->
+    <section class="child-story" id="child-story-section" style="display: none;">
+        <div class="container">
+            <div class="story-content">
+                <h2 id="story-title"></h2>
+                <div id="child-story"></div>
+                
+                <div class="story-cta">
+                    <h3 id="cta-title"></h3>
+                    <p id="cta-text"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Form -->
+    <section class="sponsorship-form-section" id="sponsorship-section" style="display: none;">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2 id="sponsor-title"></h2>
+                    <p>Choose your preferred payment method to start sponsoring</p>
+                </div>
+                <div style="max-width: 600px; margin: 40px auto 0;">
+                    <div class="donate-card">
+                        <h3>Payment Platforms</h3>
+                        <p>Select your preferred method to complete your sponsorship</p>
+                        <div class="payment-platforms">
+                            <a href="https://www.paypal.com/qrcodes/managed/5f95d821-1fed-4310-8f51-d0bd85d6d376" target="_blank" class="platform-btn"><i class="fab fa-paypal"></i> PayPal</a>
+                            <a href="https://cash.app/$IGFM" target="_blank" class="platform-btn"><i class="fas fa-dollar-sign"></i> Cash App</a>
+                            <a href="https://venmo.com/code?user_id=3147066050084864694" target="_blank" class="platform-btn"><i class="fab fa-cc-visa"></i> Venmo</a>
+                            <a href="https://www.givelify.com/donate/NzY3ODI" target="_blank" class="platform-btn"><i class="fas fa-hand-holding-heart"></i> Givelify</a>
+                        </div>
+                        <p style="margin-top: 25px; font-size: 0.95rem; color: #666; line-height: 1.6;">
+                            <strong>Important:</strong> After making your payment, please <a href="index.html#contact" style="color: #2563eb; text-decoration: underline;">contact us</a> with your sponsorship details and mention <strong id="contact-child-name"></strong>'s name.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>International Great Faith Ministries</h3>
+                    <p>Bringing hope to unreached communities in Uganda and beyond through church planting, evangelism, leadership training, and holistic care.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faith.html">Our Faith</a></li>
+                        <li><a href="stories.html">Stories</a></li>
+                        <li><a href="sponsor.html">Sponsor</a></li>
+                        <li><a href="partner.html">Partner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="index.html#programs">Berakhah Childcare</a></li>
+                        <li><a href="index.html#programs">Berakhah School</a></li>
+                        <li><a href="index.html#programs">Berakhah Clinic</a></li>
+                        <li><a href="index.html#programs">Church Planting</a></li>
+                        <li><a href="index.html#programs">Pastors Network</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/gidudu" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/paulgidudu" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/igfmuganda" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/user/PaulGidudu" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 International Great Faith Ministries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/child-loader.js"></script>
+</body>
+</html>

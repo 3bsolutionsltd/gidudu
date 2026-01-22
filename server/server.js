@@ -162,6 +162,40 @@ app.post('/api/auth/login', async (req, res) => {
     }
 });
 
+// ============= CHILDREN ROUTES =============
+
+// Get all children
+app.get('/api/children', (req, res) => {
+    try {
+        const childrenData = getDataFile('children.json');
+        if (!childrenData) {
+            return res.status(404).json({ error: 'Children data not found' });
+        }
+        res.json(childrenData);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// Get single child by ID
+app.get('/api/children/:id', (req, res) => {
+    try {
+        const childrenData = getDataFile('children.json');
+        if (!childrenData) {
+            return res.status(404).json({ error: 'Children data not found' });
+        }
+        
+        const child = childrenData.children.find(c => c.id === req.params.id);
+        if (!child) {
+            return res.status(404).json({ error: 'Child not found' });
+        }
+        
+        res.json(child);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
 // ============= HERO SLIDESHOW ROUTES =============
 
 // Get all hero slides
