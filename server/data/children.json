@@ -1,0 +1,101 @@
+{
+  "children": [
+    {
+      "id": "wandera-allan",
+      "name": "Wandera Allan",
+      "birthday": "April 4, 2011",
+      "age": 14,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Namayingo District, Uganda",
+      "image": "wandera-allan.jpg",
+      "story": [
+        "Allan is 14 years old. He comes from a small village in Namayingo district, near Lake Victoria in Uganda. He was born with a condition which made his stomach swell and hurt all the time, he could only use the restroom once every 3 months. No one in his village understood what was wrong with him. His mom thought it was a curse or witchcraft. Life was hard from the very beginning.",
+        "When he was just seven months old, his father died, leaving his mother to care for him and his three older siblings. She worked so hard, while battling HIV/AIDS and didn't have the money or knowledge to get him the help he needed. For ten years, he lived with this pain. He couldn't run, play, or be like the other kids or attend school.",
+        "Berakhah childcare found him and told his mother that Allan's condition wasn't a curse—it was something medical, and it could be treated. They took him in, loved him, and made sure he got the surgeries he needed to save his life.",
+        "Now, Allan's life is completely different. The pain is gone, the swelling is gone and he feels strong again. He is in school, learning and dreaming of a bright future. He also participates in the Berakhah Children's Choir and helps with the media team at the children's Church."
+      ],
+      "dream": null
+    },
+    {
+      "id": "kabuya-prisca",
+      "name": "Kabuya Prisca",
+      "birthday": "May 18, 2011",
+      "age": 14,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "Kabuya-Prisca.jpg",
+      "story": [
+        "Prisca is 14 years old and has endured tremendous hardship throughout her childhood. She had her left eye damaged by a neighbor's child and couldn't see well, a similar condition which occurred to her father at the same age of 9 which has failed him from active work up-to-date. This led Prisca to occasionally have severe headaches, poor vision, pain, and deterioration on her performance.",
+        "However this problem was handled medically when she joined Berakhah - her sight has been fully restored. With the father's failing sight and her mother's failing health, these have affected Prisca's parents in getting an income to support the family. Prisca would help around the house by washing plates, sweeping and cleaning the compound, but the basic needs of the family were not met adequately.",
+        "Prisca is in primary seven and dreams of becoming a Doctor. At Berakhah childcare, she has been welcomed with love and acceptance into her new family and has great comfort that her basic needs like food, shelter and education are being met."
+      ],
+      "dream": "Doctor"
+    },
+    {
+      "id": "muwanguzi-eria",
+      "name": "Muwanguzi Eria",
+      "birthday": "January 6, 2014",
+      "age": 11,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Busamaga, Sironko District",
+      "image": "mwanguzi_eria_image.jpg",
+      "story": [
+        "Eria is 11 years old, in primary three and he's the second last born in a family of seven children, five boys and two girls. His father died when he was five years old. Life became so hard for them because when he died, he left them with a mother who is a peasant farmer and could not manage to take care of the seven children.",
+        "Their paternal uncles who promised to give help turned against them to grab some of their properties instead. They lived in misery seeing their single mother becoming a beggar in the community. One day while at Church, she heard about BERAKHAH CHILD CARE and without delaying, she brought Eria and he was welcomed with open arms.",
+        "He now lives at Berakhah where all his needs are met. He loves singing, dancing and playing football. His favorite food is rice, matoke and chicken."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nasiyo-mercy",
+      "name": "Nasiyo Mercy",
+      "birthday": "2012",
+      "age": 13,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "nasiyo_mercy.jpg",
+      "story": [
+        "Mercy is a bright and joyful 13-year-old who has faced many challenges in her young life. Growing up in poverty, Mercy often went without proper meals and had no access to education. Her family struggled daily just to survive.",
+        "When Berakhah found Mercy, they saw a child full of potential and hope. Now at Berakhah, Mercy attends school regularly, excels in her studies, and dreams of becoming a teacher one day. She loves reading books, playing netball with her friends, and singing in the children's choir.",
+        "Mercy's smile lights up every room she enters, and her determination to learn inspires everyone around her."
+      ],
+      "dream": "Teacher"
+    },
+    {
+      "id": "wambede-peter-paul",
+      "name": "Wambede Peter Paul",
+      "birthday": "2011",
+      "age": 14,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "WAMBEDE-PETER-scaled-1-758x1024.jpg",
+      "story": [
+        "Peter Paul is a hardworking 14-year-old boy who shows great promise and dedication in his studies. He comes from a large family where resources are scarce, and his parents struggled to provide for all their children. Peter Paul often had to choose between eating and going to school.",
+        "When he joined Berakhah, everything changed. Now he has access to quality education, three meals a day, medical care, and spiritual guidance. Peter Paul is particularly talented in mathematics and science, and he dreams of becoming an engineer one day.",
+        "He is respectful, kind to younger children, and actively participates in church activities. Peter Paul's transformation has been remarkable, and with your sponsorship, he can continue to thrive and reach his full potential."
+      ],
+      "dream": "Engineer"
+    },
+    {
+      "id": "wanadwadi-joseph",
+      "name": "Wanadwadi Joseph",
+      "birthday": "2010",
+      "age": 15,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "Wanadwadi-Joseph.jpg",
+      "story": [
+        "Joseph is a kind and compassionate 15-year-old who has overcome significant hardships. He lost his father at a young age, leaving his mother to care for five children alone. Life was extremely difficult, and Joseph often felt hopeless about his future. Education seemed like an impossible dream.",
+        "When Berakhah welcomed Joseph, he found not just a place to live, but a family that believed in him. Joseph is now thriving in secondary school, where he excels in his studies and shows natural leadership abilities. He loves helping others and dreams of becoming a social worker to help vulnerable children like himself.",
+        "Joseph is grateful for the opportunity Berakhah has given him and works hard every day to make the most of it."
+      ],
+      "dream": "Social Worker"
+    }
+  ]
+}
