@@ -10,7 +10,7 @@ International Great Faith Ministries is a non-denominational 501(c)(3) nonprofit
 - **Berakhah Childcare** - Serving 5,000+ children
 - **Church Planting** - Establishing churches in remote villages
 - **Pastor Training** - Supporting 1,000+ rural pastors
-- **Berakhah Hospital** - Medical care for vulnerable communities
+- **Berakhah Hospital** - Life-saving medical care for vulnerable communities
 - **Healthcare** - Berakhah Clinic serving communities
 - **Education** - Berakhah School nurturing future leaders
 - **Widows & Elderly Care** - Supporting 700+ vulnerable individuals
@@ -39,7 +39,7 @@ International Great Faith Ministries is a non-denominational 501(c)(3) nonprofit
    - Church Planting
    - Pastors Network Uganda
    - Widows & Elderly Care
-5. **Medical Care**: Berakhah Busamaga Medical Hospital - Life-saving healthcare initiative
+5. **Berakhah Hospital**: Life-saving healthcare for vulnerable communities
 6. **Berakhah Choir**: Showcase of children's choir ministry
 7. **Call2Prayer Church**: Local church information
 8. **Impact Metrics**: Animated statistics showing organizational impact
