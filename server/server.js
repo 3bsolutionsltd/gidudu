@@ -5,22 +5,53 @@ const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+const { body, validationResult } = require('express-validator');
 require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-this';
 
-// Middleware
+// Security Middleware
+app.use(helmet({
+    contentSecurityPolicy: false, // Already set in HTML
+    crossOriginEmbedderPolicy: false
+}));
+
+// Rate limiting for login attempts
+const loginLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 5, // Limit each IP to 5 login requests per windowMs
+    message: 'Too many login attempts, please try again after 15 minutes',
+    standardHeaders: true,
+    legacyHeaders: false,
+});
+
+// General API rate limiter
+const apiLimiter = rateLimit({
+    windowMs: 1 * 60 * 1000, // 1 minute
+    max: 100, // Limit each IP to 100 requests per minute
+    message: 'Too many requests, please try again later',
+    standardHeaders: true,
+    legacyHeaders: false,
+});
+
+// CORS Middleware
 app.use(cors({
     origin: process.env.NODE_ENV === 'production' 
         ? ['https://3bsolutionsltd.github.io', 'https://igfm-cms-backend.onrender.com']
         : '*',
     credentials: true
 }));
+
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../')));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+// Apply rate limiting to API routes
+app.use('/api', apiLimiter);
 
 // Ensure data and uploads directories exist
 const dataDir = path.join(__dirname, 'data');
@@ -131,9 +162,21 @@ initializeData();
 
 // ============= AUTH ROUTES =============
 
-// Login
-app.post('/api/auth/login', async (req, res) => {
+// Login with validation and rate limiting
+app.post('/api/auth/login', 
+    loginLimiter,
+    [
+        body('username').trim().notEmpty().withMessage('Username is required').isLength({ min: 3, max: 50 }),
+        body('password').notEmpty().withMessage('Password is required').isLength({ min: 6 })
+    ],
+    async (req, res) => {
     try {
+        // Validate input
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ error: 'Invalid input', details: errors.array() });
+        }
+
         const { username, password } = req.body;
         const usersData = getDataFile('users.json');
         
@@ -147,7 +190,7 @@ app.post('/api/auth/login', async (req, res) => {
             return res.status(401).json({ error: 'Invalid credentials' });
         }
 
-        const token = jwt.sign({ id: user.id, username: user.username }, JWT_SECRET, { expiresIn: '24h' });
+        const token = jwt.sign({ id: user.id, username: user.username }, JWT_SECRET, { expiresIn: '2h' });
         
         res.json({ 
             token, 
@@ -208,9 +251,23 @@ app.get('/api/hero', (req, res) => {
     }
 });
 
-// Add new hero slide
-app.post('/api/hero', authenticateToken, upload.single('file'), (req, res) => {
+// Add new hero slide with validation
+app.post('/api/hero', 
+    authenticateToken, 
+    upload.single('file'),
+    [
+        body('title').trim().isLength({ max: 200 }).withMessage('Title must be 200 characters or less'),
+        body('subtitle').trim().isLength({ max: 300 }).withMessage('Subtitle must be 300 characters or less'),
+        body('type').isIn(['image', 'video']).withMessage('Type must be either image or video')
+    ],
+    (req, res) => {
     try {
+        // Validate input
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ error: 'Invalid input', details: errors.array() });
+        }
+
         const heroData = getDataFile('hero.json');
         const { title, subtitle, type } = req.body;
         
@@ -233,9 +290,22 @@ app.post('/api/hero', authenticateToken, upload.single('file'), (req, res) => {
     }
 });
 
-// Update hero slide
-app.put('/api/hero/:id', authenticateToken, (req, res) => {
+// Update hero slide with validation
+app.put('/api/hero/:id', 
+    authenticateToken,
+    [
+        body('title').optional().trim().isLength({ max: 200 }).withMessage('Title must be 200 characters or less'),
+        body('subtitle').optional().trim().isLength({ max: 300 }).withMessage('Subtitle must be 300 characters or less'),
+        body('active').optional().isBoolean().withMessage('Active must be a boolean')
+    ],
+    (req, res) => {
     try {
+        // Validate input
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ error: 'Invalid input', details: errors.array() });
+        }
+
         const heroData = getDataFile('hero.json');
         const slideIndex = heroData.slides.findIndex(s => s.id === parseInt(req.params.id));
         

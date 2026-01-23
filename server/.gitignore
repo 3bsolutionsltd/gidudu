@@ -8,5 +8,6 @@ uploads/*.jpeg
 uploads/*.png
 uploads/*.gif
 data/*.json
+!data/children.json
 *.log
 .DS_Store
