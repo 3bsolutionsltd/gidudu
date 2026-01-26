@@ -403,6 +403,7 @@ a {
     z-index: 3;
     max-width: 1000px;
     padding: 0 20px;
+    margin-top: 120px;
     animation: fadeInUp 1s ease;
 }
 
