@@ -41,7 +41,7 @@ const apiLimiter = rateLimit({
 // CORS Middleware
 app.use(cors({
     origin: process.env.NODE_ENV === 'production' 
-        ? ['https://3bsolutionsltd.github.io', 'https://igfm-cms-backend.onrender.com']
+        ? ['https://new.gidudu.org', 'https://gidudu.org', 'https://3bsolutionsltd.github.io', 'https://api.gidudu.org']
         : '*',
     credentials: true
 }));

@@ -4,11 +4,11 @@
 // Use environment-aware API URL
 const CMS_API_URL = window.location.hostname === 'localhost' 
     ? 'http://localhost:3000/api'
-    : 'https://igfm-cms-backend.onrender.com/api';
+    : 'https://api.gidudu.org/api';
 
 const CMS_BASE_URL = window.location.hostname === 'localhost'
     ? 'http://localhost:3000'
-    : 'https://igfm-cms-backend.onrender.com';
+    : 'https://api.gidudu.org';
 
 // Helper function to get full URL for media files
 function getMediaURL(src) {
