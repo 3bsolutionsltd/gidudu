@@ -998,10 +998,10 @@ a {
 }
 
 .donate-card {
-    background: var(--white);
-    padding: 2.5rem;
-    border-radius: 12px;
-    box-shadow: var(--shadow-xl);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
     color: var(--text-dark);
     position: relative;
     transition: all 0.3s ease;
@@ -2359,31 +2359,37 @@ a {
 
 /* Payment Platforms */
 .donate-options {
-    max-width: 600px;
+    max-width: 700px;
     margin: 40px auto 0;
 }
 
 .payment-platforms {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .platform-btn {
-    display: block;
-    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
     background: var(--primary-color);
     color: var(--white);
     border-radius: 8px;
     text-align: center;
     font-weight: 600;
+    font-size: 1rem;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .platform-btn:hover {
     background: var(--dark-color);
-    transform: translateX(5px);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .platform-btn i {
@@ -2461,6 +2467,25 @@ a {
     
     .detail-grid {
         grid-template-columns: 1fr;
+    }
+
+    .payment-platforms {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .platform-btn {
+        padding: 0.875rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .donate-options {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .donate-card {
+        padding: 2rem 1.5rem;
     }
     
     .form-wrapper {
