@@ -1005,6 +1005,7 @@ a {
     color: var(--text-dark);
     position: relative;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .donate-card:hover {
@@ -2357,6 +2358,11 @@ a {
 }
 
 /* Payment Platforms */
+.donate-options {
+    max-width: 600px;
+    margin: 40px auto 0;
+}
+
 .payment-platforms {
     display: flex;
     flex-direction: column;
