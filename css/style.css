@@ -2359,8 +2359,9 @@ a {
 
 /* Payment Platforms */
 .donate-options {
-    max-width: 700px;
+    max-width: 650px;
     margin: 40px auto 0;
+    text-align: center;
 }
 
 .payment-platforms {
@@ -2375,21 +2376,25 @@ a {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding: 1rem 1.5rem;
-    background: var(--primary-color);
-    color: var(--white);
-    border-radius: 8px;
+    padding: 1.25rem 1.75rem;
+    background: white;
+    color: var(--primary-color);
+    border-radius: 10px;
     text-align: center;
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: 1.05rem;
     transition: all 0.3s ease;
     text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: 2px solid transparent;
 }
 
 .platform-btn:hover {
-    background: var(--dark-color);
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    border-color: white;
 }
 
 .platform-btn i {
