@@ -48,6 +48,15 @@ app.use(cors({
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../')));
+
+// Health check endpoint
+app.get('/api/health', (req, res) => {
+    res.json({ 
+        status: 'ok', 
+        message: 'CMS API is running',
+        timestamp: new Date().toISOString()
+    });
+});
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Apply rate limiting to API routes
@@ -380,8 +389,8 @@ app.get('/admin', (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-    console.log(`🚀 IGFM CMS Server running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`🚀 IGFM CMS Server running on port ${PORT}`);
     console.log(`📊 Admin Panel: http://localhost:${PORT}/admin`);
-    console.log(`🔐 Default login: admin / admin123`);
+    console.log(`💚 Health check: http://localhost:${PORT}/api/health`);
 });
