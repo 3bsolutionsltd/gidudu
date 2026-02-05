@@ -39,9 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
         heroVideo.addEventListener('canplay', () => console.log('Video can play'));
         heroVideo.addEventListener('playing', () => console.log('Video is playing'));
         heroVideo.addEventListener('error', (e) => console.error('Video error:', e));
-    } else {
-        console.error('Video element not found!');
     }
+    // Removed the else block that was logging "Video element not found!" on every page
 });
 
 // Mobile Navigation Toggle
