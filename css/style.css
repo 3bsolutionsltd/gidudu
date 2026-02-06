@@ -1230,6 +1230,14 @@ a {
     transition: all 0.3s ease;
 }
 
+.social-links a i {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
 .social-links a:hover {
     transform: translateY(-5px);
     background: var(--dark-color);
@@ -1324,6 +1332,14 @@ a {
     justify-content: center;
     border-radius: 50%;
     transition: all 0.3s ease;
+}
+
+.footer-social a i {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 .footer-social a:hover {
@@ -2412,6 +2428,14 @@ a {
     border-radius: 50%;
     font-size: 1.25rem;
     transition: all 0.3s ease;
+}
+
+.founder-social a i {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 .founder-social a:hover {
