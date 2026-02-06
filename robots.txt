@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://3bsolutionsltd.github.io/gidudu/sitemap.xml
+Sitemap: https://gidudu.org/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 10
