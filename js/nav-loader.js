@@ -15,11 +15,16 @@ const navigationHTML = `
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
-                <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html" data-page="about">About Us</a></li>
+                        <li><a href="faith.html" data-page="faith">Our Faith</a></li>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="nav-link">Ministries <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="faith.html" data-page="faith">Our Faith</a></li>
                         <li><a href="hospital.html" data-page="hospital">Berakhah Hospital</a></li>
                         <li><a href="https://call2prayer.church" target="_blank" rel="noopener noreferrer">Call to Prayer</a></li>
                     </ul>
