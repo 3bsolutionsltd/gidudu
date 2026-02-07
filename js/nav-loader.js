@@ -25,8 +25,19 @@ const navigationHTML = `
                 <li class="dropdown">
                     <a href="#" class="nav-link">Ministries <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
+                        <li><a href="berakhah-childcare.html" data-page="berakhah-childcare">Berakhah Childcare</a></li>
+                        <li><a href="berakhah-choir.html" data-page="berakhah-choir">Berakhah Children's Choir</a></li>
+                        <li><a href="church-prison.html" data-page="church-prison">Church @ the Prison</a></li>
+                        <li><a href="church-planting.html" data-page="church-planting">Church Planting</a></li>
+                        <li><a href="https://call2prayer.church" target="_blank" rel="noopener noreferrer">Call2Prayer</a></li>
+                        <li><a href="pastors-network.html" data-page="pastors-network">Pastors' Network Uganda</a></li>
+                        <li><a href="school-outreaches.html" data-page="school-outreaches">School Outreaches</a></li>
+                        <li><a href="safe-water.html" data-page="safe-water">Safe Water</a></li>
+                        <li><a href="church-construction.html" data-page="church-construction">Church Construction</a></li>
+                        <li><a href="youth-ministries.html" data-page="youth-ministries">Youth Ministries</a></li>
+                        <li><a href="mens-ministries.html" data-page="mens-ministries">Men's Ministries</a></li>
+                        <li><a href="womens-ministries.html" data-page="womens-ministries">Women's Ministries</a></li>
                         <li><a href="hospital.html" data-page="hospital">Berakhah Hospital</a></li>
-                        <li><a href="https://call2prayer.church" target="_blank" rel="noopener noreferrer">Call to Prayer</a></li>
                     </ul>
                 </li>
                 <li><a href="stories.html" class="nav-link" data-page="stories">Stories</a></li>
