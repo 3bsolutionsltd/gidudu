@@ -1,46 +1,54 @@
 // Hero Video Autoplay
 document.addEventListener('DOMContentLoaded', () => {
-    const heroVideo = document.querySelector('.hero-video');
-    if (heroVideo) {
-        console.log('Video element found:', heroVideo);
-        
-        // Set video properties
-        heroVideo.muted = true;
-        heroVideo.volume = 0;
-        heroVideo.setAttribute('playsinline', '');
-        heroVideo.setAttribute('webkit-playsinline', '');
-        
-        // Try to play immediately
-        const playPromise = heroVideo.play();
-        
-        if (playPromise !== undefined) {
-            playPromise.then(() => {
-                console.log('Video is playing successfully!');
-            }).catch(error => {
-                console.error('Autoplay failed:', error);
-                console.log('Trying to play on user interaction...');
-                
-                // Fallback: play on any user interaction
-                const playOnInteraction = () => {
-                    heroVideo.play()
-                        .then(() => console.log('Video started after user interaction'))
-                        .catch(err => console.error('Play still failed:', err));
-                    document.removeEventListener('click', playOnInteraction);
-                    document.removeEventListener('touchstart', playOnInteraction);
-                };
-                
-                document.addEventListener('click', playOnInteraction);
-                document.addEventListener('touchstart', playOnInteraction);
-            });
+    // Delay video initialization to ensure CMS content is loaded
+    setTimeout(() => {
+        const heroVideo = document.querySelector('.hero-video');
+        if (heroVideo && document.body.contains(heroVideo)) {
+            // Set video properties
+            heroVideo.muted = true;
+            heroVideo.volume = 0;
+            heroVideo.setAttribute('playsinline', '');
+            heroVideo.setAttribute('webkit-playsinline', '');
+            
+            // Function to safely play video
+            const tryPlayVideo = () => {
+                if (document.body.contains(heroVideo)) {
+                    const playPromise = heroVideo.play();
+                    
+                    if (playPromise !== undefined) {
+                        playPromise
+                            .then(() => {
+                                console.log('Video is playing successfully!');
+                            })
+                            .catch(error => {
+                                console.log('Autoplay failed, waiting for user interaction...');
+                                
+                                // Fallback: play on any user interaction
+                                const playOnInteraction = () => {
+                                    if (document.body.contains(heroVideo)) {
+                                        heroVideo.play()
+                                            .then(() => console.log('Video started after user interaction'))
+                                            .catch(err => console.error('Play failed:', err));
+                                    }
+                                    document.removeEventListener('click', playOnInteraction);
+                                    document.removeEventListener('touchstart', playOnInteraction);
+                                };
+                                
+                                document.addEventListener('click', playOnInteraction, { once: true });
+                                document.addEventListener('touchstart', playOnInteraction, { once: true });
+                            });
+                    }
+                }
+            };
+            
+            // Wait for video to be ready
+            if (heroVideo.readyState >= 3) {
+                tryPlayVideo();
+            } else {
+                heroVideo.addEventListener('canplay', tryPlayVideo, { once: true });
+            }
         }
-        
-        // Log video events for debugging
-        heroVideo.addEventListener('loadeddata', () => console.log('Video data loaded'));
-        heroVideo.addEventListener('canplay', () => console.log('Video can play'));
-        heroVideo.addEventListener('playing', () => console.log('Video is playing'));
-        heroVideo.addEventListener('error', (e) => console.error('Video error:', e));
-    }
-    // Removed the else block that was logging "Video element not found!" on every page
+    }, 100); // Short delay to ensure CMS loader has finished
 });
 
 // Mobile Navigation Toggle
