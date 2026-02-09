@@ -37,15 +37,18 @@ const navigationHTML = `
                         <li><a href="youth-ministries.html" data-page="youth-ministries">Youth Ministries</a></li>
                         <li><a href="mens-ministries.html" data-page="mens-ministries">Men's Ministries</a></li>
                         <li><a href="womens-ministries.html" data-page="womens-ministries">Women's Ministries</a></li>
-                        <li><a href="hospital.html" data-page="hospital">Berakhah Hospital</a></li>
                     </ul>
                 </li>
+                <li><a href="hospital.html" class="nav-link" data-page="hospital">Berakhah Hospital</a></li>
                 <li><a href="stories.html" class="nav-link" data-page="stories">Stories</a></li>
                 <li class="dropdown">
                     <a href="#" class="nav-link">Get Involved <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="sponsor.html" data-page="sponsor">Sponsor a Child</a></li>
+                        <li><a href="sponsor.html" data-page="sponsor">Sponsor</a></li>
+                        <li><a href="volunteers.html" data-page="volunteers">Volunteers</a></li>
                         <li><a href="partner.html" data-page="partner">Partner With Us</a></li>
+                        <li><a href="ambassadors.html" data-page="ambassadors">Ambassadors</a></li>
+                        <li><a href="mission-trips.html" data-page="mission-trips">Mission Trips</a></li>
                     </ul>
                 </li>
                 <li><a href="index.html#contact" class="nav-link">Contact</a></li>

@@ -8,6 +8,7 @@ const jwt = require('jsonwebtoken');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const { body, validationResult } = require('express-validator');
+const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 const app = express();
@@ -211,6 +212,71 @@ app.post('/api/auth/login',
         });
     } catch (error) {
         res.status(500).json({ error: error.message });
+    }
+});
+
+// ============= CONTACT FORM ROUTE =============
+
+// Contact form submission
+app.post('/api/contact',
+    [
+        body('name').trim().notEmpty().withMessage('Name is required'),
+        body('email').isEmail().withMessage('Valid email is required'),
+        body('subject').trim().notEmpty().withMessage('Subject is required'),
+        body('message').trim().notEmpty().withMessage('Message is required')
+    ],
+    async (req, res) => {
+    try {
+        // Validate input
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ error: 'Invalid input', details: errors.array() });
+        }
+
+        const { name, email, subject, message } = req.body;
+        
+        // Create email transporter
+        const transporter = nodemailer.createTransporter({
+            host: process.env.EMAIL_HOST || 'smtp.gmail.com',
+            port: process.env.EMAIL_PORT || 587,
+            secure: false,
+            auth: {
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS
+            }
+        });
+
+        // Email content
+        const mailOptions = {
+            from: process.env.EMAIL_USER,
+            to: ['paul@gidudu.org', 'igfm@gidudu.org'],
+            replyTo: email,
+            subject: `IGFM Website Contact: ${subject}`,
+            html: `
+                <h2>New Contact Form Submission</h2>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Subject:</strong> ${subject}</p>
+                <p><strong>Message:</strong></p>
+                <p>${message.replace(/\n/g, '<br>')}</p>
+                <hr>
+                <p style="color: #666; font-size: 0.9em;">This message was sent via the IGFM website contact form.</p>
+            `
+        };
+
+        // Send email
+        await transporter.sendMail(mailOptions);
+        
+        res.json({ 
+            success: true, 
+            message: 'Your message has been sent successfully!' 
+        });
+    } catch (error) {
+        console.error('Contact form error:', error);
+        res.status(500).json({ 
+            error: 'Failed to send message. Please try again later.',
+            details: error.message 
+        });
     }
 });
 
