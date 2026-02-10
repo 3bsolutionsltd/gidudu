@@ -9,8 +9,11 @@ const navigationHTML = `
         <div class="container nav-container">
             <div class="logo">
                 <a href="index.html">
-                    <h2>IGFM</h2>
-                    <span>International Great Faith Ministries</span>
+                    <img src="images/igfm-logo.png" alt="IGFM Logo" class="logo-image">
+                    <div class="logo-text">
+                        <h2>IGFM</h2>
+                        <span>International Great Faith Ministries</span>
+                    </div>
                 </a>
             </div>
             <ul class="nav-menu" id="nav-menu">
@@ -39,7 +42,7 @@ const navigationHTML = `
                         <li><a href="womens-ministries.html" data-page="womens-ministries">Women's Ministries</a></li>
                     </ul>
                 </li>
-                <li><a href="hospital.html" class="nav-link" data-page="hospital">Berakhah Hospital</a></li>
+                <li><a href="hospital.html" class="nav-link" data-page="hospital">Hospital</a></li>
                 <li><a href="stories.html" class="nav-link" data-page="stories">Stories</a></li>
                 <li class="dropdown">
                     <a href="#" class="nav-link">Get Involved <i class="fas fa-chevron-down"></i></a>

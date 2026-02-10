@@ -71,6 +71,36 @@
             border-color: #667eea;
         }
 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: inherit;
+            resize: vertical;
+        }
+
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
         .btn {
             width: 100%;
             padding: 12px;
@@ -375,6 +405,9 @@
                 <div class="tab" onclick="switchTab('programs')">
                     <i class="fas fa-th-large"></i> Programs
                 </div>
+                <div class="tab" onclick="switchTab('sponsorship')">
+                    <i class="fas fa-hand-holding-heart"></i> Sponsorship
+                </div>
                 <div class="tab" onclick="switchTab('children')">
                     <i class="fas fa-child"></i> Children
                 </div>
@@ -433,11 +466,151 @@
                 </div>
             </div>
 
+            <!-- Sponsorship Tab -->
+            <div class="tab-content" id="sponsorship-content">
+                <div class="card">
+                    <h2><i class="fas fa-edit"></i> Edit Sponsorship Information</h2>
+                    <div class="success" id="sponsorshipSuccess"></div>
+                    <div class="error" id="sponsorshipError"></div>
+                    
+                    <form id="sponsorshipForm">
+                        <h3>Header Section</h3>
+                        <div class="form-group">
+                            <label>Section Tag</label>
+                            <input type="text" id="sectionTag" placeholder="e.g., Make an Impact">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" id="headerTitle" placeholder="e.g., Why Sponsor a Child?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea id="headerDescription" rows="3" placeholder="Main description text"></textarea>
+                        </div>
+
+                        <hr style="margin: 30px 0;">
+
+                        <h3>Benefits</h3>
+                        <div id="benefitsContainer"></div>
+
+                        <hr style="margin: 30px 0;">
+
+                        <h3>Call to Action</h3>
+                        <div class="form-group">
+                            <label>CTA Title</label>
+                            <input type="text" id="ctaTitle" placeholder="e.g., Ready to Change a Life?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>CTA Description</label>
+                            <textarea id="ctaDescription" rows="2" placeholder="Call to action description"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Payment Section Title</label>
+                            <input type="text" id="paymentSectionTitle" placeholder="e.g., Choose Your Payment Method">
+                        </div>
+
+                        <hr style="margin: 30px 0;">
+
+                        <h3>Payment Platforms</h3>
+                        <div id="platformsContainer"></div>
+
+                        <button type="submit" class="btn" style="margin-top: 20px;">
+                            <i class="fas fa-save"></i> Save Changes
+                        </button>
+                    </form>
+                </div>
+            </div>
+
             <!-- Children Tab -->
             <div class="tab-content" id="children-content">
+                <!-- Add/Edit Child Form -->
                 <div class="card">
-                    <h2>Children Profiles Management</h2>
-                    <p>Coming soon...</p>
+                    <h2 id="childFormTitle"><i class="fas fa-plus-circle"></i> Add New Child</h2>
+                    <div class="success" id="childSuccess"></div>
+                    <div class="error" id="childError"></div>
+                    
+                    <form id="childForm">
+                        <input type="hidden" id="childId">
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group">
+                                <label>Child's Name *</label>
+                                <input type="text" id="childName" required placeholder="e.g., John Doe">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Birthday *</label>
+                                <input type="text" id="childBirthday" required placeholder="e.g., January 15, 2015">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Age *</label>
+                                <input type="number" id="childAge" required min="0" max="25" placeholder="e.g., 8">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Gender *</label>
+                                <select id="childGender" required>
+                                    <option value="">Select gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Nationality</label>
+                                <input type="text" id="childNationality" placeholder="e.g., Uganda">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Location</label>
+                                <input type="text" id="childLocation" placeholder="e.g., Uganda">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Child's Story</label>
+                            <textarea id="childStory" rows="4" placeholder="Tell the child's story..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Dream/Aspiration</label>
+                            <input type="text" id="childDream" placeholder="e.g., Wants to become a doctor">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Profile Image</label>
+                            <input type="file" id="childImage" accept="image/*" style="padding: 8px; border: 1px solid #ddd; border-radius: 5px; width: 100%; cursor: pointer;">
+                            <div id="childImagePreview" style="margin-top: 10px; display: none;">
+                                <img id="childImagePreviewImg" src="" style="max-width: 200px; border-radius: 5px;">
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 10px;">
+                            <button type="submit" class="btn" style="width: auto;">
+                                <i class="fas fa-save"></i> <span id="childFormBtnText">Add Child</span>
+                            </button>
+                            <button type="button" class="btn" style="width: auto; background: #6c757d;" onclick="resetChildForm()">
+                                <i class="fas fa-times"></i> Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Children List -->
+                <div class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <h2><i class="fas fa-list"></i> All Children (<span id="childrenCount">0</span>)</h2>
+                        <input type="text" id="childrenSearch" placeholder="Search children..." style="padding: 8px; border: 1px solid #ddd; border-radius: 5px; width: 300px;">
+                    </div>
+                    
+                    <div id="childrenList" style="overflow-x: auto;">
+                        <p style="text-align: center; color: #999;">Loading children...</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -502,6 +675,13 @@
             
             event.target.closest('.tab').classList.add('active');
             document.getElementById(`${tabName}-content`).classList.add('active');
+            
+            // Load data when switching to specific tabs
+            if (tabName === 'sponsorship') {
+                loadSponsorshipData();
+            } else if (tabName === 'children') {
+                loadChildren();
+            }
         }
 
         // File input preview
@@ -661,6 +841,361 @@
             el.textContent = message;
             el.style.display = 'block';
             setTimeout(() => el.style.display = 'none', 5000);
+        }
+
+        // ============= SPONSORSHIP MANAGEMENT =============
+
+        let sponsorshipData = null;
+
+        async function loadSponsorshipData() {
+            try {
+                const response = await fetch(`${API_URL}/sponsorship`);
+                if (!response.ok) throw new Error('Failed to load sponsorship data');
+                
+                sponsorshipData = await response.json();
+                populateSponsorshipForm(sponsorshipData);
+            } catch (error) {
+                showError('sponsorshipError', error.message);
+            }
+        }
+
+        function populateSponsorshipForm(data) {
+            // Populate header section
+            document.getElementById('sectionTag').value = data.header?.sectionTag || '';
+            document.getElementById('headerTitle').value = data.header?.title || '';
+            document.getElementById('headerDescription').value = data.header?.description || '';
+
+            // Populate call to action
+            document.getElementById('ctaTitle').value = data.callToAction?.title || '';
+            document.getElementById('ctaDescription').value = data.callToAction?.description || '';
+            document.getElementById('paymentSectionTitle').value = data.callToAction?.paymentSectionTitle || '';
+
+            // Render benefits
+            renderBenefitsAdmin(data.benefits || []);
+
+            // Render payment platforms
+            renderPlatformsAdmin(data.paymentPlatforms || []);
+        }
+
+        function renderBenefitsAdmin(benefits) {
+            const container = document.getElementById('benefitsContainer');
+            container.innerHTML = benefits.map((benefit, index) => `
+                <div class="benefit-item" style="border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; border-radius: 5px;">
+                    <div style="display: flex; justify-content: between; align-items: center; margin-bottom: 10px;">
+                        <h4 style="margin: 0;">${benefit.title}</h4>
+                        <label style="margin-left: auto;">
+                            <input type="checkbox" id="benefit-active-${index}" ${benefit.active ? 'checked' : ''}> Active
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Icon Class (FontAwesome)</label>
+                        <input type="text" id="benefit-icon-${index}" value="${benefit.icon}" placeholder="e.g., fas fa-graduation-cap">
+                    </div>
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" id="benefit-title-${index}" value="${benefit.title}">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <input type="text" id="benefit-desc-${index}" value="${benefit.description}">
+                    </div>
+                    <div class="form-group">
+                        <label>Order</label>
+                        <input type="number" id="benefit-order-${index}" value="${benefit.order}" min="1" max="10">
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderPlatformsAdmin(platforms) {
+            const container = document.getElementById('platformsContainer');
+            container.innerHTML = platforms.map((platform, index) => `
+                <div class="platform-item" style="border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; border-radius: 5px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <h4 style="margin: 0;">${platform.name}</h4>
+                        <label style="margin-left: auto;">
+                            <input type="checkbox" id="platform-active-${index}" ${platform.active ? 'checked' : ''}> Active
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" id="platform-name-${index}" value="${platform.name}">
+                    </div>
+                    <div class="form-group">
+                        <label>Icon Class (FontAwesome)</label>
+                        <input type="text" id="platform-icon-${index}" value="${platform.icon}" placeholder="e.g., fab fa-paypal">
+                    </div>
+                    <div class="form-group">
+                        <label>URL</label>
+                        <input type="url" id="platform-url-${index}" value="${platform.url}">
+                    </div>
+                    <div class="form-group">
+                        <label>Order</label>
+                        <input type="number" id="platform-order-${index}" value="${platform.order}" min="1" max="10">
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Sponsorship form submission
+        document.getElementById('sponsorshipForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Collect form data
+            const updatedData = {
+                header: {
+                    sectionTag: document.getElementById('sectionTag').value,
+                    title: document.getElementById('headerTitle').value,
+                    description: document.getElementById('headerDescription').value
+                },
+                callToAction: {
+                    title: document.getElementById('ctaTitle').value,
+                    description: document.getElementById('ctaDescription').value,
+                    paymentSectionTitle: document.getElementById('paymentSectionTitle').value,
+                    followUpMessage: sponsorshipData.callToAction.followUpMessage // Keep existing
+                },
+                benefits: sponsorshipData.benefits.map((benefit, index) => ({
+                    ...benefit,
+                    icon: document.getElementById(`benefit-icon-${index}`).value,
+                    title: document.getElementById(`benefit-title-${index}`).value,
+                    description: document.getElementById(`benefit-desc-${index}`).value,
+                    order: parseInt(document.getElementById(`benefit-order-${index}`).value),
+                    active: document.getElementById(`benefit-active-${index}`).checked
+                })),
+                paymentPlatforms: sponsorshipData.paymentPlatforms.map((platform, index) => ({
+                    ...platform,
+                    name: document.getElementById(`platform-name-${index}`).value,
+                    icon: document.getElementById(`platform-icon-${index}`).value,
+                    url: document.getElementById(`platform-url-${index}`).value,
+                    order: parseInt(document.getElementById(`platform-order-${index}`).value),
+                    active: document.getElementById(`platform-active-${index}`).checked
+                })),
+                sponsorshipAmounts: sponsorshipData.sponsorshipAmounts // Keep existing
+            };
+
+            try {
+                const response = await fetch(`${API_URL}/sponsorship`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${authToken}`
+                    },
+                    body: JSON.stringify(updatedData)
+                });
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.error || 'Failed to update sponsorship');
+                }
+
+                showSuccess('sponsorshipSuccess', 'Sponsorship information updated successfully!');
+                loadSponsorshipData(); // Reload to show updated data
+            } catch (error) {
+                showError('sponsorshipError', error.message);
+            }
+        });
+
+        // ============= CHILDREN MANAGEMENT =============
+
+        let allChildren = [];
+        let currentEditId = null;
+
+        // Load all children
+        async function loadChildren() {
+            try {
+                const response = await fetch(`${API_URL}/children`);
+                if (!response.ok) throw new Error('Failed to load children');
+                
+                const data = await response.json();
+                allChildren = data.children || [];
+                renderChildrenTable(allChildren);
+                document.getElementById('childrenCount').textContent = allChildren.length;
+            } catch (error) {
+                showError('childError', error.message);
+            }
+        }
+
+        // Render children table
+        function renderChildrenTable(children) {
+            const container = document.getElementById('childrenList');
+            
+            if (children.length === 0) {
+                container.innerHTML = '<p style="text-align: center; color: #999;">No children found</p>';
+                return;
+            }
+
+            const table = `
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: #f8f9fa; border-bottom: 2px solid #ddd;">
+                            <th style="padding: 12px; text-align: left;">Image</th>
+                            <th style="padding: 12px; text-align: left;">Name</th>
+                            <th style="padding: 12px; text-align: left;">Age</th>
+                            <th style="padding: 12px; text-align: left;">Gender</th>
+                            <th style="padding: 12px; text-align: left;">Location</th>
+                            <th style="padding: 12px; text-align: left;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${children.map(child => `
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 12px;">
+                                    ${child.image ? 
+                                        `<img src="../all_children_images/${child.image}" style="width: 50px; height: 50px; border-radius: 5px; object-fit: cover;">` :
+                                        `<div style="width: 50px; height: 50px; background: #eee; border-radius: 5px; display: flex; align-items: center; justify-content: center;"><i class="fas fa-user" style="color: #999;"></i></div>`
+                                    }
+                                </td>
+                                <td style="padding: 12px;">${child.name}</td>
+                                <td style="padding: 12px;">${child.age}</td>
+                                <td style="padding: 12px;">${child.gender}</td>
+                                <td style="padding: 12px;">${child.location}</td>
+                                <td style="padding: 12px;">
+                                    <button onclick="editChild('${child.id}')" style="padding: 6px 12px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; margin-right: 5px;">
+                                        <i class="fas fa-edit"></i> Edit
+                                    </button>
+                                    <button onclick="deleteChild('${child.id}')" style="padding: 6px 12px; background: #dc3545; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                                        <i class="fas fa-trash"></i> Delete
+                                    </button>
+                                </td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+
+            container.innerHTML = table;
+        }
+
+        // Search children
+        document.getElementById('childrenSearch').addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filtered = allChildren.filter(child => 
+                child.name.toLowerCase().includes(searchTerm) ||
+                child.location.toLowerCase().includes(searchTerm)
+            );
+            renderChildrenTable(filtered);
+        });
+
+        // Profile image preview
+        document.getElementById('childImage').addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    document.getElementById('childImagePreviewImg').src = e.target.result;
+                    document.getElementById('childImagePreview').style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Child form submission
+        document.getElementById('childForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData();
+            formData.append('name', document.getElementById('childName').value);
+            formData.append('birthday', document.getElementById('childBirthday').value);
+            formData.append('age', document.getElementById('childAge').value);
+            formData.append('gender', document.getElementById('childGender').value);
+            formData.append('nationality', document.getElementById('childNationality').value || 'Uganda');
+            formData.append('location', document.getElementById('childLocation').value || 'Uganda');
+            formData.append('story', document.getElementById('childStory').value);
+            formData.append('dream', document.getElementById('childDream').value);
+
+            const imageFile = document.getElementById('childImage').files[0];
+            if (imageFile) {
+                formData.append('image', imageFile);
+            }
+
+            try {
+                const isEditing = currentEditId !== null;
+                const url = isEditing ? `${API_URL}/children/${currentEditId}` : `${API_URL}/children`;
+                const method = isEditing ? 'PUT' : 'POST';
+
+                const response = await fetch(url, {
+                    method: method,
+                    headers: {
+                        'Authorization': `Bearer ${authToken}`
+                    },
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.error || `Failed to ${isEditing ? 'update' : 'add'} child`);
+                }
+
+                showSuccess('childSuccess', `Child ${isEditing ? 'updated' : 'added'} successfully!`);
+                resetChildForm();
+                loadChildren();
+            } catch (error) {
+                showError('childError', error.message);
+            }
+        });
+
+        // Edit child
+        async function editChild(childId) {
+            const child = allChildren.find(c => c.id === childId);
+            if (!child) return;
+
+            currentEditId = childId;
+            document.getElementById('childFormTitle').innerHTML = '<i class="fas fa-edit"></i> Edit Child';
+            document.getElementById('childFormBtnText').textContent = 'Update Child';
+
+            document.getElementById('childId').value = child.id;
+            document.getElementById('childName').value = child.name;
+            document.getElementById('childBirthday').value = child.birthday;
+            document.getElementById('childAge').value = child.age;
+            document.getElementById('childGender').value = child.gender;
+            document.getElementById('childNationality').value = child.nationality;
+            document.getElementById('childLocation').value = child.location;
+            document.getElementById('childStory').value = child.story ? child.story[0] : '';
+            document.getElementById('childDream').value = child.dream || '';
+
+            if (child.image) {
+                document.getElementById('childImagePreviewImg').src = `../all_children_images/${child.image}`;
+                document.getElementById('childImagePreview').style.display = 'block';
+            }
+
+            // Scroll to form
+            document.getElementById('childForm').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Delete child
+        async function deleteChild(childId) {
+            const child = allChildren.find(c => c.id === childId);
+            if (!confirm(`Are you sure you want to delete ${child.name}? This action cannot be undone.`)) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`${API_URL}/children/${childId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Authorization': `Bearer ${authToken}`
+                    }
+                });
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.error || 'Failed to delete child');
+                }
+
+                showSuccess('childSuccess', 'Child deleted successfully');
+                loadChildren();
+            } catch (error) {
+                showError('childError', error.message);
+            }
+        }
+
+        // Reset form
+        function resetChildForm() {
+            currentEditId = null;
+            document.getElementById('childForm').reset();
+            document.getElementById('childFormTitle').innerHTML = '<i class="fas fa-plus-circle"></i> Add New Child';
+            document.getElementById('childFormBtnText').textContent = 'Add Child';
+            document.getElementById('childImagePreview').style.display = 'none';
         }
     </script>
 </body>

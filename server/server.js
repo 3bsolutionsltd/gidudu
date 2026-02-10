@@ -66,13 +66,18 @@ app.use('/api', apiLimiter);
 // Ensure data and uploads directories exist
 const dataDir = path.join(__dirname, 'data');
 const uploadsDir = path.join(__dirname, 'uploads');
+const childrenImagesDir = path.join(__dirname, '..', 'all_children_images');
 if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
 if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true });
+if (!fs.existsSync(childrenImagesDir)) fs.mkdirSync(childrenImagesDir, { recursive: true });
 
 // Configure multer for file uploads
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, uploadsDir);
+        // Use children images folder for children endpoints, uploads for others
+        const isChildrenRoute = req.path.includes('/children');
+        const uploadPath = isChildrenRoute ? childrenImagesDir : uploadsDir;
+        cb(null, uploadPath);
     },
     filename: (req, file, cb) => {
         const uniqueName = `${Date.now()}-${file.originalname}`;
@@ -314,6 +319,136 @@ app.get('/api/children/:id', (req, res) => {
     }
 });
 
+// Add new child
+app.post('/api/children',
+    authenticateToken,
+    upload.single('image'),
+    [
+        body('name').trim().notEmpty().withMessage('Name is required'),
+        body('birthday').trim().notEmpty().withMessage('Birthday is required'),
+        body('age').isInt({ min: 0, max: 25 }).withMessage('Age must be between 0 and 25'),
+        body('gender').isIn(['Male', 'Female']).withMessage('Gender must be Male or Female'),
+        body('nationality').optional().trim(),
+        body('location').optional().trim(),
+        body('story').optional().trim(),
+        body('dream').optional().trim()
+    ],
+    (req, res) => {
+    try {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ error: 'Invalid input', details: errors.array() });
+        }
+
+        const childrenData = getDataFile('children.json');
+        const { name, birthday, age, gender, nationality, location, story, dream } = req.body;
+        
+        // Generate ID from name
+        const id = name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+        
+        // Check if ID already exists
+        if (childrenData.children.find(c => c.id === id)) {
+            return res.status(400).json({ error: 'A child with this name already exists' });
+        }
+
+        const newChild = {
+            id,
+            name,
+            birthday,
+            age: parseInt(age),
+            gender,
+            nationality: nationality || 'Uganda',
+            location: location || 'Uganda',
+            image: req.file ? req.file.filename : '',
+            story: story ? [story] : [],
+            dream: dream || null
+        };
+
+        childrenData.children.push(newChild);
+        saveDataFile('children.json', childrenData);
+        
+        res.status(201).json(newChild);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// Update child
+app.put('/api/children/:id',
+    authenticateToken,
+    upload.single('image'),
+    [
+        body('name').optional().trim().notEmpty(),
+        body('birthday').optional().trim().notEmpty(),
+        body('age').optional().isInt({ min: 0, max: 25 }),
+        body('gender').optional().isIn(['Male', 'Female']),
+        body('nationality').optional().trim(),
+        body('location').optional().trim(),
+        body('story').optional().trim(),
+        body('dream').optional().trim()
+    ],
+    (req, res) => {
+    try {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ error: 'Invalid input', details: errors.array() });
+        }
+
+        const childrenData = getDataFile('children.json');
+        const childIndex = childrenData.children.findIndex(c => c.id === req.params.id);
+        
+        if (childIndex === -1) {
+            return res.status(404).json({ error: 'Child not found' });
+        }
+
+        const updatedFields = { ...req.body };
+        
+        // Handle age conversion
+        if (updatedFields.age) {
+            updatedFields.age = parseInt(updatedFields.age);
+        }
+        
+        // Handle story as array
+        if (updatedFields.story) {
+            updatedFields.story = [updatedFields.story];
+        }
+        
+        // Handle image upload
+        if (req.file) {
+            updatedFields.image = req.file.filename;
+        }
+
+        childrenData.children[childIndex] = {
+            ...childrenData.children[childIndex],
+            ...updatedFields
+        };
+
+        saveDataFile('children.json', childrenData);
+        res.json(childrenData.children[childIndex]);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// Delete child
+app.delete('/api/children/:id', authenticateToken, (req, res) => {
+    try {
+        const childrenData = getDataFile('children.json');
+        const childIndex = childrenData.children.findIndex(c => c.id === req.params.id);
+        
+        if (childIndex === -1) {
+            return res.status(404).json({ error: 'Child not found' });
+        }
+
+        const deletedChild = childrenData.children.splice(childIndex, 1)[0];
+        saveDataFile('children.json', childrenData);
+        
+        res.json({ message: 'Child deleted successfully', child: deletedChild });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
 // ============= HERO SLIDESHOW ROUTES =============
 
 // Get all hero slides
@@ -424,6 +559,97 @@ app.delete('/api/hero/:id', authenticateToken, (req, res) => {
         saveDataFile('hero.json', heroData);
         
         res.json({ message: 'Slide deleted successfully' });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// ============= SPONSORSHIP ROUTES =============
+
+// Get sponsorship information
+app.get('/api/sponsorship', (req, res) => {
+    try {
+        const sponsorshipData = getDataFile('sponsorship.json');
+        if (!sponsorshipData) {
+            return res.status(404).json({ error: 'Sponsorship data not found' });
+        }
+        res.json(sponsorshipData);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// Update sponsorship information
+app.put('/api/sponsorship', 
+    authenticateToken,
+    [
+        body('header.title').optional().trim().isLength({ max: 200 }),
+        body('header.description').optional().trim().isLength({ max: 1000 }),
+        body('callToAction.title').optional().trim().isLength({ max: 200 }),
+        body('callToAction.description').optional().trim().isLength({ max: 1000 })
+    ],
+    (req, res) => {
+    try {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ error: 'Invalid input', details: errors.array() });
+        }
+
+        const currentData = getDataFile('sponsorship.json') || {};
+        const updatedData = {
+            ...currentData,
+            ...req.body,
+            updatedAt: new Date().toISOString()
+        };
+
+        saveDataFile('sponsorship.json', updatedData);
+        res.json(updatedData);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// Update specific benefit
+app.put('/api/sponsorship/benefits/:id', authenticateToken, (req, res) => {
+    try {
+        const sponsorshipData = getDataFile('sponsorship.json');
+        const benefitIndex = sponsorshipData.benefits.findIndex(b => b.id === req.params.id);
+        
+        if (benefitIndex === -1) {
+            return res.status(404).json({ error: 'Benefit not found' });
+        }
+
+        sponsorshipData.benefits[benefitIndex] = {
+            ...sponsorshipData.benefits[benefitIndex],
+            ...req.body,
+            id: req.params.id // Ensure ID doesn't change
+        };
+
+        saveDataFile('sponsorship.json', sponsorshipData);
+        res.json(sponsorshipData.benefits[benefitIndex]);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// Update specific payment platform
+app.put('/api/sponsorship/platforms/:id', authenticateToken, (req, res) => {
+    try {
+        const sponsorshipData = getDataFile('sponsorship.json');
+        const platformIndex = sponsorshipData.paymentPlatforms.findIndex(p => p.id === req.params.id);
+        
+        if (platformIndex === -1) {
+            return res.status(404).json({ error: 'Payment platform not found' });
+        }
+
+        sponsorshipData.paymentPlatforms[platformIndex] = {
+            ...sponsorshipData.paymentPlatforms[platformIndex],
+            ...req.body,
+            id: req.params.id // Ensure ID doesn't change
+        };
+
+        saveDataFile('sponsorship.json', sponsorshipData);
+        res.json(sponsorshipData.paymentPlatforms[platformIndex]);
     } catch (error) {
         res.status(500).json({ error: error.message });
     }

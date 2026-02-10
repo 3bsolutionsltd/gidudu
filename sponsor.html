@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="js/nav-loader.js"></script>
+    <script src="js/sponsor-loader.js"></script>
 </head>
 <body>
     <!-- Navigation (loaded dynamically) -->
@@ -73,122 +74,33 @@
             <div class="section-header">
                 <h2>Meet Our Children</h2>
                 <p>These precious children are waiting for a sponsor like you</p>
+                <div id="children-stats" style="margin-top: 1rem; color: #666;"></div>
             </div>
-            <div class="children-grid">
-                <!-- Wandera Allan -->
-                <div class="child-card">
-                    <div class="child-image">
-                        <img src="images/wandera-allan.jpg" alt="Wandera Allan" loading="lazy">
-                        <div class="child-overlay">
-                            <a href="child.html?id=wandera-allan" class="btn btn-primary">View Profile</a>
-                        </div>
-                    </div>
-                    <div class="child-info">
-                        <h3>Wandera Allan</h3>
-                        <div class="child-details">
-                            <span><i class="fas fa-birthday-cake"></i> 2011</span>
-                            <span><i class="fas fa-mars"></i> Male</span>
-                        </div>
-                        <p>Allan overcame a life-threatening medical condition and now dreams of a bright future through education and faith.</p>
-                        <a href="child.html?id=wandera-allan" class="btn btn-outline">Sponsor Allan</a>
-                    </div>
-                </div>
-
-                <!-- Kabuya Prisca -->
-                <div class="child-card">
-                    <div class="child-image">
-                        <img src="images/Kabuya-Prisca.jpg" alt="Kabuya Prisca" loading="lazy">
-                        <div class="child-overlay">
-                            <a href="child.html?id=kabuya-prisca" class="btn btn-primary">View Profile</a>
-                        </div>
-                    </div>
-                    <div class="child-info">
-                        <h3>Kabuya Prisca</h3>
-                        <div class="child-details">
-                            <span><i class="fas fa-birthday-cake"></i> 2011</span>
-                            <span><i class="fas fa-venus"></i> Female</span>
-                        </div>
-                        <p>Prisca's sight was restored at Berakhah, and she now dreams of becoming a doctor to help others.</p>
-                        <a href="child.html?id=kabuya-prisca" class="btn btn-outline">Sponsor Prisca</a>
-                    </div>
-                </div>
-
-                <!-- Muwanguzi Eria -->
-                <div class="child-card">
-                    <div class="child-image">
-                        <img src="images/mwanguzi_eria_image.jpg" alt="Muwanguzi Eria" loading="lazy">
-                        <div class="child-overlay">
-                            <a href="child.html?id=muwanguzi-eria" class="btn btn-primary">View Profile</a>
-                        </div>
-                    </div>
-                    <div class="child-info">
-                        <h3>Muwanguzi Eria</h3>
-                        <div class="child-details">
-                            <span><i class="fas fa-birthday-cake"></i> 2014</span>
-                            <span><i class="fas fa-mars"></i> Male</span>
-                        </div>
-                        <p>Eria loves singing, dancing, and football, and now has the support he needs to thrive.</p>
-                        <a href="child.html?id=muwanguzi-eria" class="btn btn-outline">Sponsor Eria</a>
-                    </div>
-                </div>
-
-                <!-- Nasiyo Mercy -->
-                <div class="child-card">
-                    <div class="child-image">
-                        <img src="images/nasiyo_mercy.jpg" alt="Nasiyo Mercy" loading="lazy">
-                        <div class="child-overlay">
-                            <a href="child.html?id=nasiyo-mercy" class="btn btn-primary">View Profile</a>
-                        </div>
-                    </div>
-                    <div class="child-info">
-                        <h3>Nasiyo Mercy</h3>
-                        <div class="child-details">
-                            <span><i class="fas fa-birthday-cake"></i> 2012</span>
-                            <span><i class="fas fa-venus"></i> Female</span>
-                        </div>
-                        <p>A bright, joyful child who loves reading and dreams of becoming a teacher to inspire others.</p>
-                        <a href="child.html?id=nasiyo-mercy" class="btn btn-outline">Sponsor Mercy</a>
-                    </div>
-                </div>
-
-                <!-- Wambede Peter Paul -->
-                <div class="child-card">
-                    <div class="child-image">
-                        <img src="images/WAMBEDE-PETER-scaled-1-758x1024.jpg" alt="Wambede Peter Paul" loading="lazy">
-                        <div class="child-overlay">
-                            <a href="child.html?id=wambede-peter-paul" class="btn btn-primary">View Profile</a>
-                        </div>
-                    </div>
-                    <div class="child-info">
-                        <h3>Wambede Peter Paul</h3>
-                        <div class="child-details">
-                            <span><i class="fas fa-birthday-cake"></i> 2011</span>
-                            <span><i class="fas fa-mars"></i> Male</span>
-                        </div>
-                        <p>Talented in mathematics and science, Peter Paul dreams of becoming an engineer.</p>
-                        <a href="child.html?id=wambede-peter-paul" class="btn btn-outline">Sponsor Peter</a>
-                    </div>
-                </div>
-
-                <!-- Wanadwadi Joseph -->
-                <div class="child-card">
-                    <div class="child-image">
-                        <img src="images/Wanadwadi-Joseph.jpg" alt="Wanadwadi Joseph" loading="lazy">
-                        <div class="child-overlay">
-                            <a href="child.html?id=wanadwadi-joseph" class="btn btn-primary">View Profile</a>
-                        </div>
-                    </div>
-                    <div class="child-info">
-                        <h3>Wanadwadi Joseph</h3>
-                        <div class="child-details">
-                            <span><i class="fas fa-birthday-cake"></i> 2010</span>
-                            <span><i class="fas fa-mars"></i> Male</span>
-                        </div>
-                        <p>Joseph is a kind and compassionate child who loves helping others and dreams of a better future.</p>
-                        <a href="child.html?id=wanadwadi-joseph" class="btn btn-outline">Sponsor Joseph</a>
-                    </div>
+            
+            <!-- Search and Filters -->
+            <div class="children-filters">
+                <div class="filter-group">
+                    <input type="text" id="search-input" placeholder="Search by name..." class="search-input">
+                    <select id="gender-filter" class="filter-select">
+                        <option value="all">All Genders</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <select id="age-filter" class="filter-select">
+                        <option value="all">All Ages</option>
+                        <option value="5-10">5-10 years</option>
+                        <option value="11-15">11-15 years</option>
+                        <option value="16+">16+ years</option>
+                    </select>
                 </div>
             </div>
+            
+            <div class="children-grid" id="children-grid">
+                <!-- Children loaded dynamically via sponsor-loader.js -->
+            </div>
+            
+            <!-- Pagination Controls -->
+            <div id="pagination-controls"></div>
         </div>
     </section>
 
@@ -258,6 +170,7 @@
         </div>
     </footer>
 
+    <script src="js/sponsorship-loader.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

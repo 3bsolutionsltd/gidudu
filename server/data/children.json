@@ -1,19 +1,170 @@
 {
   "children": [
     {
-      "id": "wandera-allan",
-      "name": "Wandera Allan",
-      "birthday": "April 4, 2011",
+      "id": "abbas-bollo",
+      "name": "Abbas Bollo",
+      "birthday": "March 4, 2015",
+      "age": 10,
+      "gender": "Male",
+      "nationality": "Ugaganda",
+      "location": "Uganda",
+      "image": "ABBASI-BOLO-scaled-1-683x1024.jpg",
+      "story": [
+        "Abbas is10 years old living under the care of his elderly grandmother. After being left in her care, she has done her best to provide for him and other grandchildren despite her old age and limited means. With no stable source of income, the family depends on the small harvests from their garden for survival. Abbas is a hardworking and hopeful child who loves studying and dreams of becoming a doctor in the future. With your support Abbas will be able to have a brighter future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "ajambo-faith-mary",
+      "name": "Ajambo Faith Mary",
+      "birthday": "September 29, 2019",
+      "age": 6,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "AJAMBO-FAITH-MERY-scaled-1.jpg",
+      "story": [
+        "Faith is 6 years old living with her parents who are depending on small scale farming. They do not have another source income to sustain their family, Faith has got a problem with her sight which is affecting her ability to perform daily activities. Due to lack of incomes her parents have not been in position to give her proper medical treatment and Faith at 6 years has not yet started going to school which is affecting her emotionally because her age mates are already in school. Faith dreams of becoming a teacher but she can only achieve this when she attends school, your support towards Faith’s education will help her realize her dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "amuya-esther-magret",
+      "name": "Amuya Esther Magret",
+      "birthday": "October 10, 2010",
+      "age": 15,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "AMUYA-ESTHER-scaled-1.jpg",
+      "story": [
+        "Esther is 15 years old living with her parents who are peasant farmers, they do not have a decent source of income apart from selling their farm produce to sustain their family. Esther attends school and performs well in class, Mary is determined to become a nurse in future and her best dish is rice and beans. Mary loves doing house chores like cooking, taking care of young ones, digging, fetching water and cleaning the compound. Your support will help Esther keep in school and achieve her dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "buwule-patricia",
+      "name": "Buwule Patricia",
+      "birthday": "June 26, 2019",
+      "age": 6,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "BULE-PATRICIA-scaled-1.jpg",
+      "story": [
+        "Patricia is 6 years old and she is in Pre primary. She lives in a polygamous family and the father’s only source of income is doing peasantry work. Patricia’s family rely on agriculture on a small scale which doesn’t yield enough income to sustain the whole family’s needs. This has made Patricia face a lot of challenges during school times since her attendance is not regular, she’s always sent back home to collect school fees. Patricia performs so well in school and very active in music dance and drama. Patricia would like to become a teacher, her best color is red and her best dish is rice and beef. Supporting Patricia through education will help her change her story."
+      ],
+      "dream": null
+    },
+    {
+      "id": "bwayirisa-joshua",
+      "name": "Bwayirisa Joshua",
+      "birthday": "November 10, 2013",
+      "age": 12,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "BWAYILISA-JOSHUA-scaled-1.jpg",
+      "story": [
+        "Joshua is 12 years old and he lives with his parents lives with his parents who are peasant farmers and struggling to provide for the family’s basic needs due to lack income sources. Joshua and his siblings help their parents on people’s farms to be able to raise funds for school fees, food etc. He loves going to school and he performs well despite the so many challenges at home."
+      ],
+      "dream": null
+    },
+    {
+      "id": "fuzi-wilson",
+      "name": "Fuzi Wilson",
+      "birthday": "August 7, 2011",
       "age": 14,
       "gender": "Male",
-      "nationality": "Ugandan",
-      "location": "Namayingo District, Uganda",
-      "image": "wandera-allan.jpg",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "FUZI-WILSON-scaled-1.jpg",
       "story": [
-        "Allan is 14 years old. He comes from a small village in Namayingo district, near Lake Victoria in Uganda. He was born with a condition which made his stomach swell and hurt all the time, he could only use the restroom once every 3 months. No one in his village understood what was wrong with him. His mom thought it was a curse or witchcraft. Life was hard from the very beginning.",
-        "When he was just seven months old, his father died, leaving his mother to care for him and his three older siblings. She worked so hard, while battling HIV/AIDS and didn't have the money or knowledge to get him the help he needed. For ten years, he lived with this pain. He couldn't run, play, or be like the other kids or attend school.",
-        "Berakhah childcare found him and told his mother that Allan's condition wasn't a curse—it was something medical, and it could be treated. They took him in, loved him, and made sure he got the surgeries he needed to save his life.",
-        "Now, Allan's life is completely different. The pain is gone, the swelling is gone and he feels strong again. He is in school, learning and dreaming of a bright future. He also participates in the Berakhah Children's Choir and helps with the media team at the children's Church."
+        "Wilson is 14years old and currently lives with his elderly grandmother after his parents separated and left him under her care. Despite her old age, his grandmother works tirelessly as a peasant farmer to provide for the family’s basic needs. Wilson is a hardworking student who performs well academically and actively participates in school activities. He enjoys playing football with his friends and dreams of becoming a doctor in the future. Sponsoring Wilson would help him continue his education and move closer to achieving his dream of becoming a doctor while giving hope to his family."
+      ],
+      "dream": null
+    },
+    {
+      "id": "galenda-naume",
+      "name": "Galenda Naume",
+      "birthday": "March 28, 2015",
+      "age": 10,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "GALENDA-NAUME-scaled-1.jpg",
+      "story": [
+        "Naomi is 10 years old girl  and she is in primary Two, she lives with her grandfather. She was only one year old when her parents separated, and since then, her elderly grandfather has taken full responsibility for her care. He is a peasant farmer who also sells firewood within the community to earn a small income. However, what he earns is barely enough to provide food, clothing, and school fees for Naomi and the five other grandchildren under his care. Because of the family’s limited resources, Naomi often misses school when fees are not paid on time, which affects her performance. Naomi would like to become a lawyer and a dancer, she loves doing house chores like cooking, fetching water, washing clothes, with sponsorship support, she will have the opportunity to attend school regularly, focus on her studies, and grow toward achieving her dream of becoming a lawyer."
+      ],
+      "dream": null
+    },
+    {
+      "id": "galenda-renanah-joyce",
+      "name": "Galenda Renanah Joyce",
+      "birthday": "October 31, 2019",
+      "age": 6,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "GALENDA-JOYCE-scaled-1.jpg",
+      "story": [
+        "Renanah is 6yrs old and she lives with her parents who earn a living from hawking yellow bananas and vegetables. This little income earned can not sustain a family of 5 people therefore their needs remain unattended to. Renanah is in Pre primary and to be able to raise her school fees she has to join the parents in the hawking business over the weekend to supplement on the incomes. She likes playing dodge ball and her best meal is rice and chicken, Renanah would like to be a doctor when she grows up. Your support will help Renanah to remain in school and attend regularly."
+      ],
+      "dream": null
+    },
+    {
+      "id": "gidudu-joseph",
+      "name": "Gidudu Joseph",
+      "birthday": "August 31, 2012",
+      "age": 13,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "GIDUDU-JOSEPH-scaled-1.jpg",
+      "story": [
+        "Joseph is 13 years old and he stays with his mother after his father abandoned them and got another family. Joseph and his mother help people on the farms to be able to earn some income for the home of 7 people before he goes to school every day. Joseph enjoys attending school and his performance is promising though its being affected by his irregular attendance. He would like to become a soldier after his education, Joseph loves playing soccer and grazing goats, his best dish is Matoke, rice and beef. Your support towards Joseph’s education will help him to realize his dream of becoming a soldier. \\r\\n"
+      ],
+      "dream": null
+    },
+    {
+      "id": "gidudu-jotham",
+      "name": "Gidudu Jotham",
+      "birthday": "September 24, 2018",
+      "age": 7,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "GIDUDU-JOSAM-scaled-1.jpg",
+      "story": [
+        "Jotham is 7 years old and lives with both his parents. Jotham’s parents are both peasant farmers and their income is not enough to sustain the family of 9. After school hours Jotham and his siblings have to go and do hawking of vegetables to supplement the family income. Jotham is in Pre-Primary and he would like to become a pilot after his studies he loves playing football and making toy cars in his free time. Your support will help Jotham stay in school for a better future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "gidudu-robert",
+      "name": "Gidudu Robert",
+      "birthday": "February 25, 2015",
+      "age": 10,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "GIDUDU-ROBERT-scaled-1.jpg",
+      "story": [
+        "Robert is 10 years old and in Primary three, he lives with his parents and Robert is the 5th born in the family. His father is a peasant farmer and his mother is selling local brew in the community, he has to help the mother with brewing whenever he comes back from school to have enough production for sale. This is how his parents have managed to sustain the family and be able to pay their school fees. Robert usually doesn’t enough time to play with his mates since he has to help the mother but he loves playing football and in future he would like to become a mechanic. He loves reading story books and drawing. your support will help Robert to succeed and have a great future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "gidudu-willson",
+      "name": "Gidudu Willson",
+      "birthday": "March 7, 2022",
+      "age": 3,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "GIDUDU-WILSON-NELSON-scaled-1.jpg",
+      "story": [
+        "Wilson is 3 years old and he lives with his grandmother after the separation of his parents. His mother tries to support the old grandmother from her small sales of fruits once in a while, Wilson is not yet in school but the conditions under which he lives are so harsh to a kid of 3 years. Most of the times the family goes without a meal or one meal a day. Wilson should be joining school next year but because his mother cannot afford to raise school fees, there’s no hope of him starting school soon. He loves animals and he usually plays with them at home. Your support will help Wilson to be taken to a safer place and also to start school."
       ],
       "dream": null
     },
@@ -27,75 +178,2039 @@
       "location": "Uganda",
       "image": "Kabuya-Prisca.jpg",
       "story": [
-        "Prisca is 14 years old and has endured tremendous hardship throughout her childhood. She had her left eye damaged by a neighbor's child and couldn't see well, a similar condition which occurred to her father at the same age of 9 which has failed him from active work up-to-date. This led Prisca to occasionally have severe headaches, poor vision, pain, and deterioration on her performance.",
-        "However this problem was handled medically when she joined Berakhah - her sight has been fully restored. With the father's failing sight and her mother's failing health, these have affected Prisca's parents in getting an income to support the family. Prisca would help around the house by washing plates, sweeping and cleaning the compound, but the basic needs of the family were not met adequately.",
-        "Prisca is in primary seven and dreams of becoming a Doctor. At Berakhah childcare, she has been welcomed with love and acceptance into her new family and has great comfort that her basic needs like food, shelter and education are being met."
+        "Prisca is 14 years old and has endured tremendous hardship throughout her childhood. She had her left eye damaged by a neighbor’s child and couldn’t see well a similar condition which occurred to her father at the same age of 9 which has failed him from active work up-to-date. This led Prisca to occasionally have severe headaches, poor vision, pain, and deterioration on her performance. However this problem was handled medically when she joined Berakhah her sight has been fully restored. With the father’s failing sight and her mother`s failing health, these have affected Prisca’s parents in getting an income to support the family. Prisca would help around the house by washing plates, sweeping and cleaning the compound, the basic needs of the family were not met adequately. Prisca is in primary seven and dreams of becoming a Doctor. At Berakhah childcare, she has been welcomed with love and acceptance into her new family and has great comfort that her basic needs like food, shelter and education are being met. Your generous sponsorship will open new opportunities for Prisca to grow spiritually, mentally and physically."
       ],
-      "dream": "Doctor"
+      "dream": null
+    },
+    {
+      "id": "kadoli-alvin",
+      "name": "Kadoli Alvin",
+      "birthday": "May 29, 2011",
+      "age": 14,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "KADOLI-ALVIN-scaled-1.jpg",
+      "story": [
+        "Alvin is 14 years old in Primary Four, Alvin lives with his parents and five siblings. His parents are peasant farmers whose small income cannot meet all the family’s needs. Despite these challenges, Alvin loves going to school and dreams of becoming a teacher so he can help his community in the future. However, frequent financial struggles often cause him to miss school as he’s sent home for fees. To support his education, Alvin helps by selling small items like sugarcane and avocados. He is a friendly and hardworking boy both at school and at home who simply needs a helping hand to keep pursuing his dreams."
+      ],
+      "dream": null
+    },
+    {
+      "id": "kadoli-james",
+      "name": "Kadoli James",
+      "birthday": "June 5, 2013",
+      "age": 12,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "KADOLI-JAMES-scaled-1.jpg",
+      "story": [
+        "James is 12 years old, lives with his parents and other 6 siblings. His parents are unemployed once in while they go and work on people’s farms to secure a meal for a day. They live a rented house which is also in a bad condition and they can not afford to pay rent on time, this has made it impossible for James to attend school because his parents can not afford his school fees and for his siblings as well. James would like to become an engineer, he loves playing soccer and running. Your support will help James to rewrite his story."
+      ],
+      "dream": null
+    },
+    {
+      "id": "kamiti-angel-prossy",
+      "name": "Kamiti Angel Prossy",
+      "birthday": "June 1, 2013",
+      "age": 12,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "ANGEL-PROSSY-scaled-1.jpg",
+      "story": [
+        "Angel is 12 years old in primary four class, she lives with her parents who are small scale peasant farmers, her family struggles with limited income, making it difficult to meet Angel’s basic needs and educational requirements. Angel would like to become a teacher in future and a fashion designer however the current financial status of her parents can not guarantee that. She loves color pink and her best dish is chips and fish, she likes helping her parents with domestic chores. In her free time she loves to play with her friends and she helps her mother to sale bananas. Your support will help Angel to finish her school and have a bright future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "kasirye-sowali",
+      "name": "Kasirye Sowali",
+      "birthday": "June 11, 2015",
+      "age": 10,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "KASIRYE-SOWALI-scaled-1-683x1024.jpg",
+      "story": [
+        "Sowali is 10 years old and he is in primary three, Sowali lives with his single mother who bears the entire responsibility of providing for him and his siblings. His mother, a peasant farmer with limited resources, struggles to meet the family’s basic needs and cover their educational expenses. Despite her tireless efforts, the financial challenges weigh heavily on their daily lives. However, Sowali remains resilient in the face of these difficulties, continuing his studies with determination to become a teacher. With your support, Sowali will be sure of his future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "kibogo-luke",
+      "name": "Kibogo Luke",
+      "birthday": "August 22, 2018",
+      "age": 7,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "KIBOGO-LUKA-scaled-1-683x1024.jpg",
+      "story": [
+        "Luke is 7 years old in Primary and lives under the care of his grandmother. When his parents separated when he was just one year old, his grandmother took on the responsibility of raising him. Luke’s father has had limited involvement in his upbringing, and his grandmother who is a peasant farmer strives to provide for him and other children in the household with the little she has. The financial challenges have made it difficult to afford proper treatment for Luke’s painful eye problem, which sometimes affects his school performance and daily life. Nevertheless, Luke remains hopeful and determined to become a driver and your support will help Luke achieve his dreams."
+      ],
+      "dream": null
+    },
+    {
+      "id": "kisa-beatrice",
+      "name": "Kisa Beatrice",
+      "birthday": "September 29, 2020",
+      "age": 5,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "KISSA-BETRINCE-scaled-1.jpg",
+      "story": [
+        "Beatrice is 5 years old in Pre Primary, she lives with her parents who are peasant farmers and her three siblings. Despite the family’s ongoing financial challenges in meeting basic needs and supporting education, Beatrice’s performance in class remains outstanding and teachers are proud of her. Beatrice would love to become a nurse or a teacher, she helps her parents with domestic chores like fetching water, washing utensils. In her free time Beatrice likes to play with ropes and making crafts. With your support, Beatrice’s life can be changed."
+      ],
+      "dream": null
+    },
+    {
+      "id": "kusasila-peace",
+      "name": "Kusasila Peace",
+      "birthday": "July 8, 2018",
+      "age": 7,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "KUSASILA-PEACE-scaled-1-683x1024.jpg",
+      "story": [
+        "Peace is 7 years old in primary two, She lives with her parents who are peasant farmers, her father also works as a motorcycle rider to supplement the family’s income to be able to meet their basic needs and educational expenses. However the motorcycle work cannot give enough income to sustain the family and this has hindered Peace and her siblings from receiving quality education. Peace would like to be a nurse in future, she loves making simple crafts at home. She helps her parents to fetch water, clean the compound and also wash utensils. Her best color is yellow and she loves eating rice and chicken. With your support Peace will be able to stay in school and achieve her dreams."
+      ],
+      "dream": null
+    },
+    {
+      "id": "kwaga-shanita",
+      "name": "Kwaga Shanita",
+      "birthday": "April 28, 2007",
+      "age": 18,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "kwga-shan-683x1024.jpg",
+      "story": [
+        "Shanita is18 years old and she’s in Senior Two. Her life changed greatly after the passing of her father, who was the main provider for the family. As the firstborn among six children, Shanita had to grow up quickly, helping her mother, who works as a casual laborer, to care for her younger siblings. Her mother struggles daily to provide food, school fees, and other basic needs for the family. Before coming to Berakhah Childcare, Shanita lived a challenging life at home, often helping with many household chores such as washing utensils, fetching water, cooking, and digging. Now at Berakhah Childcare, Shanita has found a safe and supportive home where her basic needs are met. She enjoys singing, dancing, teaching Sunday school children, and spending time with her friends. Shanita dreams of becoming a teacher in the future so she can inspire and support other children facing challenges like hers. Your sponsorship will help Shanita continue her education and build a bright, hopeful future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "luguda-silver",
+      "name": "Luguda Silver",
+      "birthday": "November 8, 2014",
+      "age": 11,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "LUGUDA-SILVER-scaled-1-683x1024.jpg",
+      "story": [
+        "Silver is an 11 year old boy in Primary Three who lives with his parents, both peasant farmers. He enjoys going to school and values learning, but sometimes misses classes when his parents are unable to pay school fees on time. At home, Silver is a responsible and helpful child who supports his parents with chores such as fetching water and washing utensils. In his free time, he enjoys creating toy cars from any available materials. Silver dreams of becoming a driver in the future so he can support his family and help improve their lives."
+      ],
+      "dream": null
+    },
+    {
+      "id": "madanda-jovan",
+      "name": "Madanda Jovan",
+      "birthday": "September 9, 2016",
+      "age": 9,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MANDADA-JOVAN-1-scaled-1.jpg",
+      "story": [
+        "Jovan lives with his paternal grandparents after leaving his parents, who are peasant farmers struggling to meet even basic needs. His mother developed a severe mental illness three months before they left and remains in that condition, making her unable to care for the children. Despite facing financial hardship, Jovan’s grandparents lovingly took him and his siblings in, ensuring their safety and well being. Jovan is a bright and hopeful child who dreams of continuing his education, but he needs support to make this possible."
+      ],
+      "dream": null
+    },
+    {
+      "id": "madeyo-ian",
+      "name": "Madeyo Ian",
+      "birthday": "January 8, 2019",
+      "age": 7,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MADEYO-EARN-scaled-1.jpg",
+      "story": [
+        "Ian is 6 years old , Ian is in primary two and he lives with both his parents, who are peasant farmers. To supplement their small income from garden harvests, Ian’s father also works as a motor cycle rider. With six children in school, it is difficult for the family to meet all educational requirements, leading to Ian’s irregular school attendance. Ian helps with house chores and looks after his younger siblings. He would like to become  a doctor. Sponsorship will help Ian stay in school and pursue his dream of becoming a doctor."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mafabi-david",
+      "name": "Mafabi David",
+      "birthday": "April 5, 2019",
+      "age": 6,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MAFIBI-DAVID-scaled-1.jpg",
+      "story": [
+        "David is 6 years old and he is in Primary one, he lives with his parents. As peasant farmers, his parents work tirelessly to support the family, yet they face constant challenges in earning enough to meet basic needs. Despite these struggles, David contributes at home by helping with household chores and finds joy in playing football whenever he gets the chance. David aspires to become a doctor and is committed to working hard to achieve this goal. With the right support, he has the potential to create a brighter future for himself and his family while making a meaningful impact in his community."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mafabi-isa",
+      "name": "Mafabi Isa",
+      "birthday": "October 28, 2014",
+      "age": 11,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MAFABI-ISSA-scaled-1-796x1024.jpg",
+      "story": [
+        "Isa is 11 years old who stays with his grandmother after his parents separated, leaving him without direct parental care. His grandmother, though elderly, works tirelessly as a peasant farmer to provide for his daily needs. He enjoys helping his grandmother with light chores at home and likes spending time with friends when he feels well. Isa dreams of becoming a doctor in the future, his grandmother has struggled to afford basic needs, school fees but she has always failed. Your support will make a great difference in Isa’s life, helping him stay in school, access proper medical care, and work toward his dream of becoming a doctor."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mafabi-peter",
+      "name": "Mafabi Peter",
+      "birthday": "February 2, 2013",
+      "age": 13,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "MAFABI-PETER.jpg",
+      "story": [
+        "Peter is 12 years old and he is in primary four. Peter lost his mother at nine years and he lost all hopes of continuing with school since she was the only one supporting him and his other two siblings in school. They were left in the hands of their grandparents who struggle to meet their needs with no assistance from their father, however, he believes that with God on his side things can change. Peter would like to become either a teacher or a doctor, he loves playing football and singing. Peter’s best dish is rice and meat, while at home, peter helps his grandparents to do home chores like fetching water, sweeping the compound, washing clothes, he digs and grazes a few animals at home. Your sponsorship will help Simon to become a teacher or a doctor as it’s his dream and he will be able to support his grandparents too."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mafabi-simon-peter",
+      "name": "Mafabi Simon Peter",
+      "birthday": "January 11, 2011",
+      "age": 15,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "MAFABI-SIMON-PETER-scaled-1.jpg",
+      "story": [
+        "Peter is 14 years old and he is primary six. Peter is the fifth born in a family of seven children. He lost his father at the age of six and his mother was left to take care of the family of six children alone, she solely depends on subsistence farming which does not yield so much and it has made it difficult to access basic needs without a reliable source of income making life difficult for Peter and the siblings. Peter would like to become a teacher and his best subject is Mathematics, and his best dish is rice and chicken. At home Peter likes to fetch water and also helps his mother in the garden. your support towards peter’s education will open more opportunities for him to be successful."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mafabi-wilson",
+      "name": "Mafabi Wilson",
+      "birthday": "October 15, 2013",
+      "age": 12,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "mafabi_wilson-scaled-1-701x1024.jpg",
+      "story": [
+        "Wilson is 12 years old in Primary four and he lives at Berakhah childcare. Wilson and his siblings were raised by their single father, they do not know the whereabouts of their mother. The father didn’t have any job to earn a living for home provision but he would graze cows for other people, do farm work, work on construction sites to be able to get food tor his children. In his absence Wilson and the siblings would move village to village looking for what to eat because their father would take long to come back home. No one was around to inspect their hygiene and they ended having jiggers in their feet and fingers,. Wilson and his siblings were malnourished, they were living a very bad life in the community until Berakhah intervened and took Wilson in. He now goes to school, feeds well, his health is very good, he loves singing and dancing. At Berakhah childcare, Wilson loves to do home chores like washing utensils, cleaning compound, very active during fellowships. In future Wilson would like to become a policeman to protect his people. Your support towards his education will help Wilson have a brighter future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "magombe-dison",
+      "name": "Magombe Dison",
+      "birthday": "September 2, 2010",
+      "age": 15,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "MAGOMU-WILSON-scaled-1-683x1024.jpg",
+      "story": [
+        "Disson is 15 years old in Senior One. He lives with his grandmother, who has cared for him since he was just eight months old, following the death of his mother. His grandmother works hard as both a small scale farmer and a tailor to provide for the family. However, her income is very limited since tailoring jobs in their rural area pay very little.When the harvest is good, they have food for some months, but during poor seasons, the family often struggles with hunger. Disson’s father, who would have supported them, was left incapacitated after a motorcycle accident, making it difficult for him to provide for his son.At home, Disson helps his grandmother with chores such as fetching water and washing dishes. He also enjoys playing football with his friends in his free time. At Berakhah Childcare, Disson has found hope and stability he loves praying with the older children and is learning how to dance by watching his friends practice. His academic performance is promising, and he dreams of becoming a doctor. With your support Disson will be able to realize his dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "magomu-emma",
+      "name": "Magomu Emma",
+      "birthday": "December 5, 2006",
+      "age": 19,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "Magomu-Emma.jpg",
+      "story": [
+        "Emma is 19 years old and he used to live with his father and his other siblings. He never knew his mother’s love because he was raised by a single father who went through thick and thin to provide for his children. Despite of the fact that his left eye was permanently blind, Emma would collect water for the family, wash utensils, clean the house and also cook for his siblings. Due to inconsistent levels of income, life became very difficult and even basic needs for the children were not being met by the single father. Emma is in Senior 3 class now and for 9 years he has been staying at Berakhah childcare. At Berakhah childcare, Emma is happy because he found new found life. He has made many friends and loves to play soccer. His involvement in Christian fellowships and children’s choir has brought hope and comfort back into his life. He is changing for the best and desires to become a teacher. and his performance is average. Your generous sponsorship will help Emma develop physically, spiritually, and emotionally."
+      ],
+      "dream": null
+    },
+    {
+      "id": "magomu-enock",
+      "name": "Magomu Enock",
+      "birthday": "April 3, 2015",
+      "age": 10,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MAGOMU-ENOCK-scaled-1.jpg",
+      "story": [
+        "Enock is 10 years old and he is in Primary three, Enock lives with his maternal grandmother, who has taken on the responsibility of caring for him and his sister after his parents separated when he was just nine months old.His grandmother does her best to provide for their needs. Enock is fortunate to have no health complications and performs well academically, showcasing his potential and determination. His aspiration to become a mechanic reflects his drive to support his family and improve their lifestyle in future. Sponsoring Enock through education will be an opportunity to achieve his goals."
+      ],
+      "dream": null
+    },
+    {
+      "id": "magomu-stephen",
+      "name": "Magomu Stephen",
+      "birthday": "January 1, 2015",
+      "age": 11,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MAGOMU-CYRUS-scaled-1.jpg",
+      "story": [
+        "Stephen is 10 years old and he’s in primary three. He lives with his elderly grandmother after being abandoned by his parents. Despite her limited resources from peasant farming and the added responsibility of caring for other children in the household, she strives to provide for Stephen. These financial struggles pose significant challenges, but Stephen’s determination remains unshaken. He dreams of becoming a teacher one day, driven by his vision to transform his family’s circumstances and positively impact his community. His resilience and ambition shine brightly, offering hope for a better future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "magomu-wilson",
+      "name": "Magomu Wilson",
+      "birthday": "December 14, 2020",
+      "age": 5,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MAGOMU-WILSON-scaled-1.jpg",
+      "story": [
+        "Wilson is 5 years old and he is Pre primary, he lives with his mother and siblings after his father got another family leaving his mother as the primary caretaker. Wilson’s mother faces so many challenges while providing for the family’s basic needs and paying school fees. She has no specific job where she earns from instead she keeps on doing any work that is available to earn some money for their daily meal. She works on people’s farms, washes clothes, cleans for people etc. The father is not supporting the family ever since they separated, she would love all her children to be in school but they keep on being sent home to collect school dues, his has made Wilson to be an irregular student at school. Your sponsorship will lighten the burden of Wilson’s mother and the boy will be able to keep in school, thank you"
+      ],
+      "dream": null
+    },
+    {
+      "id": "magwali-joel",
+      "name": "Magwali Joel",
+      "birthday": "August 9, 2009",
+      "age": 16,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MAGWALI-JOEL-scaled-1.jpg",
+      "story": [
+        "Joel is in Primary Six and lives with his aunt, who took him in after his parents separated when he was six years old. His aunt works as a tailor in the community, earning very little to support her large family of eight children. Joel’s father, who occasionally helped with his support, sadly passed away, and his mother has never returned to check on him. Despite these hardships, Joel works hard doing small jobs like digging and fetching water to contribute toward his school needs. He dreams of becoming a doctor one day, and his good academic performance shows great potential. In his free time, Joel enjoys dancing and playing football."
+      ],
+      "dream": null
+    },
+    {
+      "id": "makwasi-mark",
+      "name": "Makwasi Mark",
+      "birthday": "March 31, 2015",
+      "age": 10,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "MAKWASI-MARK-683x1024.jpg",
+      "story": [
+        "Mark is a ten year old and he is in primary five. His hobbies are football, music and dancing. He is the second born in a family of two children and he lives with his grandfather. He lost his father before he made a year. A month later, they moved from the rented residence which their father left them in because his mother could not afford paying rent and decided to occupy one of the old house which was abandoned by the owner. His mother is challenged with meeting the basic needs of her children like education and feeding. Despite the challenges, Mark hopes to become an electrical engineer. Your support will help Mark to stay in school and work for a better future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "masaba-emma",
+      "name": "Masaba Emma",
+      "birthday": "March 8, 2018",
+      "age": 7,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MASABA-EMMA-scaled-1.jpg",
+      "story": [
+        "Emma is 7 years old and he’s in Primary Two. He lives with his paternal grandmother following his parents’ separation when he was very young. His grandmother works hard to care for him, but with limited income and little support from his father, meeting Emma’s daily needs is a struggle. Despite these challenges, Emma is determined to succeed in school and dreams of becoming a police officer so he can serve and protect others. However, he often misses school due to unpaid fees and suffers from an untreated dental condition that causes him pain and affects his concentration. With the help of a caring sponsor, Emma can continue his education, receive proper medical care, and move closer to realizing his dream of becoming a police officer."
+      ],
+      "dream": null
+    },
+    {
+      "id": "masaba-kevin",
+      "name": "Masaba Kevin",
+      "birthday": "August 9, 2014",
+      "age": 11,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "MASABA-KEVIN-B02-101-096-scaled-1.jpg",
+      "story": [
+        "Kevin is 11 years old who is inspired by great leaders and he dreams of becoming a president. He lives with his parents, his parents are peasant farmers and his dad also is pastor in the community where they stay. At home he helps with grazing and digging. The parents struggle to meet their children`s needs and also volunteer to attend to church’s needs. In a family of seven children Kevin is the third child. He is in primary four and likes playing football, his best dish is Irish potatoes and beef. Sponsoring Kevin will be an opportunity for him to have a brighter future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "masibo-patience",
+      "name": "Masibo Patience",
+      "birthday": "April 14, 2013",
+      "age": 12,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MASIBO-PATIENCE-scaled-1.jpg",
+      "story": [
+        "Patience is 12 years old and she is in primary five. She lives with her parents, who are peasant farmers depending on small scale farming to sustain their family. With many children of school going age, their limited income makes it difficult to meet basic needs and pay school fees consistently. She performs well in class and is known for her good behavior, discipline, and willingness to help others. Patience dreams of becoming a medical doctor, at home, she helps her parents with chores such as fetching water, cooking, and caring for her younger siblings. Your kind support will give Patience the opportunity to continue her education and move closer to fulfilling her dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mudabali-isaac",
+      "name": "Mudabali Isaac",
+      "birthday": "February 2, 2016",
+      "age": 10,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "MUDABALI-ISAAC.jpg",
+      "story": [
+        "Isaac is a nine year old boy in primary two with both parents alive but separated. He was left behind by the mother at eight years in the hands of the father. Currently the father is a single parent who is a casual labourer and a peasant farmer with limited income to take care of seven children, one girl and six boys where Isaac is the last born. With a lot of hope, Isaac would like to become a teacher. He loves playing football. His dream can be achieved through your prayers and generous support towards helping his dream come true."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mude-ben-simon",
+      "name": "Mude Ben Simon",
+      "birthday": "June 24, 2020",
+      "age": 5,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MUDE-BEN-SIMON-scaled-1.jpg",
+      "story": [
+        "Ben is five years old in Kindergarten who lives with his grandmother. He has been under her care since he was one year old. His grandmother, a peasant farmer, works hard to provide for Ben and other family members, but her limited income makes it difficult to meet all their needs. Ben is an active and cheerful boy who loves playing with friends both at home and at school. He enjoys going to school and dreams of becoming a mechanic and driver when he grows up. His favorite meal is matoke with chicken, and he loves playing football. With support, Ben can continue his education in a better school and build a bright future one day achieving his dream of becoming an engineer."
+      ],
+      "dream": null
+    },
+    {
+      "id": "muduwa-beth",
+      "name": "Muduwa Beth",
+      "birthday": "June 24, 2015",
+      "age": 10,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "MUDUWA-BETH.jpg",
+      "story": [
+        "Beth is a ten year old and the third child in a family of four children, she started living with her grandmother at the age of three. The mother is said to be living in Kenya and she decided to send the four children back to Uganda with a friend who brought them to their grandmother and since then they have never seen her. The father to the children is not known and the grandmother is a peasant farmer who struggles to raise the grandchildren without any reliable source of income. Beth helps her grandmother to wash utensils and clean around the home. Beth is in primary five and desires to become a doctor. Your support towards Beth’s education will help her achieve her dream of becoming a doctor."
+      ],
+      "dream": null
+    },
+    {
+      "id": "muduwa-favour",
+      "name": "Muduwa Favour",
+      "birthday": "November 15, 2014",
+      "age": 11,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MUDUWA-FAVOUR-1-scaled-1.jpg",
+      "story": [
+        "Favor is 11 years old and she is living with her mother and 4 other siblings after their father was imprisoned. Her mother, a peasant farmer works hard as she’s the sole provider of the family though she struggles to meet basic needs and education expenses for her children. Favor’s health has been consistently good, allowing her to excel in her academics, Favor loves doing house chores and playing with the friends in her free time. Favor is determined to pursue her dream of becoming a medical Nurse. Favour needs support in education to be able to stay in school."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mugerwa-gerald",
+      "name": "Mugerwa Gerald",
+      "birthday": "October 9, 2008",
+      "age": 17,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MUGERWA-GERALD-scaled-1.jpg",
+      "story": [
+        "Gerald is a 17 years old and he is in Primary Seven. He lost both of his parents at a young age, his father, a soldier, was shot dead when Gerald was just three years old, and his mother passed away when he was six years after battling a long illness. Since then, Gerald has been under the care of his elderly grandfather, a peasant farmer who struggles to provide for him and other  5 grandchildren due to lack of a stable income.To support himself, Gerald would often graze cows, fetched water, and worked in people’s gardens to earn some money for school fees. At home, he also helped with domestic chores such as washing utensils and slashing the compound. Gerald later joined Berakhah Childcare, where his life took a positive turn. He now focuses on his studies without worrying about food or other basic needs. His best subject is English, and he dreams of becoming an engineer in the future.Your support towards Gerald will help him achieve his dream and build a brighter future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mugide-isabela",
+      "name": "Mugide Isabela",
+      "birthday": "June 6, 2016",
+      "age": 9,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "MUGIDE-ZABELA-scaled-1.jpg",
+      "story": [
+        "Isabela is 9 years old and she is in Primary Four. She lives with her parents and five siblings, her father roasts meat by the roadside and while her mother serves as an evangelist and does some gardening to support the family.Isabela suffers from glaucoma, which affects her sight and daily activities, but she remains determined to stay in school. Her dream is to become an optician so she can help others with eye problems.\\r\\nWith your support, Isabela can continue her education, receive medical care, and work toward a brighter future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mugide-mary",
+      "name": "Mugide Mary",
+      "birthday": "March 10, 2016",
+      "age": 9,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MUGIDE-MARY-1-scaled-1.jpg",
+      "story": [
+        "Mary is 9 years old and she is in primary three and she lives with her parents, both peasant farmers struggling to earn a stable income. Due to limited resources, the family often finds it difficult to meet basic needs and afford quality education. In her free time, Mary enjoys doing art and craft. She loves making creative items such as dolls and mats from banana fibers. Her best subjects are Mathematics and English, and she dreams of becoming a teacher in the future, with education support Mary’s life can be changed."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mukisa-edward",
+      "name": "Mukisa Edward",
+      "birthday": "January 22, 2018",
+      "age": 8,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MUKISA-EDWARD-1-scaled-1.jpg",
+      "story": [
+        "Edward is 7 years old and in primary two, he lives with his maternal grandmother following his parents’ separation during his infancy. His mother, unable to support him and unsure of his father’s whereabouts, entrusted him to her parents. Despite her hard work as a peasant farmer, Edward’s grandmother faces financial difficulties caused by limited resources and unpredictable weather conditions. Edward dreams of becoming a driver to support his family in the future, Edward needs education support to change his current status."
+      ],
+      "dream": null
+    },
+    {
+      "id": "munialo-ashbel",
+      "name": "Munialo Ashbel",
+      "birthday": "February 22, 2017",
+      "age": 8,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "MUNIALO-ASHIBEL-1-scaled-1.jpg",
+      "story": [
+        "ASHBEL is 8 years old and he’s in primary 2 staying with his grandmother who runs a small retail shop in the community, his grandmother also takes care of other 3 grandchildren. Her little income cannot be enough to pay for all their school fees and also to get them all the basic needs, Ashbel loves dancing and singing in his free time. His best subject at school is Mathematics and he would like to become a pilot in future. With extra support, Ashbel can attend school with no disturbance and may be his dream of becoming a pilot can be realized."
+      ],
+      "dream": null
+    },
+    {
+      "id": "musika-emma",
+      "name": "Musika Emma",
+      "birthday": "December 15, 2013",
+      "age": 12,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MUSIKA-EMMA-scaled-1.jpg",
+      "story": [
+        "Emma is 14 years old in primary five, Emma lives with his parents. His mother hawks second hand clothes in the community while his father roasts chicken by the roadside to be able to raise income to support their family of 6 children. Lack of good income sources has made it difficult for the family to meet basic needs and provide quality education for their children. Emma loves helping his mother in the hawking business, fetching water and digging. Emma loves singing and dancing and he’s very active in church, he would like to become a mechanic in future. Your support will help Emma achieve his dreams of becoming a mechanic."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mutebi-lawrence",
+      "name": "Mutebi Lawrence",
+      "birthday": "April 8, 2009",
+      "age": 16,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "mutebi-lawrence.jpg",
+      "story": [
+        "Lawrence is 16 years old and he’s in senior two. His father has been missing for a long time, so he lived with his mother and step-father. He has three step siblings, accessing basic needs was not easy as the family struggles to make ends meet. He used to help the family out by washing plates, sweeping the house and collecting water. Lawrence’s performance is promising as he’s always above average. His favorite subjects are English and mathematics. Lawrence stays at Berakhah childcare and he participates in dancing and singing. He has found a family where he is loved, cared for by others and freely relates with them. During his free time he likes reading his books and playing football with his friends. Therefore, your generous sponsorship will create more opportunities for Lawrence as he dreams of becoming a civil engineer someday."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mutoto-abbey",
+      "name": "Mutoto Abbey",
+      "birthday": "April 10, 2009",
+      "age": 16,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "mutoto-abbey.jpg",
+      "story": [
+        "Abbey is 13 years old and he’s in primary six. He lives with his single mother after he lost his father. Abbey’s father died before Abby was born (his mother was 7months old).  His mother has other two children under her care with no assured source of livelihood. Because of this, Abbey was brought to Berakhah Child Care where his needs are met and he is happy with his new found family. During his free time, he plays football with his friends and his ambition in life is to become an electrician. He also participates in Bible study, dancing and singing. Your consideration to help him is very much welcomed for Abbey to grow physically, emotionally, spiritually and professionally."
+      ],
+      "dream": null
     },
     {
       "id": "muwanguzi-eria",
       "name": "Muwanguzi Eria",
       "birthday": "January 6, 2014",
-      "age": 11,
+      "age": 12,
       "gender": "Male",
       "nationality": "Ugandan",
-      "location": "Busamaga, Sironko District",
-      "image": "mwanguzi_eria_image.jpg",
+      "location": "Uganda",
+      "image": "1000090923-scaled-1.jpg",
       "story": [
-        "Eria is 11 years old, in primary three and he's the second last born in a family of seven children, five boys and two girls. His father died when he was five years old. Life became so hard for them because when he died, he left them with a mother who is a peasant farmer and could not manage to take care of the seven children.",
-        "Their paternal uncles who promised to give help turned against them to grab some of their properties instead. They lived in misery seeing their single mother becoming a beggar in the community. One day while at Church, she heard about BERAKHAH CHILD CARE and without delaying, she brought Eria and he was welcomed with open arms.",
-        "He now lives at Berakhah where all his needs are met. He loves singing, dancing and playing football. His favorite food is rice, matoke and chicken."
+        "Eria is 11 years old, in primary three and he’s the second last born in a family of seven children, five boys and two girls. His father died when he was five years old. Life became so hard for them because when he died, he left them with a mother who is a peasant farmer and could not manage to take care of the seven children. Their paternal uncles who promised to give help turned against them to grab some of their properties instead. They lived in misery seeing their single mother becoming a beggar in the community. One day while at Church, she heard about BERAKHAH CHILD CARE and without delaying, she brought Eria and he was welcomed with open arms. He now lives at Berakhah where all his needs are met. He loves singing, dancing and playing football. His favorite food is rice, matoke and chicken. Your sponsorship will change his life."
+      ],
+      "dream": null
+    },
+    {
+      "id": "muwanguzi-trevor",
+      "name": "Muwanguzi Trevor",
+      "birthday": "May 4, 2014",
+      "age": 11,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MUWANGUZI-TRAVER-scaled-1.jpg",
+      "story": [
+        "Trevor is 11 years old and he lives with his grandmother who is a peasant farmer, his mother is a farmer, and his father is a motor cycle rider, earning a living by transporting passengers. His parents do their best to support him and his other 9 siblings but their incomes aren’t enough to cater for all. Once in a while the grandmother supports but she too health-wise is not good. Trevor would like to be a pilot after his studies, in his free time Trevor loves playing soccer and doing some house chores. Your support will enable Trevor achieve his dreams."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mweru-eli-peter",
+      "name": "Mweru Eli Peter",
+      "birthday": "May 9, 2019",
+      "age": 6,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "MWERU-ELI-PETER-scaled-1.jpg",
+      "story": [
+        "Eli Peter is 7 years old, he’s in Primary one and he lives with his parents who are peasant farmers. His parents usually face significant financial challenges in meeting their family’s basic needs and providing quality education for their school going children. Despite their tireless efforts, including supplementing their farming income with casual labor, the low income makes it difficult to cover expenses such as education and proper shelter for their growing family. However, Eli Peter’s good performance in school encourages them to even work harder. Eli Peter would like to become a mechanic to repair vehicles in his community. Your support will enable Eli Peter to keep in school and become a mechanic."
+      ],
+      "dream": null
+    },
+    {
+      "id": "mweru-joseph",
+      "name": "Mweru Joseph",
+      "birthday": "February 28, 2009",
+      "age": 16,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "MWERU-JOSEPH-scaled-1.jpg",
+      "story": [
+        "Joseph is 16 years old and lives with his mother and stepfather. After his mother separated from his biological father, she remarried, and together they work as peasant farmers. Their small income from farming is barely enough to meet the family’s basic needs, making it difficult to keep Joseph and his siblings in school.  Joseph frequently is being sent home for unpaid fees but remains committed to his studies and continues to perform well. He dreams of becoming a medical doctor so he can help his family and give back to his community. Your support can help Joseph stay in school and move closer to achieving his dream of saving lives and creating a brighter future for himself and those around him."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabaya-anderson",
+      "name": "Nabaya Anderson",
+      "birthday": "April 24, 2012",
+      "age": 13,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NABAYA-ANDASON-scaled-1.jpg",
+      "story": [
+        "Anderson is 13 years old and the last born in a family of six children, he lives with his parents who are both peasant farmers. He is in primary three and he dreams of becoming a policeman. He likes football, athletics, music and dancing, his father is a polygamous man and he struggles to meet all the needs of the family where he always fail because of the multiple demands. While at home, Anderson helps his parents with the washing of plates, fetching of water and sweeping the compound. Your support towards his education will help him to achieve his dreams."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabaya-sulaian-sekaniya",
+      "name": "Nabaya Sulaian Sekaniya",
+      "birthday": "May 29, 2018",
+      "age": 7,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABAYASEKANIYA-scaled-1.jpg",
+      "story": [
+        "Sulaian is 11 years old and he is in Primary Four. He lives with his parents and siblings who depend on small scale farming for survival. The family faces financial challenges and their limited income often makes it difficult to provide for basic needs and pay school fees consistently. He would like to be an engineer in the future so he can support his family. Sponsorship will help Sulaian stay in school and work toward achieving his dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabude-jessica",
+      "name": "Nabude Jessica",
+      "birthday": "May 30, 2015",
+      "age": 10,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABUDE-JESSICA-scaled-1.jpg",
+      "story": [
+        "Jessica is 10 years old in primary three and she lives with her parents who are peasant farmers, they struggle to meet their family’s basic needs and provide quality education for their children. They solely rely on farming which is frequently affected by unpredictable weather and crop damage from pests, making it hard for them to be financially stable. Despite these challenges, Jessica remains focused on her education, aspiring to become a teacher. However, the ongoing financial strain often threatens her ability to stay in school. With the right support, she can continue pursuing her dreams and making a lasting impact."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabude-sherry",
+      "name": "Nabude Sherry",
+      "birthday": "June 23, 2013",
+      "age": 12,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NABUDE-SHERRY-scaled-1.jpg",
+      "story": [
+        "Sherry is 12 years old in Primary Five, she lives at Berakhah Childcare. She was abandoned by her mother at six months and raised by her elderly grandmother, a peasant farmer who struggled to provide for her. When school fees became too heavy to manage, Sherry was brought to Berakhah for care and support. She is a bright girl who loves Mathematics and Science and dreams of becoming a nurse one day. Sherry also enjoys music, dance, and drama, and is very active in the children’s church. Though financial challenges have sometimes affected her school attendance, Sherry remains hopeful, hardworking, and full of dreams. With sponsorship, she can continue her education and build the bright future she deserves."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabugasha-florence",
+      "name": "Nabugasha Florence",
+      "birthday": "January 11, 2025",
+      "age": 1,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "Nabugasha-Florence.jpg",
+      "story": [
+        "Florence lived with her grandmother whose source of income was selling a few harvests from her garden since she’s a peasant farmer. Her parents separated and her mother of 4 children decided to leave Florence who was the youngest with the grandmother as she goes to hustle with the 3, as for her father till now no one knows his whereabouts. Since she was a toddler Florence was with her aging grandmother until Berakhah came to her rescue in 2016 till now. Her grandmother couldn’t afford a meal for her grandchildren, school fees, even providing basic needs etc. since she didn’t have any source of income. Florence currently is being supported Berakhah Childcare and currently pursuing a certificate in Nursing and she still has some years to finish. At Berakhah Child Care, she participates in Bible study, singing and dancing. She can now take on prayer requests and pray during fellowship hours. Your sponsorship will help Florence to finish her course and new opportunities will come her way after studying."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabugwere-moreen",
+      "name": "Nabugwere Moreen",
+      "birthday": "March 25, 2003",
+      "age": 22,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NABUGWERE_MOREEN_0.jpeg",
+      "story": [
+        "Moreen is 22 years old and she’s in senior six with a promising performance. Moreen is the ninth child in a family of ten children. While at home, she used to clean the house, wash utensils, and helped in cooking as her mother sells in a kiosk to meet the family needs. Moreen’s mother struggles on her own to raise ten children, the family status was greatly affected when Moreen’s father committed suicide yet he was the sole provider. Moreen is hard working but sometimes she is challenged by her health since she has sickle cells. Despite the challenges, Moreen would like to become a nurse, during her free time, she enjoys playing netball with the friends. At Berakhah childcare, she participates in singing and dancing. Moreen socializes with others freely because of the family bond and love. Your sponsorship will help Moreen to face the world with confidence."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabukisa-doreen-vivian",
+      "name": "Nabukisa Doreen Vivian",
+      "birthday": "November 28, 2013",
+      "age": 12,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABUKISA-DOREEN-scaled-1.jpg",
+      "story": [
+        "Doreen is a bright 12 year old in primary Four who lives with her parents and a large extended family of ten members. She was born healthy, but at the age of eight, she began to experience problems with her sight and hearing. Sadly, her parents have not been able to afford the medical care she needs. Both parents are peasant farmers who struggle to provide for the family’s many needs. To supplement their small income, Doreen’s father takes on digging work in the community, and sometimes the children help by selling vegetables to earn a little for school requirements. Doreen is a cheerful girl who loves dancing and telling stories. She dreams of becoming a nurse or perhaps a dancer one day so she can help others and make her family proud."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabukonde-flavia",
+      "name": "Nabukonde Flavia",
+      "birthday": "March 17, 2015",
+      "age": 10,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABUKONDE-FLAVIA-scaled-1.jpg",
+      "story": [
+        "Flavia is 10 years old in primary four, she lives with her peasant farmer parents. Despite their hard work, her family struggles financially to meet basic needs and pay school fees, Flavia would like to become a teacher or a chef. Her parents are both peasant farmers who depend on the small harvest that they usually have since they have a small portion of land where they farm from. The income earned usually is not enough to sustain the whole family. Her mother sometimes hawks vegetables around the community to be able to get some basic needs. Flavia at home she helps with domestic chores and she loves playing netball with her friends during her free time. She loves making crafts and her best dish is Irish potatoes, rice and chicken."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabukonde-jenifer",
+      "name": "Nabukonde Jenifer",
+      "birthday": "October 26, 2003",
+      "age": 22,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "MUYEKO-JENIPHER-1-scaled-1.jpg",
+      "story": [
+        "Jenifer is 22 years old and is looking forward to joining a nursing college to achieve her dream of becoming a nurse. She is the second born of nine , Jenifer was raised by struggling parents who are peasant farmers and to supplement on their income they would do make bricks to be able to provide for their children which was never easy for them. Growing up in a community where many girls are married off young to ease financial burdens in a home, Jenifer had to fight hard to stay in school to fight for her future, from an early age, she took on many responsibilities at home like digging, cooking, washing dishes, collecting firewood etc. Jenifer would like to be a nurse and with your support she will make it and she will be able to support her siblings and parents."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabukwasi-betty",
+      "name": "Nabukwasi Betty",
+      "birthday": "February 23, 2006",
+      "age": 19,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABUKWASI-BETTY-scaled-1.jpg",
+      "story": [
+        "Betty is 19 years old lives with her parents and seven siblings. Her parents are peasant farmers who work very hard to provide for the family despite many challenges. Her father is physically disabled, yet he remains the main provider for the family, while her mother takes on small manual jobs to support them. Betty has a hearing problem and also struggles with a humpback, which sometimes makes it difficult for her to socialize freely with others. She dreams of becoming a teacher and inspire other children with disabilities. In her free time, Betty enjoys doing home chores such as cooking, cleaning, and fetching water. She is a hardworking and respectful girl, your support will help Betty stay in school and achieve her dream of becoming a teacher."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabukwasi-gift",
+      "name": "Nabukwasi Gift",
+      "birthday": "October 28, 2019",
+      "age": 6,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABUKWASI-GIFT-scaled-1.jpg",
+      "story": [
+        "Gift lives with her elderly grandmother following the death of her mother. Her father abandoned the family, leaving all responsibility to the grandmother, who is a peasant farmer depending on small garden sales to care for several grandchildren. Gift is a bright and joyful child who loves going to school and her happiest days are school days. Unfortunately, she is often sent home for unpaid school fees, as her grandmother struggles to meet all the costs. Gift dreams of becoming a teacher so she can educate children from poor families in her community. With support from a sponsor, she can stay in school and move closer to making her dream come true."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabukwasi-joan",
+      "name": "Nabukwasi Joan",
+      "birthday": "March 3, 2015",
+      "age": 10,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABUKWASI-JOAN-2-2-scaled-1.jpg",
+      "story": [
+        "Joan is 10 years old in Primary Three. She lives with her parents, who are peasant farmers and often engage in casual labor to sustain their family. Since childhood, Joan has struggled with a hearing problem that remains untreated due to financial struggles, which has affected her academic progress. Joan is determined to succeed and she would like to become a doctor,  Sponsoring Joan would give her the opportunity to access proper education and medical care, bringing her closer to realizing her dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabukwasi-mary",
+      "name": "Nabukwasi Mary",
+      "birthday": "October 29, 2018",
+      "age": 7,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABUKWASI-PRISILLA-NANDUNGA-scaled-1.jpg",
+      "story": [
+        "Mary is 7 years old and she lives with her aunt alongside her 5 siblings. Her parents separated and her aunt, a peasant farmer decided to take them in. With the little income she gets from selling her crops, she struggles to provide for their basic needs and education. Mary would like to become a fashion designer and a model when she grows up, Mary performs so well in class and she loves going to school. With the right support, she can overcome these challenges and turn her aspirations into reality."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabukwasi-patience",
+      "name": "Nabukwasi Patience",
+      "birthday": "April 25, 2011",
+      "age": 14,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NABUKWASI-PATIENCE-scaled-1.jpg",
+      "story": [
+        "Patience is 14 years old girl in Primary Seven, she stays at Berakhah Child Care . She came to Berakhah after her parents separated. When her mother remarried, Patience’s stepfather refused to care for her and mistreated her until the community intervened and brought her to Berakhah. Since then, Patience has found safety, love, and stability. She attends school regularly, receives proper meals and medical care. Her favorite subjects are Mathematics and English, and she dreams of becoming an accountant. Patience is hardworking, focused, and determined to succeed if given the support she needs to continue her education and build a better future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabukwasi-priscilla",
+      "name": "Nabukwasi Priscilla",
+      "birthday": "January 22, 2014",
+      "age": 12,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABUKWASI-PRECILLA-scaled-1.jpg",
+      "story": [
+        "Priscilla is 11 years old. She lives with a good Samaritan from the community who took her in after her parents abandoned her at age two. The good Samaritan is a peasant farmer with five other children. She  has been very supportive despite financial challenges, including losing her job, which once caused Priscilla to stop school. Priscilla loves attending school and helping with chores like cooking, digging, and cleaning, she dreams of becoming a doctor. Sponsorship will help her continue her education and achieve her dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabukwasi-vanesa",
+      "name": "Nabukwasi Vanesa",
+      "birthday": "February 2, 2016",
+      "age": 10,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABUKWASI-VANISHA-scaled-1.jpg",
+      "story": [
+        "Vanesa is 9 years old girl in primary Three, she lives with both her parents. Her father sells water and firewood in the community, while her mother works in the garden. Their small income is not enough to consistently pay for Vanesa’s school fees, often causing delays in her tuition. Vanesa is a hardworking and talented student who excels in class, her best subject is English, and her best sport is net ball. She loves singing, dancing, and playing with her friends. Her favorite meal is rice and chicken, and her best days are her school days. Vanesa dreams of becoming a nurse in the future so she can help others in her community. With sponsorship support, she will have the opportunity to stay in school, focus on her studies, and pursue her dream of becoming a caring and skilled professional."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabulobi-caroline",
+      "name": "Nabulobi Caroline",
+      "birthday": "September 3, 2025",
+      "age": 0,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NABULOBI-CARO.jpg",
+      "story": [
+        "Caroline is 11 years old and she stays at Berakhah childcare. her parents separated when she was one year old. Her father remarried after the separation. And her mother also got married in another family but she went along with her two children. Caroline is the second born of the three children, at home she used to help clean around the home, fetch water, wash utensils and dig. Her mother is a peasant farmer who works hard to meet the needs of her children but sometimes fails. Caroline was identified from the community and Berakhah took her in. She is now happy with her new found family where her needs are met and she participates in dancing and singing in the choir, she is currently in primary six and your sponsorship will help her achieve her dream of becoming a nurse. Thank you! God bless you!"
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabulumbi-jessica",
+      "name": "Nabulumbi Jessica",
+      "birthday": "July 12, 2007",
+      "age": 18,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NABULUMBI-JESCA.jpg",
+      "story": [
+        "Jessica is 18 years old and she’s in Senior Two. She previously lived with her parents, who rely on subsistence farming, growing crops such as cassava, beans, and maize to support their large family of nine children. Being the third-born, Jessica often faced difficulties attending school because her parents could not afford school fees regularly. Many times, she stayed home as a school fees defaulter. With no stable source of income, her family also struggles to meet other basic needs, especially when harvests are poor. Despite these challenges, Jessica is a bright and hardworking student who dreams of becoming a doctor one day so she can help her family and ensure her siblings also get an education. At home, Jessica used to help with household chores like fetching water, cleaning, and washing dishes. She now lives at Berakhah Child Care, where she has found peace, love, and support that give her hope for a better future. Your sponsorship can make a lasting difference in Jessica’s life by helping her continue her education and achieve her dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabumbo-rebecca",
+      "name": "Nabumbo Rebecca",
+      "birthday": "March 21, 2014",
+      "age": 11,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABUMBO-REBECCA-scaled-1.jpg",
+      "story": [
+        "Rebecca is 11 years old and she’s in Primary four living with her peasant farmer parents in a large family of 10. Although her father supplements their income with a motorcycle riding business, the family’s earnings are insufficient to cover overwhelming bills. Consequently, financial constraints often result in children being sent home due to unpaid school fees, putting Rebecca’s academic journey and her dream of becoming a teacher at stake."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabusagu-samuel",
+      "name": "Nabusagu Samuel",
+      "birthday": "June 16, 2002",
+      "age": 23,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NABUSAGU_SAMUEL_0.jpeg",
+      "story": [
+        "Samuel is 23 years old and he’s in senior one. He was raised by his father and stepmother after he lost his mother at just three months after birth. Samuel’s father is a peasant farmer and bears the responsibility of caring for eleven children from different mothers which made it difficult for him to sent all of them to school and this caused delays in Samuel’s journey of education. Samuel would like to become an electronic engineer in future to better his life. While at home Samuel could cook, fetch water, dig and clean the compound, and now that he’s staying at Berakhah childcare Samuel has found a sense of belonging and he actively participates in drumming, singing, and dancing, and has shown improvement in his ability to socialize and connect with others. In his free time, he enjoys playing football, practicing the keyboard and he loves photography. Your support towards his education will lead him to better opportunities in future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabusita-agiri",
+      "name": "Nabusita Agiri",
+      "birthday": "April 2, 2007",
+      "age": 18,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NABUSITA-AGRIL-scaled-1.jpg",
+      "story": [
+        "Agiri is 18 years old, she is senior one and stays at Berakhah Child Care. After losing her mother at the age of 10 with no one willing to care for her, and a father who had multiple families and neglected her, the community brought her to Berakhah, where she has lived ever since. She is a hardworking and caring girl who loves looking after the younger children, ensuring they are safe and well cared for. Agiri is dedicated to her studies and dreams of becoming an accountant in the future.Your support can help Agiri continue her education and move closer to achieving her dreams."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nabutono-justine",
+      "name": "Nabutono Justine",
+      "birthday": "May 2, 2011",
+      "age": 14,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABUTONO-JUSTINE-scaled-1.jpg",
+      "story": [
+        "Justine is14 years old and she’s staying at Berakhah Child Care. She was brought to the home after it became unsafe for her to remain with her relatives. Her father passed away when she was seven, and her mother abandoned her at her grandmother’s house. Due to her grandmother’s old age, Justine was later taken in by her aunt, who unfortunately struggled with alcoholism and was often abusive. To ensure her safety, Berakhah Child Care intervened and provided her with a secure and loving environment. Justine is now studying, eating well, and receiving proper care. With the right sponsorship support, she will be able to complete her education and continue to thrive in a safe and nurturing home."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nadule-jonan",
+      "name": "Nadule Jonan",
+      "birthday": "June 30, 2012",
+      "age": 13,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NADULE-JONAN-scaled-1.jpg",
+      "story": [
+        "Jonan is 13 years old, is the second of five children in his family and he’s in Primary six with a strong determination to become a doctor in the future. He lives with his parents, who are peasant farmers struggling with limited income to support the family’s needs. Due to these financial challenges, Jonan has difficulty accessing proper treatment for his eye condition, which often causes him pain and affects his daily activities, including his education. Despite these obstacles, Jonan remains focused on his aspirations of becoming medical doctor. With education support, Jonan’s eyes will be worked upon and he’ll be able to attend school with ease."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nadunga-loyce",
+      "name": "Nadunga Loyce",
+      "birthday": "June 20, 2004",
+      "age": 21,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NAFUNA-ALICE-scaled-1.jpg",
+      "story": [
+        "Loyce is 21 years old and she is in senior 4 and used to live with the great grand mother. After Loyce`s parents separated, her mother left them behind and went to seek for greener pastures in town to help raise her children. Before long, she fell ill and was brought back home where she died leaving the old woman with three grandchildren, two boys and one girl. Loyce`s father rarely supported the family as he remarried shortly after the separation and her great grandmother only digs to attain something for the family. At home; Loyce would dig, collect water, wash utensils and also cook and most of the days she would miss going to school as the grand mother could not raise her school fees until Berakhah intervened and decided to take her in and be part of Berakhah family at 12 years. Today Loyce hopes to be a teacher after her studies and at Berakhah childcare, she participates in dancing and singing. She has learnt how to pray and trust God to meet her needs. She has hope that her dream will be achieved. She has learnt how to associate with friends which was very difficult in the beginning . Your sponsorship will help Loyce to have a brighter future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nadunga-priscilla",
+      "name": "Nadunga Priscilla",
+      "birthday": "September 13, 2018",
+      "age": 7,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABUKWASI-PRISILLA-NANDUNGA-scaled-1-683x1024.jpg",
+      "story": [
+        "Priscilla is 7 years old and she is in Primary One. She lives with her parents, who are peasant farmers. The family depends on the small income they earn from selling their limited harvests, which makes it difficult to meet basic needs and pay school fees. Despite these challenges, Priscilla excels academically and looks forward to school every day because she dreams of becoming an agriculturists. Her family is also facing severe housing difficulties due to their large size and limited farming resources, making it hard for them to build a decent home. With support, Priscilla can continue to thrive in her education while her family works toward improved living conditions and a more stable future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nafuna-immaculate-birungi",
+      "name": "Nafuna Immaculate Birungi",
+      "birthday": "September 9, 2011",
+      "age": 14,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAFUNA-IMMACULATE-scaled-1.jpg",
+      "story": [
+        "Immaculate is14 years old, the youngest of six children, currently living at Berakhah Childcare. Before coming to Berakhah, she lived with her father after her parents separated due to her mother’s illness. Although her mother loved her deeply, she was unable to provide the care Immaculate needed, and her father’s home environment was not safe. Because Immaculate enjoyed attending the children’s church at Berakhah, she was welcomed into the center to ensure she could grow up in a safe and nurturing space.Immaculate is passionate about learning and dreams of becoming a lawyer one day. Her favorite color is green, and she loves playing netball with her friends. At Berakhah, she enjoys cooking, cleaning, and actively participating in church activities.Your support toward Immaculate’s education will help her continue pursuing her dreams."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nafuna-joan",
+      "name": "Nafuna Joan",
+      "birthday": "August 22, 2014",
+      "age": 11,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAFUNA-JOAN-scaled-1.jpg",
+      "story": [
+        "Joan is 11 years old in primary four and lives with both her parents in a small rented house as they work tirelessly to make ends meet. With a family of seven depending on limited farming income, covering basic needs and school fees remains a constant challenge. As a result, Joan and her siblings are often sent home due to unpaid dues, disrupting their education. Despite these hardships, Joan is committed to her dream of becoming a nurse, aspiring to support both her family and her community. With the right support, she can continue her studies and work toward her bright future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nafuna-sarah-charity",
+      "name": "Nafuna Sarah Charity",
+      "birthday": "August 16, 2017",
+      "age": 8,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAFUNA-SARAH-scaled-1.jpg",
+      "story": [
+        "Sarah is 9 years old and she is in primary three, Sarah is the third of the four children. Her parents are peasant farmers and struggle to make ends meet. Sarah’s education is often interrupted by unpaid school dues a challenge that jeopardizes her dream of becoming a teacher to help her family and community. At home Sarah does some house chores like washing utensils, digging, cleaning the compound etc. In her free time Sarah loves to sing, her best dish is rice and chicken. Your sponsorship will keep Sarah in school and she will study to excel"
+      ],
+      "dream": null
+    },
+    {
+      "id": "nagudi-aminah-hafuwa",
+      "name": "Nagudi Aminah Hafuwa",
+      "birthday": "February 7, 2012",
+      "age": 14,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAGUDI-AMINA-1-scaled-1.jpg",
+      "story": [
+        "Aminah is 13 years old in primary four. After her parents separated and disappeared from her life, she has been living with her aunt who is a peasant farmer with limited income to support the family if 9 children. Aminah relies solely on her aunt and she loves to do house chores in the home, she’s a social girl and she loves going to school though she has always been a school fees defaulter which has affected her academics. Aminah would like to be a doctor or a nurse to help her community, but she can only realize this when you support her."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nagudi-azida-angela",
+      "name": "Nagudi Azida Angela",
+      "birthday": "August 5, 2011",
+      "age": 14,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAGUDI-ANGELLA-scaled-1.jpg",
+      "story": [
+        "Azida is 14 years old and she lives with her single mother and other 8 siblings. Azida lives with her mother and the step father, Her mother is a house wife while her step father is  casual laborer at the construction sites, the income earned is usually not enough to take care of 8 children. Being the first born Azida runs almost all the house chores and also helping her mother in the garden. Azida is in primary five and she would like to become a fashion designer to support her mother and her siblings, she likes singing and dancing and her best subject is science, with the right support Azida will be able to complete her studies for a better future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nagudi-jane",
+      "name": "Nagudi Jane",
+      "birthday": "March 6, 2004",
+      "age": 21,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NAGUDI-JOY-scaled-1.jpg",
+      "story": [
+        "Jane is 21 years old and she is currently in her senior 4. Sarah stays at Berakhah childcare after life became so unbearable at home, she used to stay with her single mother with her 6 siblings. Her father died and there was no one else to help the family, her mother is a casual labourer and that’s how she could raise money to take care of the family. Jane helped her mother to do house work like cooking, chopping firewood, fetching water and also digging. In a family of five, some of Jane’s siblings had to drop out of school because they had nobody to support their education. Like many children, During her free time she likes to read novels, and watching soccer with friends. Now at Berakhah childcare, Jane is thriving and participates in dancing and singing. She says she found the love of Christ and she is full of life, the bond with others has grown and she would like to become a doctor so she can support her mother and the community where she comes from. Your support towards education will help her realize her dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nagudi-jesca-patience",
+      "name": "Nagudi Jesca Patience",
+      "birthday": "May 16, 2010",
+      "age": 15,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAGUDI-JESSICA-PATIENCE-scaled-1.jpg",
+      "story": [
+        "Jesca lives with her father after her mother left when she was just one year old, and her whereabouts remain unknown. Her father is a small scale farmer who struggles to provide for their basic needs, and even a daily meal can be hard to afford. Despite these challenges, Jesca is determined to stay in school and dreams of becoming a teacher one day. She needs support with school fees to help her achieve this dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nagudi-lorena",
+      "name": "Nagudi Lorena",
+      "birthday": "January 5, 2018",
+      "age": 8,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAGUDI-ROLINA-scaled-1.jpg",
+      "story": [
+        "Lorena is a 7 years old and lives with her parents, her mother sells vegetables in the market, while her father earns a living by selling charcoal. She is the sixth born in a family of eight children, Lorena performs well in class and is known for being organized and disciplined. She loves mathematics and science, and enjoys playing with her friends both at school and at home. Although her parents often struggle to provide school fees and other needs sometimes causing her to miss school, Lorena always works hard to catch up with her classmates. She dreams of becoming a nurse, At home, Lorena helps with chores such as fetching water, cleaning the compound, and washing utensils. Her favorite meal is beans and rice. Supporting Lorena through education will be an opportunity for her to stay in school and grow into a responsible citizen."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nagudi-mariam",
+      "name": "Nagudi Mariam",
+      "birthday": "May 15, 2020",
+      "age": 5,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAGUDI-MELISA-scaled-1.jpg",
+      "story": [
+        "Mariam is 5 years old and she is in Pre Primary. She lives with her hardworking parents, who are peasant farmers striving to provide for their family’s basic needs and education despite limited resources. Mariam has been battling a painful ear condition since the age of two, and her parents often struggle to afford proper medical care, school fees, and other necessities for her and her siblings. Despite these challenges, Mariam remains hopeful and determined. She dreams of becoming a medical doctor and, with the right support, has the potential to thrive and build a bright future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nagudi-miracle-mary",
+      "name": "Nagudi Miracle Mary",
+      "birthday": "July 7, 2018",
+      "age": 7,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAGUDI-MIRACLE-MARY-scaled-1.jpg",
+      "story": [
+        "Miracle is 7 years old who loves music and dancing. She is the last born in a family of six children. Her mother hawks second hand clothes within the community, while her father roasts chicken by the roadside to earn a living. With six school going children, it is very difficult for her parents to raise enough income to meet all their educational needs. Because of her talent, Miracle currently stays at Berakhah Childcare, where she is an active member of the choir serving God. She performs excellently in class and dreams of becoming a nurse in the future. Her favorite color is purple, and she loves eating rice and chicken. Your kind support will help Miracle continue her education, nurture her talents, and move closer to achieving her dream of becoming a nurse."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nagudi-sarah-keisha",
+      "name": "Nagudi Sarah Keisha",
+      "birthday": "January 15, 2016",
+      "age": 10,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAGUDI-SARAH-KEISHA-scaled-1.jpg",
+      "story": [
+        "Sarah is 9 years old, she is in Primary three. She was abandoned by her parents when she was only two years old and has since been cared for by her grandmother, aged and unemployed as she depends on her garden produce. Her grandmother struggles to provide food, clothing, and school fees for Sarah and the other children at home. Sarah would like to become a teacher in future and that’s her dream.  At home, Sarah is always helps with chores such as cooking, fetching water, digging, and collecting firewood. Her best dish is cassava and meat, Sarah loves playing dodge ball with her friends both at home and at school. With your support, Sarah will be able to continue her studies and move closer to achieving her dream of becoming a teacher."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nakayenze-gift",
+      "name": "Nakayenze Gift",
+      "birthday": "February 20, 2012",
+      "age": 13,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAKAYENZE-GIFT-scaled-1.jpg",
+      "story": [
+        "Gift is 13 years old in Primary 5 and she lives with her biological father and stepmother. Her biological mother abandoned her at the age of 5 and she was left alone with her father who is a peasant farmer, he remarried and the whole family depends on what they grow which which brings in limited incomes. The step mother has no job but she tries to hustle around the village to do some work like washing clothes for people, gardening for others etc. to be able to get something to eat at home. This has made it difficult for Gift to attend school daily because they keep on sending her back home for school fees. Gift would like to be a teacher when she grows up and she loves eating Rice and chicken, her favorite subject is science and social studies . Gift loves to play net ball and making crafts during her free time. Your generous support will keep Gift in school and she will become a teacher as it is her dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nakibi-timothy",
+      "name": "Nakibi Timothy",
+      "birthday": "March 11, 2011",
+      "age": 14,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAKIBI-TIMOTHY-scaled-1.jpg",
+      "story": [
+        "Timothy is 14 years old and he is Primary seven, he lives with both of his parents in a family of eight. His parents are peasant farmers and also work as casual laborers to supplement their income. Despite their hard work, financial constraints make it difficult for the family to cover basic needs, pay school fees, and afford medical expenses for Timothy’s eye complications. These challenges often disrupt his school performance and his ability to participate in daily activities at home. Timothy would like to become a banker after his studies or a mechanic, he loves eating chicken and rice. Your sponsorship will not only cater for his education alone but also his health condition will be catered for."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nalunga-fatuma",
+      "name": "Nalunga Fatuma",
+      "birthday": "March 30, 2012",
+      "age": 13,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NALUNGA-FATUMA-2-scaled-1.jpg",
+      "story": [
+        "Fatuma is 13 years old and she is in Primary Five who lives with her mother after their father abandoned the family and disappeared to an unknown location. Her mother works hard to provide for the family through small scale farming, digging for people, and hawking vegetables to earn a living. Despite her efforts, meeting the family’s basic needs and paying school fees remains a daily struggle. At times, Fatuma joins her mother in the gardens to help earn some money. She is a dedicated girl who loves going to school and dreams of becoming a nurse in the future. At home, she enjoys doing household chores such as cooking, washing, and fetching firewood. Your support towards Fatuma’s education will help her stay in school and move closer to achieving her dream of becoming a nurse."
+      ],
+      "dream": null
+    },
+    {
+      "id": "namale-elizabeth",
+      "name": "Namale Elizabeth",
+      "birthday": "June 20, 2019",
+      "age": 6,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NEGESA-ELIZABETH-scaled-1.jpg",
+      "story": [
+        "Elizabeth is 6 years old and she’s in primary one, she lives with both her parents, her father is a builder and her mother does farming at a small scale since they own a small piece of land where they can grow food for home consumption. Elizabeth is a jolly girl who loves music and dancing, while at home she loves washing utensils, sweeping the compound, fetching water and taking care of her young ones. Elizabeth and her other 8 siblings all depend on income earned by her father which is usually not enough for the family. Elizabeth would like to become a teacher as well as a musician. Supporting Elizabeth through Berakhah childcare will help her realize her dream of becoming a teacher."
+      ],
+      "dream": null
+    },
+    {
+      "id": "namalike-gift",
+      "name": "Namalike Gift",
+      "birthday": "January 1, 2014",
+      "age": 12,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMALIKE-GIFT-1-scaled-1.jpg",
+      "story": [
+        "Gift is 11 years old girl in Primary Four, She lives with her parents, who are peasant farmers working hard to provide for their family. Despite financial challenges, Gift still dreams of becoming a nurse. However, meeting school fees and basic needs has been difficult. Gift loves singing and dancing and at home she loves doing house chores especially fetching water, cleaning compound, washing dishes. Her best meal is rice and chicken and her best subject is English. A sponsorship would help Gift continue her education, access basic needs, and move closer to achieving her dream of becoming a nurse."
+      ],
+      "dream": null
+    },
+    {
+      "id": "namataka-bridget",
+      "name": "Namataka Bridget",
+      "birthday": "June 11, 2017",
+      "age": 8,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMATAKA-BRIGET-2-2-scaled-1.jpg",
+      "story": [
+        "Bridget, an 8-year-old fourth-grade pupil, lives with her dedicated peasant farmer parents who strive to meet the family’s basic needs and education expenses. Their limited income from small-scale farming often forces her and her siblings out of school for unpaid fees. Yet, despite these disruptions to her academic progress, Bridget stays determined to pursue her dream of becoming a journalist. Her health remains robust, ensuring she faces these challenges with resilience."
+      ],
+      "dream": null
+    },
+    {
+      "id": "namataka-desire-felina",
+      "name": "Namataka Desire Felina",
+      "birthday": "March 23, 2015",
+      "age": 10,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMATAKA-DESIRE-scaled-1.jpg",
+      "story": [
+        "Desire is a 10-year-old girl in Primary Three who lives with her grandmother and nine siblings. Her grandmother, an elderly peasant farmer, works tirelessly to provide for the family, but her small income from farming is not enough to meet their basic needs or pay school fees for all the children.  Desire’s father is alive but offers no support, and her mother has never returned since she left. She loves singing, dancing, and her favorite subject is Mathematics. Her best meal is matooke with meat. Although she is currently living with a hernia that requires medical attention, her family cannot afford the necessary treatment. Desire dreams of becoming a teacher so she can support her grandmother and help other children in her community receive an education. With sponsorship support, Desire will be able to stay in school, receive the medical care she needs, and take confident steps toward a brighter and healthier future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "namataka-edith",
+      "name": "Namataka Edith",
+      "birthday": "May 5, 2010",
+      "age": 15,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NAMATAKA-PRECIOUS-scaled-1.jpg",
+      "story": [
+        "Edith is 13 years old in primary four. She lost her father before making a year and the hope for survival was her mother who also left her with the grandmother, the grand mother too was unable to care for her because she was very old, catering for a baby would be so challenging to her, Edith was then taken by a cousin whose assistance couldn’t be guaranteed because she was married with a big family too. Edith was finally taken up by Berakhah childcare because the cousin was overwhelmed and the husband had rejected Edith, since then Edith joined the Berakhah family where she found love and care, she loves singing, and dancing and in future she would like to become a teacher. Your support towards Edith will help her realize her dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "namataka-sarah",
+      "name": "Namataka Sarah",
+      "birthday": "May 10, 2012",
+      "age": 13,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NAMATAKA-OLIVA-scaled-1.jpg",
+      "story": [
+        "My name is Sarah, and I am 13 years old. I come from a family of eight children—five boys and three girls. My life was full of struggles with no hope, but from that moment l joined Berakhah, everything began to turn around. At Berakhah, They take care of all my needs—providing me with food, clothing, education, and even the encouragement to dream again. I am determined to become a doctor. I want to use my life to help others and to give back to the community. Your sponsorship can make all the difference in my life. With your support, I can continue my journey to achieve my dreams and one day make an impact in the world."
+      ],
+      "dream": null
+    },
+    {
+      "id": "namatome-kellen",
+      "name": "Namatome Kellen",
+      "birthday": "December 20, 2020",
+      "age": 5,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMATOME-KELEN-scaled-1.jpg",
+      "story": [
+        "Kellen is 5 years old and she is in Pre-Primary. She lives with her parents, who are peasant farmers striving to provide for their family of seven. Although she has generally enjoyed good health, meeting basic needs such as food, clothing, and school fees remains a daily challenge. Despite these hardships, Kellen’s love to attend school remains and she dreams of becoming a teacher. She dreams of becoming a teacher in the future. At home and school, she enjoys spending time with other children and loves playing dodge ball and skipping rope. Her favorite food is Matoke and beans and her favorite color is pink. Kellen also helps her family by fetching water, cleaning the compound, and working in the garden. With your support, Kellen can continue her education and work toward a bright and successful future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambafu-angella",
+      "name": "Nambafu Angella",
+      "birthday": "December 10, 2013",
+      "age": 12,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMBAFU-ANGELLA-scaled-1.jpg",
+      "story": [
+        "Angela is 12 years old and she is in Primary Five. She lives with her parents, who are peasant farmers. When she was 8 years old, Angela was severely stung by bees on her way home from school. She sustained serious injuries and has since suffered from frequent headaches. Due to financial challenges, her parents have struggled to afford both her medical treatment and school fees, causing her to miss classes at times. Angela’s performance in school remains promising, and her teachers are proud of her efforts. Angela dreams of becoming a nurse so she can help others in need. She enjoys singing, dancing, and cooking, her favorite dish is beef and rice, and her favorite color is green. Your support will help Angela receive the medical care she needs and continue her education without interruption."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambafu-jane",
+      "name": "Nambafu Jane",
+      "birthday": "January 8, 2012",
+      "age": 14,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NAMBAFU-JANE-scaled-1.jpg",
+      "story": [
+        "Jane is a bright 13 years old in Primary Six and she dreams of becoming a doctor one day. She joined Berakhah Child Care when she was just five years old. Her father passed away when she was only eight months old, and after her mother remarried, life became very difficult. The new marriage was abusive, and her mother unable to care for Jane , left her with an uncle who later brought her to Berakhah for safety and support. At Berakhah, Jane has found a loving home, education, and the care every child deserves. She is thriving in school and continues to work hard toward her dream. Her future depends on the continued support of kind sponsors and well-wishers who make it possible for her to grow, learn, and hope again."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambasi-mischael",
+      "name": "Nambasi Mischael",
+      "birthday": "April 6, 2011",
+      "age": 14,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NAMBASI-MICHEAL-scaled-1.jpg",
+      "story": [
+        "Michael is 14 years old and he’s in primary five. He stays at Berakhah Child Care after his home environment became a threat. After the death of his mother Michael’s father became a drunkard and started becoming to harsh towards the children. Michael’s siblings were taken by some relatives leaving him behind with the drunkard father. Berakhah child care got him from his father and took him in, he’s now under the care of Berakhah Child care. He would like to become a pilot in future after his studies, this can only happen if Michael is supported."
+      ],
+      "dream": null
+    },
+    {
+      "id": "namboozo-sarah",
+      "name": "Namboozo Sarah",
+      "birthday": "September 23, 2015",
+      "age": 10,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NAMBOZO-SARAH-scaled-1.jpg",
+      "story": [
+        "Sarah is a cheerful 10-year-old in Primary Four who lives with her grandmother. Her parents, who are peasant farmers in Northern Uganda, struggle to care for their large family of twelve children. Because their home could no longer accommodate everyone, Sarah was brought to stay with her elderly grandmother, who depends on a small garden for food and has no steady source of income.Despite these hardships, Sarah loves going to school and dreams of becoming a nurse or a teacher one day so she can help others. However, her education is often interrupted when she is sent home for school fees. At home, Sarah helps her grandmother with chores like sweeping the compound and fetching water. She enjoys singing, dancing, and her favorite meal is rice and fish.Sarah is a bright and determined girl whose future depends on the support and kindness of well wishers to help her continue her education and achieve her dreams."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambozo-aggy",
+      "name": "Nambozo Aggy",
+      "birthday": "April 10, 2013",
+      "age": 12,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMBOZO-AGNESS-scaled-1.jpg",
+      "story": [
+        "Aggy is 12 years old in Primary Four. She comes from a large polygamous family, living with her father, mother, two stepmothers, and seven siblings. The family survives on a small piece of land where they grow food mainly for home consumption. Aggy’s mother also hawks sweet bananas to provide for her four children, as the father offers little support.\\r\\nAggy is 12 years old in Primary Four. She comes from a large polygamous family, living with her father, mother, two stepmothers, and seven siblings. The family survives on a small piece of land where they grow food mainly for home consumption. Aggy’s mother also hawks sweet bananas to provide for her four children, as the father offers little support."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambozo-christine",
+      "name": "Nambozo Christine",
+      "birthday": "January 1, 2005",
+      "age": 21,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "1000090918-scaled-1.jpg",
+      "story": [
+        "Christine is 20 years old in senior 4 class, she used to stay with both her parents and 5 siblings until a motor cycle accident claimed the life of their father leaving them as orphans with a single mother who was unemployed. She tried to support the family but due to limited income, she couldn’t manage supporting all the children single handed, she was therefore forced to pull some children out of school to go and start working. At 9 years Christine would carry vegetables to sell around the community to support her family, wash utensils, cook, sweep around the house and dig with her siblings to help her mother cater for the family needs yet she had to attend school as well. Christine was identified and brought to Berakhah Child Care because of the hardships at home. Christine’s dream is to become a teacher in future, She is certain of tomorrow since her basic needs are met, she’s loved and cared for by Berakhah childcare. Your support towards her education and well being will enable her to have a brighter future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambozo-esther",
+      "name": "Nambozo Esther",
+      "birthday": "August 11, 2012",
+      "age": 13,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NABUBOLO-AIDAH-scaled-1.jpg",
+      "story": [
+        "Esther is 13 years old in primary four, Esther is living with her grandmother after the parents failed to take care of her. Her grandmother is a peasant farmer who has the responsibility of taking care of Esther and 5 other family members, every day Esther helps her grandmother with domestic chores, balancing her responsibilities at home with her education. Esther would like to become a nurse so she can support her grandmother in her old age. In her spare time, she enjoys playing football, which gives her a sense of freedom and joy. Your support towards Esther will change her life as she will be able to realize her dream of becoming a nurse."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambozo-ketty",
+      "name": "Nambozo Ketty",
+      "birthday": "August 7, 2018",
+      "age": 7,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMBOZO-KETTY-scaled-1.jpg",
+      "story": [
+        "Ketty is 7 years old and she lives with her aged aunt and a peasant farmer, Ketty’s aunt takes care of other 6 children in the home, the aunt is diabetic and has got a high blood pressure which keeps on affecting her daily activities. Ketty has got a hearing impairment and asthma which needs better treatment. Ketty has not yet been enrolled in school because in her area of residence there’s no school for children with such a disability and also her aunt doesn’t have money to enroll her in school. Ketty loves playing with other children though she finds it hard to communicate. Supporting Ketty through education will help her learn better communication skills."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambozo-leah",
+      "name": "Nambozo Leah",
+      "birthday": "March 1, 2018",
+      "age": 7,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMBOZO-LEAH-scaled-1.jpg",
+      "story": [
+        "Leah is  7 years old in primary two. She lives with both her parents, who are peasant farmers. Her father also takes on construction work occasionally to supplement their small income. The family’s earnings are often unstable, making it difficult to provide basic needs and pay school fees consistently. Leah would like to become  a nurse or a dentist . She loves eating rice and vegetables and enjoys playing with her friends. Sponsorship will help Leah stay in school and work toward achieving her dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambozo-lydia",
+      "name": "Nambozo Lydia",
+      "birthday": "October 15, 2002",
+      "age": 23,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NAMBOZO_LYDIA_0.jpeg",
+      "story": [
+        "Lydia Nambozo is 23 years old and suffered terrible accident as an infant. One unfortunate day a candle was left burning in the room she was resting in and the room caught fire. By the time Lydia was rescued the fire had severely burned her arm and head. This led to the loss of the left arm and a scar on her forehead. Because of the large size of the family and the special care Lydia requires she has come to live at Berakhah. Lydia just completed her high school education awaiting results to join a tertiary institution. At Berakhah, Lydia is a tremendous help and even though she has had to overcome tremendous challenges she hopes to become a doctor one day. This can be made possible by your generous sponsorship."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambozo-mary",
+      "name": "Nambozo Mary",
+      "birthday": "December 18, 2013",
+      "age": 12,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NAMBOZO-MERY-scaled-1.jpg",
+      "story": [
+        "Mary is 12 years old and she’s in primary 4 staying at Berakhah Child Care, she was living with her parents until they separated that everything in her life changed. Mary’s mother remarried, Mary was in an environment which was not good for a child because even her mother at times would become drunk and forgets to take good care of the child. Berakhah staff requested her mother to entrust the child with the ministry something which she agreed since she couldn’t even afford taking her to school. Mary found herself at Berakhah and she is doing good now because she gets all the care and basic needs of the child and also she attends school regularly, Mary would like to become a fashion designer or a nurse when she grows up."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambozo-miracle",
+      "name": "Nambozo Miracle",
+      "birthday": "February 2, 2017",
+      "age": 9,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMBOZO-MIRACLE-scaled-1.jpg",
+      "story": [
+        "Miracle is 8 years old and she is in primary three living with her parents who are peasant farmers and struggle to provide for their family of eight due to the limited sources of income.   Miracle would like to become a teacher, her best color is yellow and her best dish is Matoke and chicken. While at home, Miracle loves cooking, washing utensils, digging and sweeping the compound. Miracle attends Berakhah children’s church and she is very active in church activities.  With the right support, she can continue her studies uninterrupted and work toward achieving her aspirations."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambozo-trinity",
+      "name": "Nambozo Trinity",
+      "birthday": "December 23, 2012",
+      "age": 13,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMBOZO-TRINITY-scaled-1.jpg",
+      "story": [
+        "Trinity is 13 years old and she lives with her grandmother after the death of both her parents. The grandmother is a peasant farmer and depends only on the garden produce for sale to get some income. Trinity being the oldest at home she engages in hawking of tomatoes every evening and over the weekend in their village. The grandmother is very old and her health is so worrying especially therefore she cannot do a lot of work. Due to financial challenges, Trinity’s attendance in school is irregular and this affects her performance, she has always been school fees defaulter. To contribute on school fees at school, sometimes her grandmother will take some of the garden produce at school to be converted to fees. Trinity would like to be a teacher when she grows up so she can give support to her grandmother and the young siblings."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambozo-vasha",
+      "name": "Nambozo Vasha",
+      "birthday": "July 1, 2009",
+      "age": 16,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMBOZO-VASHA-scaled-1.jpg",
+      "story": [
+        "Vasha is 14 years old in Primary 5 and she lives with her parents who are peasant farmers. Vasha’s father also runs a small retail shop in the community which helps him to supplement on the income got from garden produce. Vasha’s parents are both victims of HIV/AIDS and this has greatly affected their abilities to work for the family effectively, this has also affected Vasha’s studies as she has to miss school some days due to lack of school fees. Vasha would like to become a teacher in future and her best subject is social studies, she loves singing and dancing and her best sport is netball. Vasha loves eating Matoke and meat and her best color is blue. While at home Vasha helps her parents to do most of the home chores like digging, fetching water attending to the shop and cooking. Your sponsorship will ensure that Vasha is in school and she will be able to achieve her dream of becoming a teacher."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nambuba-phiona",
+      "name": "Nambuba Phiona",
+      "birthday": "May 9, 2006",
+      "age": 19,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NAMBUBA-PHIONA.jpg",
+      "story": [
+        "Phiona is 19 years old and she is in senior three. she lives with her parents who depend on small scale farming to survive. They usually grow beans, cassava, and maize but their income is very limited and often not enough to meet the family’s basic needs. At home, Phiona helps with daily chores such as washing dishes, cleaning the compound, and even digging in the garden to support the family. Despite these responsibilities, she remains committed to her education and performs well in school. In her free time, Phiona enjoys playing netball, skipping rope, and singing with her friends. She dreams of becoming a nurse so she can support her community. Your support towards Phiona’s wellbeing will help her achieve her dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "namono-gladys",
+      "name": "Namono Gladys",
+      "birthday": "March 12, 2020",
+      "age": 5,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMONO-GLADES-scaled-1.jpg",
+      "story": [
+        "Gladys is 5 years old and she is in primary one. She lives with her parents and siblings. Her mother sells sweet bananas by the roadside to earn some income, while her father works on a sugarcane plantation where he earns very little. Unfortunately, their combined income is not enough to meet the family’s needs or keep all the children in school. Gladys loves eating beef and rice and she enjoys playing with her friends. She would like to become a teacher one day, Sponsorship will help Gladys continue with her education and bring her closer to achieving her dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "namono-rhodah-julia",
+      "name": "Namono Rhodah Julia",
+      "birthday": "July 24, 2019",
+      "age": 6,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMONO-CAROLINE-scaled-1.jpg",
+      "story": [
+        "Rhodah is 6 years old and she lives with her father and 5 siblings. Rhoda’s father is motor cycle rider as a source of income, her mother left them behind till to date she has never returned. Her father’s income is very little to sustain the whole family he therefore gets vegetables for Rhodah and her siblings to hawk after school to supplement on what he earns so they can be able to feed and pay school fees. Rhodah is a jolly girl and she loves singing and skipping ropes during her free time, when she grows up Rhoda would like to become a footballer as she enjoys playing football with boys. Your support will enable Rhodah to become successful in life"
+      ],
+      "dream": null
+    },
+    {
+      "id": "namono-suzan",
+      "name": "Namono Suzan",
+      "birthday": "May 21, 2018",
+      "age": 7,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAMONO-SUZAN-scaled-1.jpg",
+      "story": [
+        "Suzan is 7 years old and she stays with her parents. Her parents operate a local brewery to earn a living, her father is aging and yet the children are still young and require much care in provision of school fees and basic needs. Suzan usually helps her parents during the production of the local brew sold by her parents, this kind of business is not good to expose a girl child to it as there so many risks involved, Suzan would like to become a teacher after her studies. This can only be realized if Suzan attends school and leaves her parent’s environment which is a threat to her wellbeing. Your support towards Suzan will enable her to leave the unhealthy environment to a better location and also she will be able to concentrate in school."
+      ],
+      "dream": null
+    },
+    {
+      "id": "namonye-peter",
+      "name": "Namonye Peter",
+      "birthday": "July 15, 2020",
+      "age": 5,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WAMBEDE-PETER-scaled-1.jpg",
+      "story": [
+        "Peter is 5 years old attending kindergarten, he lives with his maternal grandmother. After his father’s early death and his mother’s unexplained absence, his grandmother has taken up the responsibility of caring for him and his siblings. Despite her tireless efforts, the meager income she earns from peasantry farming often marred by unpredictable weather and pest infestations makes it difficult to cover everyday expenses and the school fees required for the children’s education."
+      ],
+      "dream": null
+    },
+    {
+      "id": "namulembwa-bakali",
+      "name": "Namulembwa Bakali",
+      "birthday": "May 9, 2012",
+      "age": 13,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "namulembwa-bakali.jpg",
+      "story": [
+        "Bakali is 13 years old boy and he is the only child of his father. His father is blind and the mother has mental disabilities. This created a wanting situation for his wellbeing so, his aunt took him in although she is challenged given that she is in a polygamous marriage with a limited source of income as she is a peasant farmer. Bakali started staying with his aunt at five years. His life was not so good because of the situation he was in which led him be so quiet and sometimes could harshly react to people.  Berakhah Child Care came to know about him and he was taken in , his life has gradually changed and he co-operates with people. Bakali is in primary four and hopes to become pilot and in his free time, likes playing football. While at home, Bakali used to cut grass for animal, sweep the compound, dig, wash plates and fetch water. Your sponsorship will support Bakali in school and his story will be changed."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nandudu-daphine",
+      "name": "Nandudu Daphine",
+      "birthday": "August 16, 2010",
+      "age": 15,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "GIDUDU-EMMA-scaled-1.jpg",
+      "story": [
+        "Daphine is 15 years old she lives with both her parents who are peasant farmers and earn very little. Daphine has got sickle cells which has disturbed her both her daily life and school life. Her parents cannot afford her treatment as she is not the only one with sickle cell disease at home, her other three siblings are victims as well.  Daphine performs very well in class though her attendance is irregular due to lack of school fees and her health condition. After her studies, Daphine would like to become a hairdresser as she loves styling hair. Your support will not only help Daphine stay in school but also she will be able to receive proper medication."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nandudu-gloria",
+      "name": "Nandudu Gloria",
+      "birthday": "December 25, 2010",
+      "age": 15,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NANDUDU-GLORIA.jpg",
+      "story": [
+        "Gloria is 15 years old and she is in primary six. She is the only child of the mother but the second child of her father. Gloria`s mother died of HIV/AIDS when Gloria was eight years. She currently stays with her father who is also infected with HIV/AIDS. He was a casual laborer but due to continuous illness, he resorted to peasant farming with no defined income to support his daughter sufficiently. During her free time, Gloria likes skipping the rope and playing netball with her friends. She wants to become a nurse. Gloria does all the house hold chores to support the family. Thank you for your consideration to support her."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nandudu-joy",
+      "name": "Nandudu Joy",
+      "birthday": "February 28, 2018",
+      "age": 7,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NANDUDU-JOY-1-scaled-1.jpg",
+      "story": [
+        "Joy is 7 years old and she’s in primary two living with her parents who are struggling to provide for their family’s basic needs and the educational expenses for their children. Joy is the third born in the family of 6 and she performs well in school. Because her parents ’income is very low, they are challenged when it comes to school fees payment, medical and feeding alongside managing other household responsibilities. Joy would like to become a lawyer in future, she loves dancing and singing during her free time, With support Joy can become a better person."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nandudu-joyce",
+      "name": "Nandudu Joyce",
+      "birthday": "October 29, 2016",
+      "age": 9,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NANDUDU-JOYCE-scaled-1.jpg",
+      "story": [
+        "Joyce is 9 years old girl and she is in primary two. Joyce lost both of her parents to HIV/AIDS when she was still an infant, and she too was born with the virus. She now lives under the care of her grandmother who looks after her together with five other children. Her grandmother is a peasant farmer whose small earnings can barely sustain the family’s basic needs. Due to financial hardships, Joyce often struggles to maintain a proper diet and sometimes misses her medication (ARVs) because there is no money for transport to the nearest health center. These health challenges, combined with frequent school absences caused by unpaid school fees, make her situation even more difficult. Nevertheless, Joyce loves going to school and dreams of becoming a nurse.  In her free time, she enjoys playing dodgeball with her friends. With consistent care, education support, and access to medical needs, Joyce can have a brighter and healthier future. Sponsorship would not only keep her in school but also ensure she receives the treatment and nutrition vital for her wellbeing."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nandudu-linah",
+      "name": "Nandudu Linah",
+      "birthday": "August 8, 2015",
+      "age": 10,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NANDUDU-LINA-scaled-1.jpg",
+      "story": [
+        "Linah is 10 years old in primary four and lives lives under the care of her grandmother. When she was just two months old, her mother attempted to throw her in pit latrine at 2months but the community intervened and saved her life. Since then, her grandmother has lovingly raised her despite many challenges. Linah’s father, who used to support them, passed away when she was nine years old, leaving the grandmother as her only guardian. Because of her outstanding talent in music, dance, and drama, Linah now lives at Berakhah Childcare, where she receives care, education, and guidance. She dreams of becoming a doctor,  Linah enjoys participating in athletics at school and takes part in household chores such as cooking, washing utensils, and digging. Her favorite color is pink, and she loves eating Irish potatoes with chicken. Your sponsorship will help Linah to have a brighter future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nandudu-sarah",
+      "name": "Nandudu Sarah",
+      "birthday": "March 6, 2003",
+      "age": 22,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NANDUDU_SARAH_0.jpeg",
+      "story": [
+        "Sarah is 22 years old and she is currently in Senior 5. Sarah lost her father when she was 6 years old. She and other 9 siblings were left under the care of their mother who was a peasant farmer. Taking care of the 10 children was such a heavy burden for her, and since she couldn’t put all of them in school she decided to put some out of school and do farm for people to be able to get something to eat. Life became so difficult for the family that even Sarah who was the youngest couldn’t attend school regularly because of lack of school fees and basic needs. Sarah would dig, cook, wash utensils, fetch water, wash clothes and sometimes do quarrying to help her mother sustain the family. Later on, Sarah joined Berakhah childcare after she was identified from the community. Berakhah has supported Sarah since she was 13 years, she would like to be a teacher after her studies and she loves sports and singing. At Berakhah childcare Sarah gets all her basic needs, she goes to school, receives medical treatment and she’s happy because Berakhah childcare gave her opportunity to enjoy her childhood moments. Your sponsorship will open doors for her to re-write her story."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nangoli-elijah",
+      "name": "Nangoli Elijah",
+      "birthday": "March 3, 2018",
+      "age": 7,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NANGODI-ELIJAH-scaled-1.jpg",
+      "story": [
+        "Elijah is 7 years old and he’s the last born in a family of five. He lost his father at eight months old. Elijah is now in primary one. He stays at Berakhah Child Care after his family abandoned him, his mother went missing till now no one knows about her whereabouts. Elijah would like to be a soldier after his studies, he loves eating rice and beef , his best sport is soccer and riding bicycle. At Berakhah childcare Elijah loves running and washing utensils. Your support towards Elijah through Berakhah will enable him to have a brighter future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nangoye-emma",
+      "name": "Nangoye Emma",
+      "birthday": "February 10, 2014",
+      "age": 11,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAGOTE-EMMA-1-scaled-1.jpg",
+      "story": [
+        "Emma is 11 years old in primary 3 living with his single mother after the death of his father, he’s a self-motivated and ambitious person who dreams of becoming an engineer, his mother is a nursery school teacher and she takes care of 6 children from the salary that she gets at the end of month. To supplement on the income, Emma’s mother sells fruits in the community to be able to feed and to meet other family’s expenses. Emma usually helps his mother to hawk the fruits every evening and over the weekend, he loves playing soccer in his free time and telling stories. With support Emma will be able to complete his education and become an engineer."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nangulu-pamela",
+      "name": "Nangulu Pamela",
+      "birthday": "April 21, 2013",
+      "age": 12,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NANGULU-PAMELLA-scaled-1.jpg",
+      "story": [
+        "Pamela is 12 years old in primary three. Pamela and her other 7 siblings stay with their father following the separation of her parents. Her father works on construction sites to be able to raise some money to take care of the family, while at the site he got an accident which injured his back and because of this he can’t do much to provide for his family. Pamela loves attending school because she would like to be a nurse unfortunately she has always been a fees defaulter which keeps her away from school. Pamela loves singing and dancing and while at home she loves cooking, fetching water and playing with her mates. Your generous contribution towards Pamela’s education will enable her become a nurse in future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "napangi-yeku",
+      "name": "Napangi Yeku",
+      "birthday": "August 16, 2017",
+      "age": 8,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NAPAGI-YEKU-scaled-1.jpg",
+      "story": [
+        "Yeku is 8 years old and he is in Primary Two. He lives with his parents, who are peasant farmers struggling to provide for the family due to their low income. The limited resources often make it difficult to pay school fees, causing Yeku to miss classes at times. His performance is promising and he would like to be a teacher, he enjoys drawing and playing soccer with his friends. Sponsorship will help Yeku stay in school and move closer to achieving his dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "nasike-sarah",
+      "name": "Nasike Sarah",
+      "birthday": "August 14, 2008",
+      "age": 17,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "NASIKE_SARAH_0.jpeg",
+      "story": [
+        "Sarah is 17 years old and in senior two class. Sarah is the fifth of six children. She lost her father at two years old after a long illness and since then she lived with her mother, a peasant farmer, who struggles with poor health and could not fully provide for Sarah’s needs. She frequently fell sick and this could worry Sarah so much who had started taking on the house responsibilities at a young age, Sarah would do all the home chores and also to work for people in the community to be able to get something to eat at home. Thankfully, Sarah was welcomed into Berakhah Child Care, where she now enjoys the love and support of a new family. Surrounded by other children with similar experiences, she has found comfort and strength in her faith. Sarah loves singing and dancing as it brings her joy and helps her forget her worries. With your sponsorship, Sarah will be able to rewrite her story."
       ],
       "dream": null
     },
     {
       "id": "nasiyo-mercy",
       "name": "Nasiyo Mercy",
-      "birthday": "2012",
-      "age": 13,
+      "birthday": "October 10, 2009",
+      "age": 16,
       "gender": "Female",
       "nationality": "Ugandan",
       "location": "Uganda",
-      "image": "nasiyo_mercy.jpg",
+      "image": "NAMBOZO-MERCY-scaled-1.jpg",
       "story": [
-        "Mercy is a bright and joyful 13-year-old who has faced many challenges in her young life. Growing up in poverty, Mercy often went without proper meals and had no access to education. Her family struggled daily just to survive.",
-        "When Berakhah found Mercy, they saw a child full of potential and hope. Now at Berakhah, Mercy attends school regularly, excels in her studies, and dreams of becoming a teacher one day. She loves reading books, playing netball with her friends, and singing in the children's choir.",
-        "Mercy's smile lights up every room she enters, and her determination to learn inspires everyone around her."
+        "Mercy is 16 years old. She comes from a very large family where her elder siblings dropped out of school and got married at a very tender age. She faced rejection at birth because she was born without arms. She was rescued when she was about to be thrown in a pit latrine because of being born different. This was all because children born different in the neighborhood are viewed as a curse so most families with such children keep them away from the public to avoid public shame and insults. Growing up in a humble family with many children was a struggle. Her parents were challenged financially and couldn’t send her to school because it was very expensive to take her to a school that caters for children with special needs. At Berakhah, she found love, acceptance, and hope. All her needs are met and she now feels valued which has gotten her to hope again. She dreams of a better future, one where she can rise above her challenges and make her life meaningful, with your support Mercy can rewrite her story Your sponsorship makes a difference, not just for her, but for many children like her."
       ],
-      "dream": "Teacher"
+      "dream": null
     },
     {
-      "id": "wambede-peter-paul",
-      "name": "Wambede Peter Paul",
-      "birthday": "2011",
+      "id": "negesa-shina-sumaya",
+      "name": "Negesa Shina Sumaya",
+      "birthday": "July 1, 2019",
+      "age": 6,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NEGESA-SHINA-scaled-1.jpg",
+      "story": [
+        "Shina is 6 years old in Primary One. She lives with her grandmother after her parents separated when she was only 3 years old. Her grandmother is a peasant farmer who works very hard, but what she earns from the garden is very little. She struggles to pay school fees and to handle her family basic needs. Shina loves school and performs well in her class. She dreams of becoming a teacher in the future. Shina loves playing with friends and she loves helping with home chores at home like washing utensils, cleaning the compound. Her best dish is rice and beef and her best color is green. Your support will help Shina stay healthy and continue with her education."
+      ],
+      "dream": null
+    },
+    {
+      "id": "neumbe-favour",
+      "name": "Neumbe Favour",
+      "birthday": "December 9, 2013",
+      "age": 12,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "NEAUMBE-FAVOUR-1-scaled-1.jpg",
+      "story": [
+        "Favor is12 years old in primary five. She lives with both her parents who struggle to make ends meet because of the little income earned. The limited income got from their work often leave them unable to fully provide for the family’s basic needs and the educational expenses for their children. Favor has hernia which is an inconvenience to her daily activities. Favor’s performance is good and she would like to become a medical doctor after her studies. Your support towards Favor’s wellbeing will help her get an operation and also finish her studies ."
+      ],
+      "dream": null
+    },
+    {
+      "id": "precious-irene",
+      "name": "Precious Irene",
+      "birthday": "September 9, 2018",
+      "age": 7,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "PATIENCE-IRENE-scaled-1.jpg",
+      "story": [
+        "Irene is 7 years old and she is in primary three. She lives with her grandmother and mother after her father separated from her mother. Unfortunately, her father has become irresponsible due to excessive alcohol consumption, leaving Irene’s upbringing entirely to the grandmother, The grand mother is a peasant farmer limited income, struggling to meet the basic needs of the family and ensure the children’s education. Despite these financial challenges, Irene remains in good health and she would like to be a chef in future, Irene loves to play with her age mates and she is so social. At home she helps with some domestic chores like collecting firewood, fetching water and cleaning the compound, with your support Irene will stay in school and this will be an opportunity for her to have a brighter future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "salimu-esili",
+      "name": "Salimu Esili",
+      "birthday": "March 13, 2012",
+      "age": 13,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "SALIMU-ISLI-1-scaled-1.jpg",
+      "story": [
+        "Esili is a 13 year old boy, in Primary Four. When he was just 9 months old, both of his parents separated and left him in the care of his grandmother in the village. Since then, he has never seen them again, and no one knows where they are. His grandmother is a peasant farmer who works very hard every day to grow food and take care of him. But life is very difficult. They struggle to find enough to eat, and sometimes they go without the basic things they need. Esili needs support to stay in school and have a chance at a brighter future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wabulo-trevor",
+      "name": "Wabulo Trevor",
+      "birthday": "December 18, 2013",
+      "age": 12,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WOBULO-TREVOR-scaled-1.jpg",
+      "story": [
+        "Trevor is 12 years old and he is in Primary five,He stays at Berakhah childcare, Trevor was staying with his grandmother but the situation at home was hard. Feeding was hard, the house was not good and the grand mother could not afford paying school fees for the grand children since she’s only a peasant farmer. Trevor was then taken in by Berakhah childcare for safety and proper care. He would like to become an engineer and his best food is rice and meat. During his free time, Trevor likes to sing and dance as well as playing football. Trevor’s parents separated and left the children under the care of the grandmother. With your support, Trevor can realize his dream of becoming an engineer."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wadada-brian",
+      "name": "Wadada Brian",
+      "birthday": "March 13, 2011",
+      "age": 14,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WADADA-BRIAN-scaled-1.jpg",
+      "story": [
+        "Brian is 14 years old and lives with his maternal grandmother. He lost his father at the age of eight, and his mother later remarried, leaving him under his grandmother’s care. She works hard as a peasant laborer on local plantations to provide for his basic needs. Brian is a disciplined and motivated student who values education and performs well in school. He dreams of becoming a teacher in the future, your sponsorship will give Brian the support he needs to continue his studies and work toward his goal."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wadamba-jordan",
+      "name": "Wadamba Jordan",
+      "birthday": "June 15, 2015",
+      "age": 10,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WODAMBA-JODAN-1-scaled-1.jpg",
+      "story": [
+        "Jordan is 10 years old, he’s in primary four and he lives with his parents. Jordan’s parents are peasant farmers and they depend on the garden produce to provide for the family needs and pay school fees for 8 children. Jordan loves going to school and he would like to become a doctor in future, his best subject is Mathematics and his best dish is rice and beans. Jordan loves doing some house chores like cutting grass for 2 cows and slashing around home. In his free time, Jordan likes playing football and singing. With your support Jordan can achieve his dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wadeya-timothy",
+      "name": "Wadeya Timothy",
+      "birthday": "May 12, 2025",
+      "age": 0,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WODEYA-TIMOTHY-scaled-1.jpg",
+      "story": [
+        "Timothy is a 13 year old, who stays with his grandfather, a peasant farmer. The grandfather is unable to raise school fees for him and offer him some basic needs like clothing and proper meals. Feeding is one of the major problems in Timothy’s home and the state of the house Timothy is staying is not good. Timothy would like to be a soldier in future, his best subjects are Mathematics and P/E. Timothy while at home he does domestic chores and he helps the grandfather in hawking vegetables after school. Your support towards Timothy will help him to stay in school and to have a better shelter over his head."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wafula-joel",
+      "name": "Wafula Joel",
+      "birthday": "June 29, 2009",
+      "age": 16,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WAFULA-JOEL-scaled-1.jpg",
+      "story": [
+        "Joel is 16 years old in senior two class, he dreams of becoming a medical doctor despite facing numerous challenges. After his parents’ separation at 4 years old, Joel has solely depended on his mother who is a peasant farmer for support in education and basic needs. However, her limited earnings from farming cannot sustain her family and Joel has not been a regular student at school because of failure to pay school dues on time. Joel dreams pf becoming a doctor someday to serve his community and the family as well. With your support Joel can make it."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wafula-zeverio",
+      "name": "Wafula Zeverio",
+      "birthday": "April 30, 2011",
       "age": 14,
       "gender": "Male",
       "nationality": "Ugandan",
       "location": "Uganda",
-      "image": "WAMBEDE-PETER-scaled-1-758x1024.jpg",
+      "image": "WAFULA-ZEVERIO.jpg",
       "story": [
-        "Peter Paul is a hardworking 14-year-old boy who shows great promise and dedication in his studies. He comes from a large family where resources are scarce, and his parents struggled to provide for all their children. Peter Paul often had to choose between eating and going to school.",
-        "When he joined Berakhah, everything changed. Now he has access to quality education, three meals a day, medical care, and spiritual guidance. Peter Paul is particularly talented in mathematics and science, and he dreams of becoming an engineer one day.",
-        "He is respectful, kind to younger children, and actively participates in church activities. Peter Paul's transformation has been remarkable, and with your sponsorship, he can continue to thrive and reach his full potential."
+        "Zeverio is 14 years old and he’s in primary six. He is the third born in a family of six children, he lives with his parents and they are peasant farmers. They find it very difficult to meet all the family basic needs with no assured source of income. Zeverio a midst the family challenges is hopeful to become a doctor. At home he does some house chores like fetching water washing utensils, collecting firewood, digging. During his free time Zeverio likes to play football with his friends and grazing goats. Your sponsorship will help Zeverio to become a doctor."
       ],
-      "dream": "Engineer"
+      "dream": null
+    },
+    {
+      "id": "wakilo-partrick",
+      "name": "Wakilo Partrick",
+      "birthday": "December 12, 2016",
+      "age": 9,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WAKILO-PATRICK-scaled-1.jpg",
+      "story": [
+        "Patrick is 9 years old in primary two. Patrick and his other 7 siblings stay with their father following the separation of her parents. His father works on construction sites to be able to raise some money to take care of the family, while at the site he got an accident which injured his back and because of this he can’t do much to provide for his family. Patrick loves attending school because he would like to be a lawyer, unfortunately he has always been a fees defaulter which keeps him away from school. Patrick loves playing football and running while at home he loves fetching water and playing with her mates. Your generous contribution towards Patrick’s education will enable her become a lawyer in future."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wakiro-dan",
+      "name": "Wakiro Dan",
+      "birthday": "December 18, 2019",
+      "age": 6,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WAKILO-DAN-1-scaled-1.jpg",
+      "story": [
+        "Dan is 6 years old and he’s in primary two, he lives with his parents who are peasant farmers.  Despite financial struggles that make it difficult to provide for basic needs and secure better shelter, Dan excels academically. His good health is a blessing a midst the challenges, allowing him to focus on his studies. Dan would like to become a teacher, and his best sport is playing football with friends. Dan can excel through academics if he’s supported."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wambede-aoron",
+      "name": "Wambede Aoron",
+      "birthday": "January 10, 2015",
+      "age": 11,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WAMBEDE-ARON-scaled-1.jpg",
+      "story": [
+        "Aaron is10 years old, he is in primary two. His dream is to become a police man in future. He lives with his parents, who are peasant farmers struggling to provide for their family’s daily needs and school expenses. Aaron is often sent home from school due to unpaid fees, which affects his learning. His father also works as a boda boda rider to supplement on his income and his mother is a house wife. He enjoys playing soccer and making new friends. Your kind support will enable Aaron to continue his education and work towards his dream of becoming an army officer."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wambede-emma",
+      "name": "Wambede Emma",
+      "birthday": "June 13, 2014",
+      "age": 11,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "WAMBEDE-EMMA-scaled-1.jpg",
+      "story": [
+        "Emma is 11 years old, he is in primary 3 and lives with his father and the step mother. His mother left the home when Emma was 7 years old.  Emma is a very active boy in almost all areas, at home he loves doing home chores by assisting his parents in fetching water, cleaning the compound etc, at church he loves cleaning church, singing and volunteering to take care of young ones and at school Emma’s performance is good and he would like to become a doctor. His parents are both peasant farmers and to supplement on their incomes his mother sells milk that she gets from the one cow at home and his father hawks some of the garden produce in the community to be able to take care of the family. For Emma to realize his dream of becoming a doctor, he needs support to be able to attend and stay in school."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wambede-nasuru",
+      "name": "Wambede Nasuru",
+      "birthday": "February 3, 2013",
+      "age": 13,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "WAMBEDE-ALLAN-scaled-1.jpg",
+      "story": [
+        "Nasuru lost both of his parents when he was still young. His father died when he was 2 years old while his mother died when he was 12 years . It was not easy for him and the siblings to survive as total orphans. He had to live with various families after his parents died in search for what to eat. In exchange for food, he had to cut grass for the cows, collect water and do other domestic chores for people. Berakhah childcare spotted him and took him in, he was taken to school, care for and was loved. Nasuru is now doing an ICT course which and he’s in his first year. At Berakhah childcare, he participates in drumming, dancing and singing. He has hope for a bright future because he has access to all his basic needs. He has found love and the bond is great with the new family where he learns to freely express himself. Your sponsorship will be greatly appreciated to help him finish his course of ICT which he’s currently pursuing and his performance so far is good."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wambede-peter-paul",
+      "name": "Wambede Peter Paul",
+      "birthday": "January 2, 2013",
+      "age": 13,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WAMBEDE-ERIJAH-scaled-1.jpg",
+      "story": [
+        "Paul is a 12 year old lives with his step mother and his father, He was abandoned by his mother when he was still very young after the separation of his parents. His parents are facing a problem of paying school fees because they are just mere peasants. Paul loves playing foot ball and he would like to become a soccer player. At home Paul loves to do home chores and he loves attending school. Paul’s step mother can only cater for her own children because her income is very low and his father rarely supports which makes it impossible for Paul to attend school regularly. Your support will help Paul to attend school regularly and will achieve his goal."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wambode-ivan",
+      "name": "Wambode Ivan",
+      "birthday": "August 18, 2009",
+      "age": 16,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "WAMBEDE-IVAN-scaled-1.jpg",
+      "story": [
+        "Ivan is 16 years old and he is in primary six, he comes from a family of eight children and is the fourth born. He previously lived with his father and stepmother, but life was difficult, he often missed meals, denied school, and faced frequent mistreatment. Fortunately, Berakhah Child Care rescued him and provided a safe and loving home. Ivan is a bright and disciplined student who balances his daily activities especially playing football with strong academic performance. He dreams of becoming an engineer in the future and is determined to achieve his goals with the support of kind sponsors and well wishers."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wamola-john",
+      "name": "Wamola John",
+      "birthday": "October 3, 2016",
+      "age": 9,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WAWOMOLA-JOHN-scaled-1.jpg",
+      "story": [
+        "John is in primary two and lives with his father and stepmother after losing his biological mother, who passed away shortly after giving birth to him and his two sisters, they’re triplets. His father, a peasant farmer and charcoal seller, works hard to support the family but earns very little to meet the needs of all five children. Despite the challenges, John is an active and joyful boy who loves school and enjoys playing soccer. He helps with house chores at home and dreams of becoming a builder one day. With support, John can continue his education and move closer to achieving his dream."
+      ],
+      "dream": null
     },
     {
       "id": "wanadwadi-joseph",
       "name": "Wanadwadi Joseph",
-      "birthday": "2010",
+      "birthday": "February 12, 2010",
       "age": 15,
       "gender": "Male",
       "nationality": "Ugandan",
       "location": "Uganda",
       "image": "Wanadwadi-Joseph.jpg",
       "story": [
-        "Joseph is a kind and compassionate 15-year-old who has overcome significant hardships. He lost his father at a young age, leaving his mother to care for five children alone. Life was extremely difficult, and Joseph often felt hopeless about his future. Education seemed like an impossible dream.",
-        "When Berakhah welcomed Joseph, he found not just a place to live, but a family that believed in him. Joseph is now thriving in secondary school, where he excels in his studies and shows natural leadership abilities. He loves helping others and dreams of becoming a social worker to help vulnerable children like himself.",
-        "Joseph is grateful for the opportunity Berakhah has given him and works hard every day to make the most of it."
+        "Joseph is 15 years old. He is the eldest of five children. Life became very hard since their mother left them, before she left, their father would often come home drunk, beating their mother and neglecting them. Many times, he didn’t provide food, medicine, or school fees. After she ran away, things got even worse. Their father would disappear for days, leaving them with no food or care. As the oldest, he had to take care of his younger brothers. They begged for food around the neighborhood, but it wasn’t enough. They became weak and sick, and jiggers painfully infested their hands, feet, and elbows. Their house was falling apart, with holes in the walls that let in rain, soaking their beddings. When Berakhah learnt about their plight, it rescued them and brought them to a safe place, gave them food, medicine, clothes, and sent them to school. Joseph is now safe, cared for, and full of hope. He loves reading, listening to music, playing football, and his favorite meal is rice and chicken. His dream is to become a doctor. Your sponsorship can provide him with the education he needs to make my dreams come true."
       ],
-      "dream": "Social Worker"
+      "dream": null
+    },
+    {
+      "id": "wandera-allan",
+      "name": "Wandera Allan",
+      "birthday": "April 4, 2011",
+      "age": 14,
+      "gender": "Female",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "Wandera-Allan.jpg",
+      "story": [
+        "Allan is 14 years old. He comes from a small village in Namayingo district, near Lake Victoria in Uganda. He was born with a condition which made his stomach swell and hurt all the time, he could only use the restroom once every 3 months. No one in my village understood what was wrong with him. His mom thought it was a curse or witchcraft. Life was hard from the very beginning. When he was just seven months old, his father died, leaving his mother to care for him and his three older siblings. She worked so hard, while battling HIV/ AIDS and didn’t have the money or knowledge to get him the help he needed, For ten years, he lived with this pain. He couldn’t run, play, or be like the other kids or attend school, Berakhah childcare found him and told his mother that Allan`s condition wasn’t a curse—it was something medical, and it could be treated. They took him in, loved him, and made sure he got the surgeries he needed to save his life. Now, Allan`s life is completely different. The pain is gone, the swelling is gone and he feels strong again. He is in school, learning and dreaming of a bright future. He also participates in the Berakhah Children’s Choir and helps with the media team at the children’s Church."
+      ],
+      "dream": null
+    },
+    {
+      "id": "waniala-boniface",
+      "name": "Waniala Boniface",
+      "birthday": "March 14, 2011",
+      "age": 14,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WANIALA-BONNYFAS-scaled-1.jpg",
+      "story": [
+        "Boniface is 14 years old in primary five. He lives with his parents who have no descent job to be able to provide for their children, his parents try their best to provide but in most cases they failed. Boniface performs very well in school and he would like to become a pilot so he can support his parents in their old age. In his free time, Boniface loves to play football and riding his bicycle. Your sponsorship will help Boniface to rewrite his story."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wanyenya-patience",
+      "name": "Wanyenya Patience",
+      "birthday": "April 1, 2009",
+      "age": 16,
+      "gender": "Female",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WANYENZE-PATIENCE-scaled-1.jpg",
+      "story": [
+        "Patience is16 years old and she is Primary five staying at Berakhah Child Care. She is living with sickle cell disease, which has greatly affected her health and childhood. Her parents, who are peasant farmers, struggled to provide her with proper treatment due to limited income. Sadly, Patience is not the only child in her family suffering from sickle cell disease, two of her siblings are also victims. Managing treatment for all three children became an unbearable financial burden for her parents, who also have three other children depending on them. When Berakhah learned about the family’s situation, they decided to take Patience under their care. She now receives proper medication, nutritious meals, and the opportunity to attend school regularly. This support has also helped ease the family’s burden, allowing her parents to focus on the other children at home. Patience dreams of becoming a doctor in the future. With continued support, she can complete her education and receive consistent medical care to live a healthier, brighter life."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wasukira-deo",
+      "name": "Wasukira Deo",
+      "birthday": "October 18, 2016",
+      "age": 9,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WASUKILA-DEO-scaled-1.jpg",
+      "story": [
+        "Deo is  9 years old boy who lives with his aunt and seven other family members. His aunt works as a market vendor, earning just enough to provide food for the day, with little or nothing left to cover school fees and other basic needs. Because of these financial struggles, Deo is often sent home from school for unpaid fees, yet he remains determined and performs well academically. He dreams of becoming a teacher so he can help educate and uplift his community. With the support of a sponsor, Deo can stay in school, continue excelling in his studies, and work toward achieving his dream."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wekoye-bob",
+      "name": "Wekoye Bob",
+      "birthday": "June 7, 2012",
+      "age": 13,
+      "gender": "Male",
+      "nationality": "Uganda",
+      "location": "Uganda",
+      "image": "WOKOYE-BOB-scaled-1.jpg",
+      "story": [
+        "Bob is 13years old, after his parents separated Bob was taken to stay with his grandmother. His grandmother is a widow who earns her living from selling some food stuffs she grows, she’s taking care of over 6 grandchildren and they are all of school going age, from her incomes, meeting their needs is impossible because even her health doesn’t allow her to work so hard. Bob enjoys helping his grandmother in the garden and at home with home chores, when he grows up Bob dreams of becoming an agriculturalist, he loves playing soccer and creating new friends."
+      ],
+      "dream": null
+    },
+    {
+      "id": "wosaza-hussein",
+      "name": "Wosaza Hussein",
+      "birthday": "June 20, 2001",
+      "age": 24,
+      "gender": "Male",
+      "nationality": "Ugandan",
+      "location": "Uganda",
+      "image": "Wosaza-hussein.jpg",
+      "story": [
+        "Hussein used to live with his mother. She is a peasant who works on people’s gardens to make ends meet. His father died before his birth, Hussein got other 12 siblings when his mother remarried to a polygamous man. The family has no access to basic needs as they only have the mother to look up to, At home, Hussein would dig, clean the house, fetch water, cook and wash clothes. He would also grazes cow to contribute to his family`s welfare. He is in senior three and his performance is promising. His hobbies are; volley ball, athletics and debating. Being part of Berakhah childcare, Hussein participates in drumming, dancing and singing. He likes caring for others and studying the Bible. Hussein is full of life and hope and he hopes to be a doctor in future to support his mother and siblings. Your sponsorship will help his dream become a reality."
+      ],
+      "dream": null
     }
   ]
 }

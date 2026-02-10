@@ -58,7 +58,7 @@ function displayChildProfile(child) {
     document.getElementById('page-description').content = `Sponsor ${child.name}, a ${child.age}-year-old ${child.gender.toLowerCase()} from ${child.location}. Transform their life through education, healthcare, and spiritual care.`;
     
     // Update profile header
-    document.getElementById('child-image').src = `images/${child.image}`;
+    document.getElementById('child-image').src = `all_children_images/${child.image || 'placeholder-child.jpg'}`;
     document.getElementById('child-image').alt = child.name;
     document.getElementById('child-name').textContent = child.name;
     document.getElementById('child-birthday').textContent = `${child.birthday} (Age ${child.age})`;
