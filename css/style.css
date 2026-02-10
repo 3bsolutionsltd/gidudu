@@ -168,7 +168,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 20px;
+    padding: 0.75rem 20px;
 }
 
 .logo {
@@ -184,7 +184,7 @@ a {
 }
 
 .logo-image {
-    height: 50px;
+    height: 40px;
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -213,7 +213,7 @@ a {
 /* Logo Responsive Styles */
 @media (max-width: 992px) {
     .logo-image {
-        height: 45px;
+        height: 38px;
     }
     
     .logo-text h2 {
@@ -227,7 +227,7 @@ a {
 
 @media (max-width: 768px) {
     .logo-image {
-        height: 40px;
+        height: 35px;
     }
     
     .logo-text h2 {
@@ -249,7 +249,7 @@ a {
     }
     
     .logo-image {
-        height: 35px;
+        height: 32px;
     }
     
     .logo-text h2 {
