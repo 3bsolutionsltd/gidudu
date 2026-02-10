@@ -18,17 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (playPromise !== undefined) {
                         playPromise
                             .then(() => {
-                                console.log('Video is playing successfully!');
+                                // Video playing successfully
                             })
                             .catch(error => {
-                                console.log('Autoplay failed, waiting for user interaction...');
-                                
-                                // Fallback: play on any user interaction
+                                // Autoplay failed, waiting for user interaction
                                 const playOnInteraction = () => {
                                     if (document.body.contains(heroVideo)) {
                                         heroVideo.play()
-                                            .then(() => console.log('Video started after user interaction'))
-                                            .catch(err => console.error('Play failed:', err));
+                                            .then(() => {
+                                                // Video started after user interaction
+                                            })
+                                            .catch(err => {
+                                                // Play failed silently
+                                            });
                                     }
                                     document.removeEventListener('click', playOnInteraction);
                                     document.removeEventListener('touchstart', playOnInteraction);
