@@ -1,70 +1,13 @@
 /**
- * Centralized Navigation Loader
- * Loads consistent navigation across all pages
+ * Centralized Navigation Loader - Production Optimized
+ * @version 1.0.0
  */
+(function() {
+'use strict';
 
 // Navigation HTML template
-const navigationHTML = `
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/igfm-logo.png" alt="IGFM Logo" class="logo-image">
-                    <div class="logo-text">
-                        <h2>IGFM</h2>
-                        <span>International Great Faith Ministries</span>
-                    </div>
-                </a>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
-                <li class="dropdown">
-                    <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="about.html" data-page="about">About Us</a></li>
-                        <li><a href="faith.html" data-page="faith">Our Faith</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="nav-link">Ministries <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="berakhah-childcare.html" data-page="berakhah-childcare">Berakhah Childcare</a></li>
-                        <li><a href="berakhah-choir.html" data-page="berakhah-choir">Berakhah Children's Choir</a></li>
-                        <li><a href="church-prison.html" data-page="church-prison">Church @ the Prison</a></li>
-                        <li><a href="church-planting.html" data-page="church-planting">Church Planting</a></li>
-                        <li><a href="https://call2prayer.church" target="_blank" rel="noopener noreferrer">Call2Prayer</a></li>
-                        <li><a href="pastors-network.html" data-page="pastors-network">Pastors' Network Uganda</a></li>
-                        <li><a href="school-outreaches.html" data-page="school-outreaches">School Outreaches</a></li>
-                        <li><a href="safe-water.html" data-page="safe-water">Safe Water</a></li>
-                        <li><a href="church-construction.html" data-page="church-construction">Church Construction</a></li>
-                        <li><a href="youth-ministries.html" data-page="youth-ministries">Youth Ministries</a></li>
-                        <li><a href="mens-ministries.html" data-page="mens-ministries">Men's Ministries</a></li>
-                        <li><a href="womens-ministries.html" data-page="womens-ministries">Women's Ministries</a></li>
-                    </ul>
-                </li>
-                <li><a href="hospital.html" class="nav-link" data-page="hospital">Hospital</a></li>
-                <li><a href="stories.html" class="nav-link" data-page="stories">Stories</a></li>
-                <li class="dropdown">
-                    <a href="#" class="nav-link">Get Involved <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="sponsor.html" data-page="sponsor">Sponsor</a></li>
-                        <li><a href="volunteers.html" data-page="volunteers">Volunteers</a></li>
-                        <li><a href="partner.html" data-page="partner">Partner With Us</a></li>
-                        <li><a href="ambassadors.html" data-page="ambassadors">Ambassadors</a></li>
-                        <li><a href="mission-trips.html" data-page="mission-trips">Mission Trips</a></li>
-                    </ul>
-                </li>
-                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-                <li><a href="index.html#donate" class="btn btn-primary">Donate</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-`;
+const navigationHTML = `<nav class="navbar" id="navbar"><div class="container nav-container"><div class="logo"><a href="index.html"><img src="images/igfm-logo.png" alt="IGFM Logo" class="logo-image" loading="lazy"><div class="logo-text"><h2>IGFM</h2><span>International Great Faith Ministries</span></div></a></div><ul class="nav-menu" id="nav-menu">
+<li><a href="index.html" class="nav-link" data-page="home">Home</a></li><li class="dropdown"><a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="about.html" data-page="about">About Us</a></li><li><a href="faith.html" data-page="faith">Our Faith</a></li></ul></li><li class="dropdown"><a href="#" class="nav-link">Ministries <i class="fas fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="berakhah-childcare.html" data-page="berakhah-childcare">Berakhah Childcare</a></li><li><a href="berakhah-choir.html" data-page="berakhah-choir">Berakhah Children's Choir</a></li><li><a href="church-prison.html" data-page="church-prison">Church @ the Prison</a></li><li><a href="church-planting.html" data-page="church-planting">Church Planting</a></li><li><a href="https://call2prayer.church" target="_blank" rel="noopener noreferrer">Call2Prayer</a></li><li><a href="pastors-network.html" data-page="pastors-network">Pastors' Network Uganda</a></li><li><a href="school-outreaches.html" data-page="school-outreaches">School Outreaches</a></li><li><a href="safe-water.html" data-page="safe-water">Safe Water</a></li><li><a href="church-construction.html" data-page="church-construction">Church Construction</a></li><li><a href="youth-ministries.html" data-page="youth-ministries">Youth Ministries</a></li><li><a href="mens-ministries.html" data-page="mens-ministries">Men's Ministries</a></li><li><a href="womens-ministries.html" data-page="womens-ministries">Women's Ministries</a></li></ul></li><li><a href="hospital.html" class="nav-link" data-page="hospital">Hospital</a></li><li><a href="stories.html" class="nav-link" data-page="stories">Stories</a></li><li class="dropdown"><a href="#" class="nav-link">Get Involved <i class="fas fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="sponsor.html" data-page="sponsor">Sponsor</a></li><li><a href="volunteers.html" data-page="volunteers">Volunteers</a></li><li><a href="partner.html" data-page="partner">Partner With Us</a></li><li><a href="ambassadors.html" data-page="ambassadors">Ambassadors</a></li><li><a href="mission-trips.html" data-page="mission-trips">Mission Trips</a></li></ul></li><li><a href="index.html#contact" class="nav-link">Contact</a></li><li><a href="index.html#donate" class="btn btn-primary">Donate</a></li></ul><div class="hamburger" id="hamburger"><span></span><span></span><span></span></div></div></nav>`;
 
 /**
  * Load navigation into the page
@@ -142,40 +85,41 @@ function getCurrentPage() {
 }
 
 /**
- * Initialize dropdown functionality for mobile
+ * Initialize dropdown functionality with event delegation
  */
 function initializeDropdowns() {
-    const dropdowns = document.querySelectorAll('.dropdown');
+    const navMenu = document.getElementById('nav-menu');
+    if (!navMenu) return;
 
-    // Dropdown functionality for mobile
-    dropdowns.forEach(dropdown => {
-        const dropdownLink = dropdown.querySelector('.nav-link');
-        
-        if (dropdownLink) {
-            dropdownLink.addEventListener('click', (e) => {
-                // On mobile, toggle dropdown
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    dropdown.classList.toggle('active');
-                }
-            });
+    // Use event delegation for better performance
+    navMenu.addEventListener('click', (e) => {
+        const dropdownLink = e.target.closest('.dropdown > .nav-link');
+        if (dropdownLink && window.innerWidth <= 768) {
+            e.preventDefault();
+            const dropdown = dropdownLink.parentElement;
+            dropdown.classList.toggle('active');
         }
-    });
+    }, { passive: false });
 
-    // Close dropdowns when clicking outside
+    // Close dropdowns when clicking outside (debounced)
+    let closeTimer;
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.dropdown')) {
-            dropdowns.forEach(dropdown => {
-                dropdown.classList.remove('active');
-            });
+            clearTimeout(closeTimer);
+            closeTimer = setTimeout(() => {
+                document.querySelectorAll('.dropdown.active').forEach(d => d.classList.remove('active'));
+            }, 10);
         }
     });
 }
 
-// Load navigation when DOM is ready
+// Defer navigation load slightly to prioritize critical rendering
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadNavigation);
+    document.addEventListener('DOMContentLoaded', () => {
+        requestAnimationFrame(loadNavigation);
+    });
 } else {
-    // DOM already loaded
-    loadNavigation();
+    requestAnimationFrame(loadNavigation);
 }
+
+})();

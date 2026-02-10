@@ -9,11 +9,27 @@ const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const { body, validationResult } = require('express-validator');
 const nodemailer = require('nodemailer');
+const compression = require('compression');
 require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-this';
+const IS_PRODUCTION = process.env.NODE_ENV === 'production';
+
+// Production optimization: Enable gzip compression
+app.use(compression());
+
+// Production logging
+if (IS_PRODUCTION) {
+    app.use((req, res, next) => {
+        const start = Date.now();
+        res.on('finish', () => {
+            console.log(`${req.method} ${req.path} ${res.statusCode} ${Date.now() - start}ms`);
+        });
+        next();
+    });
+}
 
 // Security Middleware
 app.use(helmet({
@@ -47,18 +63,20 @@ app.use(cors({
     credentials: true
 }));
 
-app.use(express.json());
+app.use(express.json({ limit: '10mb' }));
 app.use(express.static(path.join(__dirname, '../')));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-// Health check endpoint
+// Health check endpoint with system info
 app.get('/api/health', (req, res) => {
     res.json({ 
         status: 'ok', 
         message: 'CMS API is running',
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
+        environment: IS_PRODUCTION ? 'production' : 'development',
+        uptime: process.uptime()
     });
 });
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Apply rate limiting to API routes
 app.use('/api', apiLimiter);
@@ -681,8 +699,41 @@ app.get('/admin', (req, res) => {
 });
 
 // Start server
-app.listen(PORT, '0.0.0.0', () => {
+const server = app.listen(PORT, '0.0.0.0', () => {
     console.log(`🚀 IGFM CMS Server running on port ${PORT}`);
     console.log(`📊 Admin Panel: http://localhost:${PORT}/admin`);
     console.log(`💚 Health check: http://localhost:${PORT}/api/health`);
+    console.log(`🌍 Environment: ${IS_PRODUCTION ? 'production' : 'development'}`);
+});
+
+// Graceful shutdown
+process.on('SIGTERM', () => {
+    console.log('SIGTERM received. Closing server gracefully...');
+    server.close(() => {
+        console.log('Server closed.');
+        process.exit(0);
+    });
+});
+
+process.on('SIGINT', () => {
+    console.log('SIGINT received. Closing server gracefully...');
+    server.close(() => {
+        console.log('Server closed.');
+        process.exit(0);
+    });
+});
+
+// Handle uncaught exceptions
+process.on('uncaughtException', (err) => {
+    console.error('Uncaught Exception:', err);
+    if (IS_PRODUCTION) {
+        process.exit(1);
+    }
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+    if (IS_PRODUCTION) {
+        process.exit(1);
+    }
 });

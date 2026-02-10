@@ -1,53 +1,67 @@
-// Child Profile Loader
+// Child Profile Loader (Production Optimized)
 // Dynamically loads child data based on URL parameter
+(function() {
+    'use strict';
 
-// API Configuration
-const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-    ? 'http://localhost:3000/api'
-    : 'https://igfm-cms-backend.onrender.com/api';
+    // API Configuration
+    const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        ? 'http://localhost:3000/api'
+        : 'https://igfm-cms-backend.onrender.com/api';
 
-// Get child ID from URL parameter
-function getChildIdFromURL() {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('id');
-}
+    // Cache DOM elements
+    let loadingEl, errorEl, profileEl, storyEl, sponsorshipEl;
 
-// Load child data
-async function loadChildProfile() {
-    const childId = getChildIdFromURL();
-    
-    if (!childId) {
-        showError();
-        return;
+    // Get child ID from URL parameter
+    function getChildIdFromURL() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('id');
     }
-    
-    // Show loading indicator
-    document.getElementById('loading').style.display = 'block';
-    
-    try {
-        // Fetch children data from API
-        const response = await fetch(`${API_URL}/children`);
+
+    // Load child data
+    async function loadChildProfile() {
+        const childId = getChildIdFromURL();
         
-        if (!response.ok) {
-            throw new Error('Failed to fetch children data');
-        }
-        
-        const data = await response.json();
-        const child = data.children.find(c => c.id === childId);
-        
-        if (!child) {
+        if (!childId) {
             showError();
             return;
         }
         
-        // Display child data
-        displayChildProfile(child);
+        // Cache DOM elements
+        loadingEl = document.getElementById('loading');
+        errorEl = document.getElementById('error-message');
+        profileEl = document.getElementById('child-profile');
+        storyEl = document.getElementById('child-story-section');
+        sponsorshipEl = document.getElementById('sponsorship-section');
         
-    } catch (error) {
-        console.error('Error loading child profile:', error);
-        showError();
-    } finally {
-        document.getElementById('loading').style.display = 'none';
+        // Show loading indicator
+        if (loadingEl) loadingEl.style.display = 'block';
+        
+        try {
+            // Fetch children data from API
+            const response = await fetch(`${API_URL}/children`);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: Failed to fetch children data`);
+            }
+            
+            const data = await response.json();
+            const child = data.children.find(c => c.id === childId);
+            
+            if (!child) {
+                showError();
+                return;
+            }
+            
+            // Display child data
+            displayChildProfile(child);
+            
+        } catch (error) {
+            console.error('Error loading child profile:', error);
+            showError();
+        } finally {
+            if (loadingEl) loadingEl.style.display = 'none';
+        }
+    }
     }
 }
 
@@ -107,14 +121,15 @@ function displayChildProfile(child) {
     document.getElementById('sponsorship-section').style.display = 'block';
 }
 
-// Show error message
-function showError() {
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('error-message').style.display = 'block';
-    document.getElementById('child-profile').style.display = 'none';
-    document.getElementById('child-story-section').style.display = 'none';
-    document.getElementById('sponsorship-section').style.display = 'none';
-}
+    // Show error message
+    function showError() {
+        if (loadingEl) loadingEl.style.display = 'none';
+        if (errorEl) errorEl.style.display = 'block';
+        if (profileEl) profileEl.style.display = 'none';
+        if (storyEl) storyEl.style.display = 'none';
+        if (sponsorshipEl) sponsorshipEl.style.display = 'none';
+    }
 
-// Load child profile when page loads
-document.addEventListener('DOMContentLoaded', loadChildProfile);
+    // Load child profile when page loads
+    document.addEventListener('DOMContentLoaded', loadChildProfile);
+})();

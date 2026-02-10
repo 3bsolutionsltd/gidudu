@@ -1,37 +1,43 @@
 /**
- * Sponsor Page - Dynamic Children Loading
+ * Sponsor Page - Dynamic Children Loading (Production Optimized)
  * Loads children from server/data/children.json and provides filtering/pagination
  */
+(function() {
+    'use strict';
 
-let allChildren = [];
-let filteredChildren = [];
-let currentPage = 1;
-const childrenPerPage = 12;
+    let allChildren = [];
+    let filteredChildren = [];
+    let currentPage = 1;
+    const childrenPerPage = 12;
 
-// Load children data on page load
-document.addEventListener('DOMContentLoaded', function() {
-    loadChildren();
-    setupEventListeners();
-});
+    // Load children data on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        loadChildren();
+        setupEventListeners();
+    });
 
-async function loadChildren() {
-    try {
-        const response = await fetch('server/data/children.json');
-        const data = await response.json();
-        allChildren = data.children || [];
-        
-        // Sort children by name
-        allChildren.sort((a, b) => a.name.localeCompare(b.name));
-        
-        filteredChildren = [...allChildren];
-        displayChildren();
-        updateStats();
-    } catch (error) {
-        console.error('Error loading children:', error);
-        document.getElementById('children-grid').innerHTML = 
-            '<p style="grid-column: 1/-1; text-align: center; color: #666;">Unable to load children. Please try again later.</p>';
+    async function loadChildren() {
+        const grid = document.getElementById('children-grid');
+        try {
+            const response = await fetch('server/data/children.json');
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            
+            const data = await response.json();
+            allChildren = data.children || [];
+            
+            // Sort children by name
+            allChildren.sort((a, b) => a.name.localeCompare(b.name));
+            
+            filteredChildren = [...allChildren];
+            displayChildren();
+            updateStats();
+        } catch (error) {
+            console.error('Error loading children:', error);
+            if (grid) {
+                grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:#666">Unable to load children. <a href="javascript:location.reload()">Refresh</a> to try again.</p>';
+            }
+        }
     }
-}
 
 function setupEventListeners() {
     // Search input
@@ -266,5 +272,6 @@ function debounce(func, wait) {
     };
 }
 
-// Make changePage globally accessible
-window.changePage = changePage;
+    // Make changePage globally accessible
+    window.changePage = changePage;
+})();
