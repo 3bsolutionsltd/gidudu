@@ -208,20 +208,77 @@ if (contactForm) {
             const result = await response.json();
             
             if (response.ok) {
-                alert('Thank you for your message! We will get back to you soon.');
+                // Show success message
+                showMessage('Thank you for your message! We will get back to you soon.', 'success');
                 contactForm.reset();
             } else {
-                alert('Failed to send message. Please try again or contact us directly at paul@gidudu.org');
+                // Show error message from server
+                const errorMsg = result.error || 'Failed to send message. Please try again or contact us directly at paul@gidudu.org';
+                showMessage(errorMsg, 'error');
             }
         } catch (error) {
             console.error('Error sending message:', error);
-            alert('Failed to send message. Please try again or contact us directly at paul@gidudu.org');
+            showMessage('Network error. Please try again or contact us directly at paul@gidudu.org', 'error');
         } finally {
             // Re-enable submit button
             submitBtn.disabled = false;
             submitBtn.textContent = originalText;
         }
     });
+}
+
+// Show message notification (replaces alert)
+function showMessage(message, type = 'info') {
+    // Remove existing message if any
+    const existing = document.querySelector('.notification-message');
+    if (existing) existing.remove();
+    
+    // Create message element
+    const msgDiv = document.createElement('div');
+    msgDiv.className = `notification-message notification-${type}`;
+    msgDiv.textContent = message;
+    
+    // Style
+    msgDiv.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        max-width: 400px;
+        padding: 15px 20px;
+        background: ${type === 'success' ? '#4caf50' : '#f44336'};
+        color: white;
+        border-radius: 4px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        z-index: 10000;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        animation: slideIn 0.3s ease-out;
+    `;
+    
+    // Add keyframes for animation if not exists
+    if (!document.querySelector('#notification-styles')) {
+        const style = document.createElement('style');
+        style.id = 'notification-styles';
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(120%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            @keyframes slideOut {
+                from { transform: translateX(0); opacity: 1; }
+                to { transform: translateX(120%); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+    
+    document.body.appendChild(msgDiv);
+    
+    // Auto remove after 5 seconds
+    setTimeout(() => {
+        msgDiv.style.animation = 'slideOut 0.3s ease-out';
+        setTimeout(() => msgDiv.remove(), 300);
+    }, 5000);
 }
 
 // Sponsorship form handling
