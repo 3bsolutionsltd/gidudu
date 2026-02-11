@@ -17,6 +17,9 @@ const PORT = process.env.PORT || 3000;
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-this';
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
 
+// Trust proxy - Required when behind reverse proxy (Apache/Nginx)
+app.set('trust proxy', true);
+
 // Production optimization: Enable gzip compression
 app.use(compression());
 
