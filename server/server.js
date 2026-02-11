@@ -317,7 +317,10 @@ app.post('/api/contact',
             },
             tls: {
                 rejectUnauthorized: IS_PRODUCTION // Strict in production, relaxed in development
-            }
+            },
+            connectionTimeout: 10000, // 10 seconds
+            greetingTimeout: 10000,   // 10 seconds
+            socketTimeout: 15000      // 15 seconds
         });
 
         // Verify transporter configuration (non-blocking)
@@ -351,8 +354,13 @@ app.post('/api/contact',
             `
         };
 
-        // Send email
-        await transporter.sendMail(mailOptions);
+        // Send email with 20 second timeout
+        const sendPromise = transporter.sendMail(mailOptions);
+        const timeoutPromise = new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('Email sending timed out after 20 seconds')), 20000)
+        );
+        
+        await Promise.race([sendPromise, timeoutPromise]);
         
         res.json({ 
             success: true, 
@@ -367,8 +375,19 @@ app.post('/api/contact',
             response: error.response,
             responseCode: error.responseCode
         });
+        
+        // Determine user-friendly error message
+        let userMessage = 'We\'re experiencing technical difficulties sending email. Please contact us directly at paul@gidudu.org';
+        
+        if (error.code === 'ETIMEDOUT' || error.message.includes('timeout')) {
+            userMessage = 'Email server connection timed out. Please try again or contact paul@gidudu.org directly.';
+        } else if (error.code === 'ECONNREFUSED') {
+            userMessage = 'Unable to reach email server. Please contact paul@gidudu.org directly.';
+        }
+        
         res.status(500).json({ 
-            error: 'Failed to send message. Please try again later.',
+            error: userMessage,
+            fallbackEmail: 'paul@gidudu.org',
             details: IS_PRODUCTION ? undefined : {
                 message: error.message,
                 code: error.code,
@@ -910,6 +929,22 @@ app.post('/api/upload', authenticateToken, upload.single('file'), (req, res) => 
 
 app.get('/admin', (req, res) => {
     res.sendFile(path.join(__dirname, 'admin', 'index.html'));
+});
+
+// Global error handler - Ensures CORS headers are always sent, even on errors
+app.use((err, req, res, next) => {
+    console.error('Error:', err);
+    
+    // Ensure CORS headers are present even in error responses
+    res.header('Access-Control-Allow-Origin', req.headers.origin || '*');
+    res.header('Access-Control-Allow-Credentials', 'true');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    
+    res.status(err.status || 500).json({
+        error: IS_PRODUCTION ? 'An error occurred' : err.message,
+        details: IS_PRODUCTION ? undefined : err.stack
+    });
 });
 
 // Start server
