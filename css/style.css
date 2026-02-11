@@ -1928,6 +1928,26 @@ a {
     color: white;
 }
 
+.option-image {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.option-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.option-card:hover .option-image img {
+    transform: scale(1.05);
+}
+
 .option-card h3 {
     font-size: 1.6rem;
     color: var(--primary-color);
@@ -2065,6 +2085,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
     transition: transform 0.5s ease;
 }
 
@@ -2876,6 +2897,88 @@ a {
 .founder-social a:hover {
     transform: translateY(-5px);
     background: var(--dark-color);
+}
+
+/* Ambassadors Grid */
+.ambassadors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.ambassador-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.ambassador-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.ambassador-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.ambassador-header h3 {
+    color: white;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.ambassador-header .location {
+    color: rgba(255,255,255,0.9);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.ambassador-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -90px auto 0;
+    border: 6px solid white;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    z-index: 10;
+}
+
+.ambassador-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ambassador-content {
+    padding: 2.5rem 2rem 2rem;
+    text-align: center;
+}
+
+.ambassador-content p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.ambassador-quote {
+    font-style: italic;
+    color: var(--text-dark);
+    border-left: 3px solid var(--primary-color);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    text-align: left;
 }
 
 /* Payment Platforms */

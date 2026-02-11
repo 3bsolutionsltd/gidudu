@@ -1,0 +1,55 @@
+{
+  "source": "https://gidudu.org/sponsor/",
+  "extracted_at": "2026-02-10 12:12:21",
+  "total_children": 6,
+  "images_downloaded": 4,
+  "images_failed": 2,
+  "children": [
+    {
+      "id": "muwanguzi-eria",
+      "name": "MUWANGUZI ERIA",
+      "image_url": "https://gidudu.org/wp-content/uploads/2025/09/1000090923-scaled-1.jpg",
+      "profile_url": "https://gidudu.org/child/muwanguzi-eria/",
+      "alt_text": "",
+      "local_path": "extracted_images\\1000090923-scaled-1.jpg"
+    },
+    {
+      "id": "nasiyo-mercy",
+      "name": "NASIYO MERCY",
+      "image_url": "https://gidudu.org/wp-content/uploads/2025/09/1000090918-scaled-1.jpg",
+      "profile_url": "https://gidudu.org/child/nasiyo-mercy/",
+      "alt_text": ""
+    },
+    {
+      "id": "wambede-peter-paul-2",
+      "name": "Wambede Peter Paul",
+      "image_url": "https://gidudu.org/wp-content/uploads/2025/09/WAMBEDE-PETER-scaled-1.jpg",
+      "profile_url": "https://gidudu.org/child/wambede-peter-paul-2/",
+      "alt_text": "",
+      "local_path": "extracted_images\\WAMBEDE-PETER-scaled-1.jpg"
+    },
+    {
+      "id": "wanadwadi-joseph-2",
+      "name": "WANADWADI JOSEPH",
+      "image_url": "https://gidudu.org/wp-content/uploads/2025/09/Wanadwadi-Joseph-150x150.jpg",
+      "profile_url": "https://gidudu.org/child/wanadwadi-joseph-2/",
+      "alt_text": ""
+    },
+    {
+      "id": "kabuya-prisca",
+      "name": "KABUYA PRISCA",
+      "image_url": "https://gidudu.org/wp-content/uploads/2025/09/Kabuya-Prisca-150x150.jpg",
+      "profile_url": "https://gidudu.org/child/kabuya-prisca/",
+      "alt_text": "",
+      "local_path": "extracted_images\\Kabuya-Prisca-150x150.jpg"
+    },
+    {
+      "id": "wandera-allan",
+      "name": "WANDERA ALLAN",
+      "image_url": "https://gidudu.org/wp-content/uploads/2025/09/Wandera-Allan-150x150.jpg",
+      "profile_url": "https://gidudu.org/child/wandera-allan/",
+      "alt_text": "",
+      "local_path": "extracted_images\\Wandera-Allan-150x150.jpg"
+    }
+  ]
+}
