@@ -258,16 +258,53 @@ app.post('/api/contact',
 
         const { name, email, subject, message } = req.body;
         
+        // Validate email credentials are configured
+        if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+            console.error('Email credentials not configured');
+            console.error('EMAIL_USER:', process.env.EMAIL_USER ? 'SET' : 'NOT SET');
+            console.error('EMAIL_PASS:', process.env.EMAIL_PASS ? 'SET' : 'NOT SET');
+            console.error('EMAIL_HOST:', process.env.EMAIL_HOST ? 'SET' : 'NOT SET');
+            return res.status(500).json({ 
+                error: 'Email service is not configured. Please contact us directly at paul@gidudu.org' 
+            });
+        }
+
+        console.log('Email config:', {
+            host: process.env.EMAIL_HOST,
+            port: process.env.EMAIL_PORT,
+            user: process.env.EMAIL_USER,
+            secure: process.env.EMAIL_SECURE
+        });
+
         // Create email transporter
-        const transporter = nodemailer.createTransporter({
+        const emailPort = parseInt(process.env.EMAIL_PORT) || 587;
+        const emailSecure = process.env.EMAIL_SECURE === 'true' || emailPort === 465;
+        
+        const transporter = nodemailer.createTransport({
             host: process.env.EMAIL_HOST || 'smtp.gmail.com',
-            port: process.env.EMAIL_PORT || 587,
-            secure: false,
+            port: emailPort,
+            secure: emailSecure, // true for 465, false for other ports
             auth: {
                 user: process.env.EMAIL_USER,
                 pass: process.env.EMAIL_PASS
+            },
+            tls: {
+                rejectUnauthorized: IS_PRODUCTION // Strict in production, relaxed in development
             }
         });
+
+        // Verify transporter configuration (non-blocking)
+        transporter.verify()
+            .then(() => {
+                console.log('✅ Email server connection verified');
+            })
+            .catch((verifyError) => {
+                console.warn('⚠️  Email server verification failed (will still attempt to send):', verifyError.message);
+                console.warn('   Email may still work when actually sending. Error details:', {
+                    code: verifyError.code,
+                    command: verifyError.command
+                });
+            });
 
         // Email content
         const mailOptions = {
@@ -296,9 +333,20 @@ app.post('/api/contact',
         });
     } catch (error) {
         console.error('Contact form error:', error);
+        console.error('Error details:', {
+            message: error.message,
+            code: error.code,
+            command: error.command,
+            response: error.response,
+            responseCode: error.responseCode
+        });
         res.status(500).json({ 
             error: 'Failed to send message. Please try again later.',
-            details: error.message 
+            details: IS_PRODUCTION ? undefined : {
+                message: error.message,
+                code: error.code,
+                response: error.response
+            }
         });
     }
 });
@@ -332,6 +380,145 @@ app.get('/api/children/:id', (req, res) => {
         }
         
         res.json(child);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// ============= AMBASSADORS ROUTES =============
+
+// Get all ambassadors
+app.get('/api/ambassadors', (req, res) => {
+    try {
+        const ambassadorsData = getDataFile('ambassadors.json');
+        if (!ambassadorsData) {
+            return res.status(404).json({ error: 'Ambassadors data not found' });
+        }
+        res.json(ambassadorsData);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// Get single ambassador by ID
+app.get('/api/ambassadors/:id', (req, res) => {
+    try {
+        const ambassadorsData = getDataFile('ambassadors.json');
+        if (!ambassadorsData) {
+            return res.status(404).json({ error: 'Ambassadors data not found' });
+        }
+        
+        const ambassador = ambassadorsData.find(a => a.id === parseInt(req.params.id));
+        if (!ambassador) {
+            return res.status(404).json({ error: 'Ambassador not found' });
+        }
+        
+        res.json(ambassador);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// Add new ambassador (protected)
+app.post('/api/ambassadors', authenticateToken, upload.single('image'), [
+    body('name').trim().notEmpty().withMessage('Name is required'),
+    body('location').trim().notEmpty().withMessage('Location is required'),
+    body('bio').trim().notEmpty().withMessage('Bio is required')
+], (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+
+    try {
+        const ambassadorsData = getDataFile('ambassadors.json') || [];
+        
+        const newAmbassador = {
+            id: ambassadorsData.length > 0 ? Math.max(...ambassadorsData.map(a => a.id)) + 1 : 1,
+            name: req.body.name,
+            location: req.body.location,
+            image: req.file ? `/uploads/${req.file.filename}` : req.body.image || 'images/igfm-logo.png',
+            bio: req.body.bio,
+            quote: req.body.quote || ''
+        };
+        
+        ambassadorsData.push(newAmbassador);
+        saveDataFile('ambassadors.json', ambassadorsData);
+        
+        res.status(201).json(newAmbassador);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// Update ambassador (protected)
+app.put('/api/ambassadors/:id', authenticateToken, upload.single('image'), [
+    body('name').optional().trim().notEmpty(),
+    body('location').optional().trim().notEmpty(),
+    body('bio').optional().trim().notEmpty()
+], (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+
+    try {
+        const ambassadorsData = getDataFile('ambassadors.json');
+        if (!ambassadorsData) {
+            return res.status(404).json({ error: 'Ambassadors data not found' });
+        }
+        
+        const ambassadorIndex = ambassadorsData.findIndex(a => a.id === parseInt(req.params.id));
+        if (ambassadorIndex === -1) {
+            return res.status(404).json({ error: 'Ambassador not found' });
+        }
+        
+        const updatedAmbassador = {
+            ...ambassadorsData[ambassadorIndex],
+            name: req.body.name || ambassadorsData[ambassadorIndex].name,
+            location: req.body.location || ambassadorsData[ambassadorIndex].location,
+            bio: req.body.bio || ambassadorsData[ambassadorIndex].bio,
+            quote: req.body.quote !== undefined ? req.body.quote : ambassadorsData[ambassadorIndex].quote
+        };
+        
+        if (req.file) {
+            updatedAmbassador.image = `/uploads/${req.file.filename}`;
+        }
+        
+        ambassadorsData[ambassadorIndex] = updatedAmbassador;
+        saveDataFile('ambassadors.json', ambassadorsData);
+        
+        res.json(updatedAmbassador);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// Delete ambassador (protected)
+app.delete('/api/ambassadors/:id', authenticateToken, (req, res) => {
+    try {
+        const ambassadorsData = getDataFile('ambassadors.json');
+        if (!ambassadorsData) {
+            return res.status(404).json({ error: 'Ambassadors data not found' });
+        }
+        
+        const ambassadorIndex = ambassadorsData.findIndex(a => a.id === parseInt(req.params.id));
+        if (ambassadorIndex === -1) {
+            return res.status(404).json({ error: 'Ambassador not found' });
+        }
+        
+        const deletedAmbassador = ambassadorsData.splice(ambassadorIndex, 1)[0];
+        saveDataFile('ambassadors.json', ambassadorsData);
+        
+        // Delete associated image file if it exists in uploads
+        if (deletedAmbassador.image && deletedAmbassador.image.startsWith('/uploads/')) {
+            const imagePath = path.join(__dirname, deletedAmbassador.image);
+            if (fs.existsSync(imagePath)) {
+                fs.unlinkSync(imagePath);
+            }
+        }
+        
+        res.json({ message: 'Ambassador deleted successfully', ambassador: deletedAmbassador });
     } catch (error) {
         res.status(500).json({ error: error.message });
     }

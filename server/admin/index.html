@@ -411,6 +411,9 @@
                 <div class="tab" onclick="switchTab('children')">
                     <i class="fas fa-child"></i> Children
                 </div>
+                <div class="tab" onclick="switchTab('ambassadors')">
+                    <i class="fas fa-users"></i> Ambassadors
+                </div>
             </div>
 
             <!-- Hero Slideshow Tab -->
@@ -610,6 +613,70 @@
                     
                     <div id="childrenList" style="overflow-x: auto;">
                         <p style="text-align: center; color: #999;">Loading children...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ambassadors Tab -->
+            <div class="tab-content" id="ambassadors-content">
+                <!-- Add/Edit Ambassador Form -->
+                <div class="card">
+                    <h2 id="ambassadorFormTitle"><i class="fas fa-plus-circle"></i> Add New Ambassador</h2>
+                    <div class="success" id="ambassadorSuccess"></div>
+                    <div class="error" id="ambassadorError"></div>
+                    
+                    <form id="ambassadorForm">
+                        <input type="hidden" id="ambassadorId">
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group">
+                                <label>Ambassador Name *</label>
+                                <input type="text" id="ambassadorName" required placeholder="e.g., John Smith or John and Mary">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Location *</label>
+                                <input type="text" id="ambassadorLocation" required placeholder="e.g., Colorado, USA">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Bio *</label>
+                            <textarea id="ambassadorBio" rows="4" required placeholder="Tell the ambassador's story and involvement with IGFM..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Quote (Optional)</label>
+                            <textarea id="ambassadorQuote" rows="2" placeholder="An inspiring quote from the ambassador..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Profile Image</label>
+                            <input type="file" id="ambassadorImage" accept="image/*" style="padding: 8px; border: 1px solid #ddd; border-radius: 5px; width: 100%; cursor: pointer;">
+                            <div id="ambassadorImagePreview" style="margin-top: 10px; display: none;">
+                                <img id="ambassadorImagePreviewImg" src="" style="max-width: 200px; border-radius: 5px;">
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 10px;">
+                            <button type="submit" class="btn" style="width: auto;">
+                                <i class="fas fa-save"></i> <span id="ambassadorFormBtnText">Add Ambassador</span>
+                            </button>
+                            <button type="button" class="btn" style="width: auto; background: #6c757d;" onclick="resetAmbassadorForm()">
+                                <i class="fas fa-times"></i> Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Ambassadors List -->
+                <div class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <h2><i class="fas fa-list"></i> All Ambassadors (<span id="ambassadorsCount">0</span>)</h2>
+                    </div>
+                    
+                    <div id="ambassadorsList" class="slides-grid">
+                        <p style="text-align: center; color: #999;">Loading ambassadors...</p>
                     </div>
                 </div>
             </div>
@@ -1197,6 +1264,169 @@
             document.getElementById('childFormBtnText').textContent = 'Add Child';
             document.getElementById('childImagePreview').style.display = 'none';
         }
+
+        // ============= AMBASSADORS FUNCTIONS =============
+        let allAmbassadors = [];
+        let currentAmbassadorEditId = null;
+
+        async function loadAmbassadors() {
+            try {
+                const response = await fetch(`${API_URL}/ambassadors`);
+                if (!response.ok) throw new Error('Failed to load ambassadors');
+                
+                allAmbassadors = await response.json();
+                document.getElementById('ambassadorsCount').textContent = allAmbassadors.length;
+                renderAmbassadors();
+            } catch (error) {
+                showError('ambassadorError', error.message);
+            }
+        }
+
+        function renderAmbassadors() {
+            const container = document.getElementById('ambassadorsList');
+            
+            if (allAmbassadors.length === 0) {
+                container.innerHTML = '<p style="text-align: center; color: #999; grid-column: 1/-1;">No ambassadors found. Add your first ambassador!</p>';
+                return;
+            }
+
+            container.innerHTML = allAmbassadors.map(ambassador => `
+                <div class="slide-card">
+                    <img src="${ambassador.image}" alt="${ambassador.name}" class="slide-preview" onerror="this.src='images/igfm-logo.png'">
+                    <div class="slide-info">
+                        <h3>${ambassador.name}</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> ${ambassador.location}</p>
+                        <p style="font-size: 0.85rem; color: #666;">${ambassador.bio.substring(0, 80)}...</p>
+                        <div class="slide-actions">
+                            <button class="btn-small btn-edit" onclick="editAmbassador(${ambassador.id})">
+                                <i class="fas fa-edit"></i> Edit
+                            </button>
+                            <button class="btn-small btn-delete" onclick="deleteAmbassador(${ambassador.id})">
+                                <i class="fas fa-trash"></i> Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Ambassador image preview
+        document.getElementById('ambassadorImage').addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    document.getElementById('ambassadorImagePreviewImg').src = e.target.result;
+                    document.getElementById('ambassadorImagePreview').style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Ambassador form submission
+        document.getElementById('ambassadorForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData();
+            formData.append('name', document.getElementById('ambassadorName').value);
+            formData.append('location', document.getElementById('ambassadorLocation').value);
+            formData.append('bio', document.getElementById('ambassadorBio').value);
+            formData.append('quote', document.getElementById('ambassadorQuote').value);
+
+            const imageFile = document.getElementById('ambassadorImage').files[0];
+            if (imageFile) {
+                formData.append('image', imageFile);
+            }
+
+            try {
+                const isEditing = currentAmbassadorEditId !== null;
+                const url = isEditing ? `${API_URL}/ambassadors/${currentAmbassadorEditId}` : `${API_URL}/ambassadors`;
+                const method = isEditing ? 'PUT' : 'POST';
+
+                const response = await fetch(url, {
+                    method: method,
+                    headers: {
+                        'Authorization': `Bearer ${authToken}`
+                    },
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.error || `Failed to ${isEditing ? 'update' : 'add'} ambassador`);
+                }
+
+                showSuccess('ambassadorSuccess', `Ambassador ${isEditing ? 'updated' : 'added'} successfully!`);
+                resetAmbassadorForm();
+                loadAmbassadors();
+            } catch (error) {
+                showError('ambassadorError', error.message);
+            }
+        });
+
+        // Edit ambassador
+        async function editAmbassador(ambassadorId) {
+            const ambassador = allAmbassadors.find(a => a.id === ambassadorId);
+            if (!ambassador) return;
+
+            currentAmbassadorEditId = ambassadorId;
+            document.getElementById('ambassadorFormTitle').innerHTML = '<i class="fas fa-edit"></i> Edit Ambassador';
+            document.getElementById('ambassadorFormBtnText').textContent = 'Update Ambassador';
+            
+            document.getElementById('ambassadorName').value = ambassador.name;
+            document.getElementById('ambassadorLocation').value = ambassador.location;
+            document.getElementById('ambassadorBio').value = ambassador.bio;
+            document.getElementById('ambassadorQuote').value = ambassador.quote || '';
+            
+            if (ambassador.image) {
+                document.getElementById('ambassadorImagePreviewImg').src = ambassador.image;
+                document.getElementById('ambassadorImagePreview').style.display = 'block';
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Delete ambassador
+        async function deleteAmbassador(ambassadorId) {
+            if (!confirm('Are you sure you want to delete this ambassador?')) return;
+
+            try {
+                const response = await fetch(`${API_URL}/ambassadors/${ambassadorId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Authorization': `Bearer ${authToken}`
+                    }
+                });
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.error || 'Failed to delete ambassador');
+                }
+
+                showSuccess('ambassadorSuccess', 'Ambassador deleted successfully');
+                loadAmbassadors();
+            } catch (error) {
+                showError('ambassadorError', error.message);
+            }
+        }
+
+        // Reset ambassador form
+        function resetAmbassadorForm() {
+            currentAmbassadorEditId = null;
+            document.getElementById('ambassadorForm').reset();
+            document.getElementById('ambassadorFormTitle').innerHTML = '<i class="fas fa-plus-circle"></i> Add New Ambassador';
+            document.getElementById('ambassadorFormBtnText').textContent = 'Add Ambassador';
+            document.getElementById('ambassadorImagePreview').style.display = 'none';
+        }
+
+        // Load ambassadors when switching to ambassadors tab
+        const originalSwitchTab = switchTab;
+        switchTab = function(tabName) {
+            originalSwitchTab.call(this, tabName);
+            if (tabName === 'ambassadors') {
+                loadAmbassadors();
+            }
+        };
     </script>
 </body>
 </html>

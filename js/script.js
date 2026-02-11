@@ -191,8 +191,13 @@ if (contactForm) {
         submitBtn.textContent = 'Sending...';
         
         try {
+            // Determine API URL based on environment
+            const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+                ? 'http://localhost:3000/api'
+                : 'https://api.gidudu.org/api';
+            
             // Send to backend API
-            const response = await fetch('https://api.gidudu.org/api/contact', {
+            const response = await fetch(`${API_URL}/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
