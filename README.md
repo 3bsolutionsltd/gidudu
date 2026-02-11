@@ -2,7 +2,9 @@
 
 Modern, responsive website for International Great Faith Ministries (IGFM) - Transforming lives in Uganda through faith, care, and compassion.
 
-🌐 **Live Site:** https://3bsolutionsltd.github.io/gidudu/
+🌐 **Production Site:** https://new.gidudu.org  
+🔗 **Backend API:** https://api.gidudu.org  
+📊 **Project Status:** ✅ LIVE AND OPERATIONAL
 
 ## About IGFM
 
@@ -17,15 +19,18 @@ International Great Faith Ministries is a non-denominational 501(c)(3) nonprofit
 
 ## Features
 
-- **Dynamic Content Management**: Backend CMS for easy content updates (no coding required!)
-- **Modern Design**: Clean, contemporary design with smooth animations
-- **Fully Responsive**: Optimized for all devices (mobile, tablet, desktop)
-- **Hero Slideshow**: Dynamic video/image slideshow managed through admin panel
-- **Professional Forms**: Dynamic sponsorship forms with auto-population
-- **Fast Performance**: Lightweight code with lazy loading for images
-- **SEO Optimized**: Semantic HTML and meta tags for better search visibility
-- **Accessible**: WCAG compliant with proper ARIA labels
-- **Interactive**: Smooth scrolling, animated counters, and parallax effects
+### Production Features
+- ✅ **Production Deployment**: Live on https://new.gidudu.org with backend API at https://api.gidudu.org
+- ✅ **Ambassador Management System**: Dynamic ambassador profiles loaded from backend CMS
+- ✅ **Contact Form Integration**: Functional contact form with email API and professional notifications
+- ✅ **Children Sponsorship Data**: Backend management for child sponsorship program
+- ✅ **Secure Backend API**: JWT authentication, rate limiting, CORS protection, helmet security
+- ✅ **Modern Design**: Clean, contemporary design with smooth animations
+- ✅ **Fully Responsive**: Optimized for all devices (mobile, tablet, desktop)
+- ✅ **Professional Forms**: Dynamic sponsorship forms with auto-population
+- ✅ **Fast Performance**: Lightweight code with optimized loading
+- ✅ **SEO Optimized**: Semantic HTML and meta tags for better search visibility
+- ✅ **Interactive**: Smooth scrolling, animated elements, and professional UI feedback
 
 ## Sections
 
@@ -52,80 +57,145 @@ International Great Faith Ministries is a non-denominational 501(c)(3) nonprofit
 ## Technologies Used
 
 ### Frontend
-- HTML5
-- CSS3 (with CSS Grid and Flexbox)
-- Vanilla JavaScript
+- HTML5 (Semantic markup)
+- CSS3 (Grid, Flexbox, Custom Properties)
+- Vanilla JavaScript (ES6+)
 - Google Fonts (Inter & Poppins)
 - Font Awesome Icons
 
-### Backend (NEW!)
-- Node.js + Express
-- JWT Authentication
-- Multer (File Uploads)
-- bcryptjs (Password Security)
-- JSON-based Data Storage
+### Backend (Production)
+- **Runtime**: Node.js v20.10.0
+- **Framework**: Express.js
+- **Authentication**: JWT (JSON Web Tokens)
+- **Email**: nodemailer (SMTP integration)
+- **Security**: 
+  - helmet (HTTP headers security)
+  - express-rate-limit (DDoS protection)
+  - CORS (Cross-Origin Resource Sharing)
+  - bcryptjs (Password hashing)
+- **Storage**: JSON-based data storage
+- **File Handling**: Multer (file uploads)
 
-## Installation
+### Hosting & Infrastructure
+- **Shared Hosting**: Reverse proxy (Apache/LiteSpeed)
+- **Production URLs**:
+  - Frontend: https://new.gidudu.org
+  - Backend API: https://api.gidudu.org
+- **Environment**: Production with secure JWT secrets
+- **Deployment**: FTP with hosting control panel configuration
 
-### Quick Start (Frontend Only)
-1. Clone or download this repository
-2. Open `index.html` in your web browser
-3. No build process required - pure HTML/CSS/JS
+## Installation & Setup
 
-### Full Setup (With CMS Backend)
+### Production Deployment (Current Live Site)
+
+**Status:** ✅ Deployed and operational at https://new.gidudu.org
+
+The production site is already configured with:
+- Backend API running on https://api.gidudu.org
+- Node.js v20.10.0 with all dependencies installed
+- Environment variables configured via hosting control panel
+- CORS enabled for production domain
+- Trust proxy configured for shared hosting
+- Email integration with graceful error handling
+
+**Production Documentation:**
+- See [server/DEPLOYMENT_STEPS.md](server/DEPLOYMENT_STEPS.md) for deployment guide
+- See [server/PRODUCTION_EMAIL_SETUP.md](server/PRODUCTION_EMAIL_SETUP.md) for email configuration
+
+### Local Development Setup
 
 **Prerequisites:**
 - Node.js 16+ installed
-- Python 3.x for frontend dev server
+- Git for version control
+- Text editor (VS Code recommended)
 
-**Step 1: Install Backend Dependencies**
+**Step 1: Clone Repository**
+```bash
+git clone https://github.com/3bsolutionsltd/gidudu.git
+cd gidudu
+```
+
+**Step 2: Install Backend Dependencies**
 ```bash
 cd server
 npm install
 ```
 
-**Step 2: Configure Environment**
+**Step 3: Configure Environment**
 ```bash
-# Copy .env.example to .env
+# Create .env file in server directory
 cp .env.example .env
 
-# Edit .env and set your JWT_SECRET
+# Edit .env and set your values:
+# JWT_SECRET=your_secure_random_secret_here
+# NODE_ENV=development
+# EMAIL_HOST=mail.gidudu.org
+# EMAIL_PORT=465
+# EMAIL_SECURE=true
+# EMAIL_USER=noreply@gidudu.org
+# EMAIL_PASS=your_email_password
 ```
 
-**Step 3: Start Backend Server**
+**Step 4: Start Backend Server**
 ```bash
 npm start
 # Server runs on http://localhost:3000
 ```
 
-**Step 4: Start Frontend Server**
+**Step 5: Open Frontend**
 ```bash
-# In project root (new terminal)
+# In project root, open index.html in your browser
+# Or use a local server:
 python -m http.server 8000
-# Website runs on http://localhost:8000
+# Then visit http://localhost:8000
 ```
 
-**Step 5: Access Admin Panel**
+**Step 6: Access Admin Panel (Optional)**
 - URL: http://localhost:3000/admin
 - Username: `admin`
-- Password: `admin123`
+- Password: `admin123` (change in production!)
 
-📖 **Detailed CMS Guide**: See [CMS_GUIDE.md](CMS_GUIDE.md) for complete instructions
+📖 **Detailed Guides:**
+- [CMS_GUIDE.md](CMS_GUIDE.md) - Content management instructions
+- [SPONSORSHIP_CMS_GUIDE.md](SPONSORSHIP_CMS_GUIDE.md) - Sponsorship system guide
 
-## Content Management
+## API & Content Management
 
-### Managing Hero Slideshow
-1. Login to admin panel at http://localhost:3000/admin
-2. Upload videos (MP4, WEBM, MOV) or images (JPEG, PNG, GIF)
-3. Add titles and subtitles
-4. Toggle slides active/inactive
-5. Changes appear automatically on website!
+### Production API Endpoints
 
-### API Endpoints
-- `GET /api/hero` - Get all hero slides (public)
-- `POST /api/hero` - Upload new slide (requires auth)
-- `PUT /api/hero/:id` - Update slide (requires auth)
-- `DELETE /api/hero/:id` - Delete slide (requires auth)
+**Base URL:** https://api.gidudu.org
+
+#### Public Endpoints
+- `GET /api/health` - API health check
+- `GET /api/ambassadors` - Get all ambassador profiles
+- `GET /api/children` - Get all children profiles
+- `GET /api/children/:id` - Get specific child profile
+- `POST /api/contact` - Submit contact form
+
+#### Protected Endpoints (Require JWT)
+- `POST /api/auth/login` - Admin authentication
+- `POST /api/ambassadors` - Create new ambassador
+- `PUT /api/ambassadors/:id` - Update ambassador
+- `DELETE /api/ambassadors/:id` - Delete ambassador
+- `POST /api/children` - Create new child profile
+- `PUT /api/children/:id` - Update child profile
+- `DELETE /api/children/:id` - Delete child profile
+
+### Ambassador Management
+The website features 5 authentic ambassador testimonies:
+1. **Phyllis Stewart** - Texas
+2. **Jim and Nancy** - Colorado
+3. **Ann and Steve McKinley** - Ohio
+4. **Benjamin and Sheila Burum** - Houston
+5. **Trina Ryan** - Ohio
+
+Ambassadors are dynamically loaded from the API and displayed on the [ambassadors page](https://new.gidudu.org/ambassadors.html).
+
+### Contact Form
+- Integrated with backend API
+- Professional notification system (no popups)
+- Email sending with timeout protection
+- Graceful error handling with fallback contact information
 
 For full API documentation, see [server/README.md](server/README.md)
 
@@ -166,26 +236,110 @@ Edit the text content directly in `index.html`
 - Time to Interactive: < 3.5s
 - Cumulative Layout Shift: < 0.1
 
-## Future Enhancements
+## Project Structure
 
-- [x] ✅ Backend CMS system
-- [x] ✅ Dynamic hero slideshow
-- [x] ✅ Professional sponsorship forms
-- [ ] Programs management via CMS
-- [ ] Children profiles management
-- [ ] Add image gallery
-- [ ] Implement actual donation integration (Stripe/PayPal)
-- [ ] Add blog section
-- [ ] Integrate email service for contact form
-- [ ] Add language translation
+```
+gidudu/
+├── index.html              # Main landing page
+├── ambassadors.html        # Ambassador profiles page
+├── sponsor.html            # Sponsorship program page
+├── child.html             # Individual child profile page
+├── css/
+│   └── style.css          # Main stylesheet
+├── js/
+│   ├── script.js          # Main JavaScript with contact form
+│   ├── ambassador-loader.js  # Ambassador dynamic loading
+│   ├── sponsor-loader.js  # Sponsorship form logic
+│   ├── cms-loader.js      # CMS content loading
+│   └── nav-loader.js      # Navigation system
+├── images/                # Frontend images and assets
+├── server/                # Backend API
+│   ├── server.js          # Express server with all API endpoints
+│   ├── package.json       # Node.js dependencies
+│   ├── .env              # Environment variables (not in git)
+│   ├── data/             # JSON data storage
+│   │   ├── ambassadors.json
+│   │   ├── children.json
+│   │   └── users.json
+│   ├── uploads/          # Uploaded files
+│   └── admin/            # Admin panel (if implemented)
+├── docs/                  # Documentation
+└── README.md             # This file
+```
+
+## Security Notes
+
+- JWT authentication protects admin endpoints
+- Password hashing with bcryptjs
+- Rate limiting prevents API abuse (100 requests per 15 minutes)
+- Helmet.js sets security HTTP headers
+- CORS restricted to production domains only
+- Trust proxy configured for X-Forwarded-For validation
+- Environment variables never committed to git
+- Secure JWT_SECRET (64-character cryptographic random)
+
+## Project Status & Roadmap
+
+### ✅ Completed Features
+- [x] Backend CMS system with API
+- [x] Ambassador management and profiles (5 profiles live)
+- [x] Children sponsorship data management
+- [x] Contact form with email integration
+- [x] Production deployment (new.gidudu.org, api.gidudu.org)
+- [x] Security configuration (CORS, helmet, rate limiting, JWT)
+- [x] Professional UI with styled notifications
+- [x] Responsive design optimization
+- [x] Error handling and timeout protection
+- [x] Trust proxy for shared hosting environment
+
+### 🔄 In Progress / Known Issues
+- ⚠️ Email server timeout (mail.gidudu.org:465 unreachable from hosting)
+  - Currently gracefully handled with fallback contact
+  - Options: Contact hosting support, switch to SendGrid/Mailgun, or accept current behavior
+- 🎥 Missing hero video (hero-video.mp4) - minor, non-critical
+
+### 📋 Future Enhancements
+- [ ] Fix email SMTP connectivity (contact hosting or switch to API-based service)
+- [ ] Upload hero video content
+- [ ] Programs management via CMS admin panel
+- [ ] Children profiles management via admin panel
+- [ ] Image gallery section
+- [ ] Stripe/PayPal donation integration
+- [ ] Blog section with CMS management
+- [ ] Language translation (Spanish, Luganda)
 - [ ] Database migration (PostgreSQL/MongoDB)
-- [ ] Image optimization and CDN integration
+- [ ] CDN integration for faster asset delivery
+- [ ] Advanced analytics dashboard
+
+### 📊 Production Monitoring
+- Health check: https://api.gidudu.org/api/health
+- Status: All systems operational
+- Uptime: Monitored via hosting control panel
+
+## Contributing
+
+This is a private project for International Great Faith Ministries. For questions or contributions, contact the development team.
 
 ## Credits
 
-Design and Development: GitHub Copilot
-Based on content from: gidudu.org
+**Development:** 3B Solutions Ltd with GitHub Copilot  
+**Content:** International Great Faith Ministries  
+**Ministry Leadership:** Pastor Paul Musoke (Founder & President)  
+**Based on:** gidudu.org legacy website
+
+## Support
+
+For technical support or questions:
+- **Email:** paul@gidudu.org
+- **Website:** https://new.gidudu.org
+- **API Status:** https://api.gidudu.org/api/health
 
 ## License
 
 © 2025 International Great Faith Ministries. All rights reserved.
+
+---
+
+**Last Updated:** February 11, 2026  
+**Version:** 2.0 (Production Release)  
+**Status:** ✅ Live and Operational
