@@ -55,12 +55,36 @@ const apiLimiter = rateLimit({
     legacyHeaders: false,
 });
 
-// CORS Middleware
+// CORS Middleware - Allow requests from production and development
+const allowedOrigins = [
+    'https://new.gidudu.org',
+    'https://gidudu.org',
+    'https://www.gidudu.org',
+    'https://3bsolutionsltd.github.io',
+    'https://api.gidudu.org',
+    'http://localhost:3000',
+    'http://localhost:5500',
+    'http://127.0.0.1:5500',
+    'http://127.0.0.1:3000'
+];
+
 app.use(cors({
-    origin: process.env.NODE_ENV === 'production' 
-        ? ['https://new.gidudu.org', 'https://gidudu.org', 'https://3bsolutionsltd.github.io', 'https://api.gidudu.org']
-        : '*',
-    credentials: true
+    origin: function(origin, callback) {
+        // Allow requests with no origin (like mobile apps, Postman, or curl)
+        if (!origin) return callback(null, true);
+        
+        // Check if origin is in allowed list
+        if (allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            console.log('CORS blocked origin:', origin);
+            callback(null, false);
+        }
+    },
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    exposedHeaders: ['Content-Range', 'X-Content-Range']
 }));
 
 app.use(express.json({ limit: '10mb' }));
